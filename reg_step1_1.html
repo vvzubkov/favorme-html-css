@@ -151,203 +151,21 @@
                                     <h3 class="c-blue form-group-title">Подтверждение регистрации</h3>
                                     <div class="form-row">
                                         <label class="w-13part">Номер телефона</label>
-                                        <div class="dib w-auto va-top pad0">
+                                        <div class="dib w-auto va-middle pad0">
                                             <input class="mobile-number" type="tel" required/>
                                         </div>
-                                        <div class="dib ta-l w-13part">
+                                        <div class="dib ta-l w-25part">
                                             <span class="dib w-auto pad0 required-icon">*</span>
-                                            <a href="/" class="pad0-10 c-blue">Изменить номер</a>
+                                            <a href="/" class="pad0-10 c-blue">Выслать код</a>
                                         </div>
                                     </div>
                                     <div class="form-row pad10-0">
                                         <div class="dib w-13part"></div>
                                         <div class="user-exists">
-                                            <p class="c-dark-gray fw-slim fz11 pad10-0">Пользователь с таким номером телефона
-                                                уже зарегистрирован</p>
-                                            <div class="dib w-full">
-                                                <div class="img-col">
-                                                    <div class="img-mask middle">
-                                                        <img src="images/user1.png" alt=""/>
-                                                    </div>
-                                                </div>
-                                                <div class="data-col">
-                                                    <a href="#" class="c-dark-gray w-full">Петров Петр</a>
-                                                    <a href="#" class="c-blue">Войти</a>
-                                                </div>
-                                            </div>
+                                            <p class="c-dark-gray fw-slim pad10-0">Для защиты Вашей страницы мы вышлем на Ваш мобильный<br>
+                                                телефон <strong>бесплатное</strong> сообщение с кодом</p>
                                         </div>
                                     </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">Код подтверждения</label>
-                                        <div class="dib w-auto va-middle pad0">
-                                            <input class="input-alert" type="text" required/>
-                                        </div>
-                                        <div class="dib ta-l w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10">Неверный код подтверждения</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">Пароль</label>
-                                        <div class="dib w-auto va-middle pad0">
-                                            <input type="password" required/>
-                                        </div>
-                                        <div class="dib ta-l w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10"></p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">Повторите пароль</label>
-                                        <div class="dib w-auto va-middle pad0">
-                                            <input class="input-alert" type="password" required/>
-                                        </div>
-                                        <div class="dib ta-l w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10">Пароль не совпадает</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="c-blue form-group-title">Личные данные</h3>
-                                    <div class="form-row">
-                                        <label class="w-13part fw-semi-bold">Вы можете импортировать<br> личные данные из соц. сетей</label>
-                                        <div class="dib w-auto soc-block va-middle">
-                                            <a class="soc-icon soc-icon-trigger"><img src="images/vk-icon.png" alt=""/></a>
-                                            <a class="soc-icon soc-icon-trigger"><img src="images/fb-icon.png" alt=""/></a>
-                                            <a class="soc-icon soc-icon-trigger"><img src="images/od-icon.png" alt=""/></a>
-                                            <a class="soc-icon soc-icon-trigger"><img src="images/twitter-icon.png" alt=""/></a>
-                                        </div>
-                                        <a href="#" class="c-blue">Выбрать другую</a>
-                                    </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">Имя</label>
-                                        <div class="dib w-auto va-middle pad0">
-                                            <input type="text" required/>
-                                        </div>
-                                        <div class="dib w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10">Поле не заполнено</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">Фамилия</label>
-                                        <div class="dib w-auto va-middle pad0">
-                                            <input type="text" required/>
-                                        </div>
-                                        <div class="dib w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10">Поле не заполнено</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">Пол</label>
-                                        <div class="dib va-middle pad0" style="width:200px;">
-                                            <select name="gender" id="gender">
-                                                <option value="male">Мужчина</option>
-                                                <option value="female">Женщина</option>
-                                            </select>
-                                        </div>
-                                        <div class="dib w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10">Пол не выбран</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">Дата рождения</label>
-                                        <div class="dib va-middle pad0" style="width:50px;">
-                                            <select name="day" id="day">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">7</option>
-                                                <option value="8">8</option>
-                                            </select>
-                                        </div>
-                                        <div class="dib va-middle pad0" style="width:146px;">
-                                            <select name="month" id="month">
-                                                <option value="1">Январь</option>
-                                                <option value="1">Февраль</option>
-                                                <option value="1">Март</option>
-                                                <option value="1">Апрель</option>
-                                            </select>
-                                        </div>
-                                        <div class="dib va-middle pad0" style="width:70px;">
-                                            <select name="year" id="year">
-                                                <option value="1">1995</option>
-                                                <option value="1">1996</option>
-                                                <option value="1">1997</option>
-                                                <option value="1">1998</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="load-avatar">
-                                        <div class="img-col">
-                                            <div class="img-mask avatar">
-                                                <img src="images/avatar-def.png" alt=""/>
-                                            </div>
-                                        </div>
-                                        <div class="dib w-full">
-                                            <a href="/" class="c-blue">Выбрать фото</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="c-blue form-group-title">Контактные данные</h3>
-                                    <div class="form-row pad5-0">
-                                        <label class="w-13part">Страна</label>
-                                        <select id="countryFilter" style="width: 200px;">
-                                            <option>Россия</option>
-                                            <option>Украина</option>
-                                            <option>Беларусь</option>
-                                        </select>
-                                        <div class="dib w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10">Страна не выбрана</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row pad5-0">
-                                        <label class="w-13part">Город</label>
-                                        <select id="cityFilter" style="width: 200px;">
-                                            <option value=""></option>
-                                            <option data-country="UA">Киев</option>
-                                            <option data-country="UA">Львов</option>
-                                            <option data-country="RU">Москва</option>
-                                            <option data-country="BL">Минск</option>
-                                            <option data-country="RU">Питер</option>
-                                            <option data-country="UA">Донецк</option>
-                                        </select>
-                                        <div class="dib w-13part">
-                                            <span class="required-icon">*</span>
-                                            <p class="input-alert pad0-10">Город не выбран</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label class="w-13part">E-mail</label>
-                                        <div class="dib w-autova-m">
-                                            <input type="email"/>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="w-13part"></div>
-                                        <div class="dib w-auto va-middle">
-                                            <p class="w-full">* Поля, обязательные для заполнения</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-row pad10-0">
-                                        <div class="w-13part"></div>
-                                        <div class="dib w-auto va-middle">
-                                            <input class="rect-check" id="check1" type="checkbox" name="iCheck" value="radio"/>
-                                            <label class="dib ta-l va-middle" for="check1">Соглашаюсь с <br>
-                                                <a href="#" class="c-blue">условиями пользования сайтом</a></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <a class="reg-button next" href="/"><span>Далее</span><span><i class="fa fa-long-arrow-right"></i></span></a>
                                 </div>
                             </form>
                         </div>

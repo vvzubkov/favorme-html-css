@@ -1337,13 +1337,13 @@ textarea:-ms-input-placeholder {
     border-bottom: none;
 }
 
-/*.reg-form label,*/
-/*.reg-form input,*/
-/*.reg-form a,*/
-/*.reg-form p {*/
-    /*display: inline-block;*/
-    /*width: auto;*/
-/*}*/
+.reg-form label,
+.reg-form input,
+.reg-form a,
+.reg-form p {
+    display: inline-block;
+    font-size: 11px;
+}
 
 .reg-form label {
     /*width: 260px;*/
@@ -1374,12 +1374,12 @@ textarea:-ms-input-placeholder {
 }
 
 .reg-form p.input-alert {
-    color: red;
+    color: #df6352;
 }
 
 input.input-alert,
 input.mobile-number.input-alert {
-    border-color: red;
+    border-color: #df6352;
 }
 
 .req-desc {
@@ -1389,7 +1389,7 @@ input.mobile-number.input-alert {
 }
 
 .user-exists {
-    width: 200px;
+    width: auto;
     display: inline-block;
     margin: 0;
     text-align: left;
