@@ -1,0 +1,100 @@
+/*-------------- Padding ------------*/
+.pad0
+{
+    padding:0 !important;
+}
+.pad0-10
+{
+    padding:0 10px !important;
+}
+.pad5
+{
+    padding:5px !important;
+}
+.pad5-0
+{
+    padding:5px 0px !important;
+}
+.pad5-10
+{
+    padding:5px 10px !important;
+}
+.pad10-0
+{
+    padding:10px 0;
+}
+.pad10
+{
+    padding: 10px;
+}
+.pad-l-60px
+{
+    padding-left: 60px !important;
+}
+
+/*--------- Vertical Align ----------*/
+.va-top
+{
+    vertical-align: top !important;
+}
+.va-middle
+{
+    vertical-align: middle !important;
+}
+.va-bottom
+{
+    vertical-align: bottom !important;
+}
+
+
+/*---------- Font-Size ----------*/
+.fz11
+{
+    font-size: 11px;
+}
+.fz12
+{
+    font-size: 12px;
+}
+.fz13
+{
+    font-size: 13px;
+}
+.fz14
+{
+    font-size: 14px;
+}
+.fz16
+{
+    font-size: 16px;
+}
+.fz20
+{
+    font-size: 20px;
+}
+.fz28
+{
+    font-size: 28px;
+}
+
+/*------------ Font-Weight ----------*/
+.fs-i
+{
+    font-style: italic;
+}
+.fw-slim
+{
+    font-weight: 300;
+}
+.fw-regular
+{
+    font-weight: 400;
+}
+.fw-semi-bold
+{
+    font-weight: 600;
+}
+.fw-extra-bold
+{
+    font-weight: 800;
+}

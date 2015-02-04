@@ -1,0 +1,37 @@
+.row-list-7el-mini
+{
+    height: 154px;
+}
+.row-list-7el
+{
+    height: 295px;
+}
+.row-list-6el
+{
+    height: 250px;
+}
+.row-list-5el
+{
+    height: 205px;
+}
+.row-list-4el
+{
+    height: 163px;
+}
+.row-list-3el
+{
+    height: 185px;
+}
+.row-list-2el
+{
+    height: 128px;
+}
+.row-list-5el .title,
+.row-list-2el .title
+{
+    padding: 10px 0;
+}
+.fv-trust-frList
+{
+    height: 396px;
+}
