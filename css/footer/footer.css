@@ -3,14 +3,12 @@
 {
     display: inline-block;
     margin: 0 0 10px;
-    width: 100%;
 }
 #footer nav a
 {
     font-size: 0.917em;
     color: #353535;
     opacity: 0.7;
-    /*text-decoration: underline;*/
     display: inline-block;
     margin: 0 5px;
 }

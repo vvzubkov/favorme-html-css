@@ -1,37 +1,61 @@
-.row-list-7el-mini
-{
+.row-list {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.row-list-el {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 10px;
+    position: relative;
+}
+
+.row-list-el:last-of-type {
+    border: none;
+}
+
+.row-list-el.fr-inbook,
+.row-list-el.fr-offer,
+.row-list-el.fr-group,
+.row-list-el.fr-bid {
+    padding: 10px;
+}
+
+.row-list-7el-mini {
     height: 154px;
 }
-.row-list-7el
-{
+
+.row-list-7el {
     height: 295px;
 }
-.row-list-6el
-{
+
+.row-list-6el {
     height: 250px;
 }
-.row-list-5el
-{
+
+.row-list-5el {
     height: 205px;
 }
-.row-list-4el
-{
+
+.row-list-4el {
     height: 163px;
 }
-.row-list-3el
-{
+
+.row-list-3el {
     height: 185px;
 }
-.row-list-2el
-{
+
+.row-list-2el {
     height: 128px;
 }
+
 .row-list-5el .title,
-.row-list-2el .title
-{
+.row-list-2el .title {
     padding: 10px 0;
 }
-.fv-trust-frList
-{
+
+.fv-trust-frList {
     height: 396px;
 }

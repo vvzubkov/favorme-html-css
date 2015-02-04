@@ -928,7 +928,7 @@
 .intl-tel-input {
     position: relative;
     display: inline-block;
-    width:100%;
+    width: 100%;
 }
 
 .intl-tel-input * {
@@ -950,7 +950,8 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     padding-left: 38px;
-    margin-left: 0
+    margin-left: 0;
+    line-height: 33px;
 }
 
 .intl-tel-input .flag-dropdown {

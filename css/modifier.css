@@ -1,100 +1,266 @@
+/*-------------- Block style------------*/
+.dib {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.db {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.dtc {
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.f-l {
+    float: left !important;
+}
+
+.f-r {
+    float: right !important;
+}
+
+.over-hidden {
+    overflow: hidden;
+}
+
 /*-------------- Padding ------------*/
-.pad0
-{
-    padding:0 !important;
+.pad0 {
+    padding: 0 !important;
 }
-.pad0-10
-{
-    padding:0 10px !important;
+
+.pad0-10 {
+    padding: 0 10px !important;
 }
-.pad5
-{
-    padding:5px !important;
+
+.pad5 {
+    padding: 5px !important;
 }
-.pad5-0
-{
-    padding:5px 0px !important;
+
+.pad5-0 {
+    padding: 5px 0px !important;
 }
-.pad5-10
-{
-    padding:5px 10px !important;
+
+.pad5-10 {
+    padding: 5px 10px !important;
 }
-.pad10-0
-{
-    padding:10px 0;
+
+.pad10-0 {
+    padding: 10px 0;
 }
-.pad10
-{
+
+.pad10 {
     padding: 10px;
 }
-.pad-l-60px
-{
+
+.pad-l-60px {
     padding-left: 60px !important;
 }
 
 /*--------- Vertical Align ----------*/
-.va-top
-{
+.va-top {
     vertical-align: top !important;
 }
-.va-middle
-{
+
+.va-middle {
     vertical-align: middle !important;
 }
-.va-bottom
-{
+
+.va-bottom {
     vertical-align: bottom !important;
 }
 
-
 /*---------- Font-Size ----------*/
-.fz11
-{
+.fz11 {
     font-size: 11px;
 }
-.fz12
-{
+
+.fz12 {
     font-size: 12px;
 }
-.fz13
-{
+
+.fz13 {
     font-size: 13px;
 }
-.fz14
-{
+
+.fz14 {
     font-size: 14px;
 }
-.fz16
-{
+
+.fz16 {
     font-size: 16px;
 }
-.fz20
-{
+
+.fz20 {
     font-size: 20px;
 }
-.fz28
-{
+
+.fz28 {
     font-size: 28px;
 }
 
 /*------------ Font-Weight ----------*/
-.fs-i
-{
+.fs-i {
     font-style: italic;
 }
-.fw-slim
-{
+
+.fw-slim {
     font-weight: 300;
 }
-.fw-regular
-{
+
+.fw-regular {
     font-weight: 400;
 }
-.fw-semi-bold
-{
+
+.fw-semi-bold {
     font-weight: 600;
 }
-.fw-extra-bold
-{
+
+.fw-extra-bold {
     font-weight: 800;
+}
+
+/*---------- Text position -----------*/
+.ta-r {
+    text-align: right;
+}
+
+.ta-l {
+    text-align: left !important;
+}
+
+.ta-c {
+    text-align: center !important;
+}
+
+/*----------- Width option -----------*/
+.w-auto {
+    width: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+    width: 49%;
+}
+
+.w-13part {
+    width: 32%;
+}
+
+.w-23part {
+    width: 64%;
+}
+
+.w-34part {
+    width: 74%;
+}
+
+.w-14part {
+    width: 24%;
+}
+
+.w-45part {
+    width: 79%;
+}
+
+.w-15part {
+    width: 19%;
+}
+
+.w-95perc {
+    width: 95%;
+}
+
+.w-90perc {
+    width: 90%;
+}
+
+.w-50perc {
+    width: 50%;
+}
+
+.w-05perc {
+    width: 5%;
+}
+
+.w-10prec {
+    width: 10%;
+}
+
+.h500 {
+    height: 500px;
+}
+
+/*---------- Color -------------*/
+.c-orange {
+    color: #F6881F !important;
+}
+
+.c-blue {
+    color: #3eb6e2 !important;
+}
+
+.c-green {
+    color: #36b75d !important;
+}
+
+.c-gray {
+    color: #b3b3b3 !important;
+}
+
+.c-dark-gray {
+    color: #878889 !important;
+}
+
+.c-black {
+    color: #000 !important;
+}
+
+.c-red {
+    color: #db0707 !important;
+}
+
+.fr-amount {
+    color: #636363;
+}
+
+.bg-blue {
+    background-color: #3eb6e2 !important;
+}
+
+.bg-green {
+    background-color: #36b75d !important;
+}
+
+.bg-gray {
+    background-color: #b3b3b3;
+}
+
+.bg-blue-light {
+    background: rgba(61, 182, 225, 0.05);
+}
+
+.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
 }

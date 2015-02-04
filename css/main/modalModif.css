@@ -1,0 +1,73 @@
+.md-trigger {
+    cursor: pointer;
+}
+
+.md-content header {
+    background: #3db6e1;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.md-content header a {
+    color: #fff;
+}
+
+.md-content header h3.title {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.md-content header p.title {
+    color: #fff;
+    padding: 30px 20px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+.md-content main {
+    background: #f6f9fa;
+    padding: 10px 20px;
+
+}
+
+.md-content footer {
+    background: #edf6f9;
+    padding: 10px 20px;
+}
+
+.md-content > footer .button {
+    font-size: 14px;
+}
+
+.modal-w240 {
+    width: 240px;
+    margin-left: -120px;
+}
+
+.modal-w300 {
+    width: 300px;
+    margin-left: -150px;
+}
+
+.modal-w470 {
+    width: 470px;
+    margin-left: -235px;
+}
+
+.modal-w600 {
+    width: 600px;
+    margin-left: -150px;
+}
+
+.modal-w730 {
+    width: 730px;
+    margin-left: -365px;
+}
+
+.modal-abs {
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
