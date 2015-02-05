@@ -1,6 +1,16 @@
 @import "sidebar.css";
+@import "regBlock.css";
 @import "rowList.css";
 @import "tabs.css";
+@import "socBlock.css";
+@import "../add/icheck-blue.css";
+@import "../add/icheck-green.css";
+@import "../add/select.css";
+@import "../add/font-awesome.min.css";
+@import "../add/owl.carousel.min.css";
+@import "../add/jquery.scrollbar.css";
+@import "../add/intlTelInput.css";
+@import "../add/component.css";
 
 .title {
     font-size: 1em;

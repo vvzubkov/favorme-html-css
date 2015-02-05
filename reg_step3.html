@@ -6,19 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!------ CSS ----->
+    <link rel="stylesheet" href="css/reset.css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,cyrillic-ext'
           rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/add/font-awesome.min.css"/>
-    <link href="css/add/owl.carousel.min.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/add/intlTelInput.css"/>
-    <link rel="stylesheet" href="css/add/jquery.scrollbar.css"/>
-    <link rel="stylesheet" href="css/add/nprogress.css"/>
-    <link rel="stylesheet" href="css/add/component.css"/>
     <link rel="stylesheet" href="css/add/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/add/nprogress.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/add/select.css"/>
-    <link href="css/add/icheck-blue.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/modifier.css"/>
 
     <!------ JS ----->
     <script type="text/javascript" src="js/add/jquery-1.11.1.min.js"></script>
@@ -30,26 +24,23 @@
     <script type="text/javascript" src="js/add/intlTelInput.min.js"></script>
     <script type="text/javascript" src="js/add/jquery.limit.js"></script>
     <script type="text/javascript" src="js/modalEffects/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/add/icheck.js"></script>
+    <script type="text/javascript" src="js/add/jquery.clearsearch.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
     <script type="text/javascript" src="js/source.js"></script>
     <script type="text/javascript" src="js/gs.js"></script>
-    <script src="js/add/icheck.js"></script>
-    <script src="js/add/jquery.clearsearch.js"></script>
 
 </head>
 <body>
 <div id="wrap">
     <header id="header">
         <div class="c-block">
-            <div class="ta-l">
+            <div class="dib f-l w-50perc ta-l">
                 <div class="logo-block">
                     <a class="logo" href="/">
-                        <img src="images/logo.png" alt=""/>
+                        <img src="images/logo/logo.png" alt=""/>
                     </a>
-                    <a class="logo-f">О проекте</a>
                 </div>
-            </div>
-            <div class="ta-r">
             </div>
         </div>
     </header>
@@ -64,20 +55,19 @@
     </div>
     <main id="main">
         <div class="c-block">
-            <div class="sidebar left ta-l">
-                <div class="sidebar-nav">
-                    <nav>
+            <div class="sideBar left ta-l">
+                <div class="sidebar-block">
+                    <nav class="sidebar-nav">
                         <a href="">Возможности</a>
                         <a href="">Потребности</a>
-                        <a href="">Друзья</a>
                     </nav>
                 </div>
-                <div class="favorme-about">
-                    <h3 class="title c-blue fw-extra-bold">Favorme - это :</h3>
-                    <ul>
-                        <li>
+                <div class="sidebar-block">
+                    <h3 class="title c-dark-gray fw-extra-bold">Статистика</h3>
+                    <ul class="favorme-about">
+                        <li class="pad10-0">
                             <div>
-                                <img src="images/users-icon.png" alt=""/>
+                                <img src="images/users/users-icon.png" alt=""/>
                             </div>
                             <div>
                                 <p>пользователей</p>
@@ -95,56 +85,60 @@
                         </li>
                         <li>
                             <div>
-                                <img src="images/needs-icon.png" alt=""/>
+                                <img src="images/icons/needs-icon.png" alt=""/>
                             </div>
                             <div>
                                 <p>потребностей</p>
+
                                 <p>101 941</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <img src="images/city-icon.png" alt=""/>
+                                <img src="images/icons/city-icon.png" alt=""/>
                             </div>
                             <div>
                                 <p>городов</p>
+
                                 <p>53 127</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="app-links">
-                    <h3 class="title">Приложения для iPhone <br>и Android</h3>
-                    <a href="android"><img src="images/google-play-icon.png" alt="google-play-icon"/></a>
-                    <a href="iphone"><img src="images/app-store-icon.png" alt="app-store-icon"/></a>
+                <div class="sidebar-block app-links">
+                    <h3 class="title c-dark-gray">Установить приложение</h3>
+                    <a href="android"><img src="images/icons/google-play-icon.png" alt="google-play-icon"/></a>
+                    <a href="iphone"><img src="images/icons/app-store-icon.png" alt="app-store-icon"/></a>
                 </div>
-                <div class="send-app-block">
+                <div class="sidebar-block send-app-block">
                     <form id="send-app-form" action="">
-                        <p>Отправить ссылку на скачивание приложения</p>
-                        <input id="send-app-tel" type="text" placeholder="+"/>
-                        <label class="button bg-blue" for="send-app-submit">Войти</label>
+                        <p class="c-dark-gray">Отправить ссылку на скачивание приложения</p>
+                        <input id="send-app-tel" type="tel" class="mobile-number"/>
+                        <label class="button bg-blue" for="send-app-submit">Отправить</label>
                         <input id="send-app-submit" type="submit"/>
                     </form>
                 </div>
             </div>
-            <div class="reg-block ta-c">
+            <div class="regBlock ta-c">
                 <div class="reg-step">
                     <div class="title">
-                        <div>
-                            <h3 class="c-blue">Шаг 1 <i class="fa fa-check"></i></h3>
-                            <p>Расскажите о себе</p>
+                        <div class="">
+                            <h3 class="c-blue">Шаг 1</h3>
+                            <p>Информаци о Вас</p>
                         </div>
-                        <div>
-                            <h3 class="c-blue">Шаг 2 <i class="fa fa-check"></i></h3>
-                            <p>Укажите свое окружение</p>
-                        </div>
-                        <div class="active sh">
+                        <div class="">
                             <h3 class="c-blue">Шаг 2</h3>
-                            <p>Создайте первые возможности и потребности</p>
+                            <p>Ваше окружение</p>
+                        </div>
+                        <div class="active">
+                            <h3 class="c-blue">Шаг 2</h3>
+                            <p>Возможности и потребности</p>
                         </div>
                     </div>
-                    <div class="body sh">
-                        <h3 class="c-blue form-group-title">Создайте возможность или потребность. Поделитесь ею со своими друзьями.</h3>
+                    <div class="body">
+                        <h3 class="c-blue form-group-title">Создайте возможность или потребность. Поделитесь ею со
+                            своими друзьями.</h3>
+
                         <div class="tabSection">
                             <ul class="tabs tabs-title form-group step3">
                                 <div class="form-row">
@@ -162,7 +156,8 @@
                             </ul>
                             <div class="form-group step3 box">
                                 <div class="form-row pad10-0">
-                                    <textarea name="reg-vp-textarea" id="reg-vp-textarea-1" placeholder="Опишите возможность"></textarea>
+                                    <textarea name="reg-vp-textarea" id="reg-vp-textarea-1"
+                                              placeholder="Опишите возможность"></textarea>
                                     <span class="charsLeft" id="charsLeft-1"></span>
                                 </div>
                                 <div class="form-row pad10-0">
@@ -172,12 +167,14 @@
                                         <option>Киев, Украина</option>
                                         <option>Минск, Беларусь</option>
                                     </select>
-                                    <a class="vp-add-photo" href="/"><i class="fa fa-camera"></i><span>Добавить фото</span></a>
+                                    <a class="vp-add-photo" href="/"><i
+                                            class="fa fa-camera"></i><span>Добавить фото</span></a>
                                 </div>
                             </div>
                             <div class="form-group step3 box hidden">
                                 <div class="form-row pad10-0">
-                                    <textarea name="reg-vp-textarea" id="reg-vp-textarea-2" placeholder="Опишите потребность"></textarea>
+                                    <textarea name="reg-vp-textarea" id="reg-vp-textarea-2"
+                                              placeholder="Опишите потребность"></textarea>
                                     <span class="charsLeft" id="charsLeft-2"></span>
                                 </div>
                                 <div class="form-row pad10-0">
@@ -187,13 +184,15 @@
                                         <option>Киев, Украина</option>
                                         <option>Минск, Беларусь</option>
                                     </select>
-                                    <a class="vp-add-photo" href="/"><i class="fa fa-camera"></i><span>Добавить фото</span></a>
+                                    <a class="vp-add-photo" href="/"><i
+                                            class="fa fa-camera"></i><span>Добавить фото</span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group step3">
                             <div class="form-row">
                                 <p class="fw-extra-bold">Доступна к просмотру:</p>
+
                                 <div class="tabSection">
                                     <ul class="tabs tabs-title">
                                         <li class="w-13part current">Всем</li>
@@ -205,46 +204,41 @@
                         </div>
                         <div class="form-group">
                             <a class="reg-button prev" href="/"><span><i class="fa fa-long-arrow-left"></i></span><span>Назад</span></a>
-                            <a class="reg-button next" href="/"><span>Создать</span><span><img src="images/logo-mini.png" alt=""/></i></span></a>
+                            <a class="reg-button next" href="/"><span>Создать</span><span><img
+                                    src="images/logo/logo-mini.png" alt=""/></i></span></a>
                             <a class="reg-button skip next" href=""><span>Пропустить</span></a>
                         </div>
                     </div>
                 </div>
+                <footer id="footer">
+                    <nav class="w-34part ta-l">
+                        <a href="/">О проекте</a>
+                        <a href="/">Правила</a>
+                        <a class="md-trigger" data-modal="callBack">Обратная связь</a>
+                    </nav>
+                    <div class="copyright w-14part ta-r"><i class="fa fa-copyright"></i> Favorme 2014</div>
+                </footer>
             </div>
         </div>
     </main>
-    <div class="push"></div>
+
 </div>
-<footer id="footer">
-    <div class="c-block">
-        <nav>
-            <a href="/">Помощь</a>
-            <a href="/">Правила</a>
-            <a href="/">Соглашения</a>
-            <a href="/">Подписка</a>
-            <a href="/">Обратная связь</a>
-            <a href="/">Техническая поддержка</a>
-            <a href="/">Сообщение об ошибке</a>
-        </nav>
-        <div class="copyright"> <i class="fa fa-copyright"></i> Favorme 2014</div>
-    </div>
-</footer>
 </body>
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("#reg-city-choise-1").select2({
             placeholder: "Выберите город",
             allowClear: true
         });
 
-        $('#reg-vp-textarea-1').limit('160','#charsLeft-1');
+        $('#reg-vp-textarea-1').limit('160', '#charsLeft-1');
 
         $("#reg-city-choise-2").select2({
             placeholder: "Выберите город",
             allowClear: true
         });
 
-        $('#reg-vp-textarea-2').limit('160','#charsLeft-2');
+        $('#reg-vp-textarea-2').limit('160', '#charsLeft-2');
     });
 </script>
 </html>

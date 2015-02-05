@@ -1,0 +1,380 @@
+.regBlock h3 {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    /*width: 100%;*/
+    text-align: left;
+}
+
+.regBlock .reg-step {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+}
+
+.regBlock .reg-step > .title,
+.regBlock .reg-step > .body {
+    color: #545454;
+    display: inline-block;
+}
+
+.regBlock .reg-step > .title h3 > i {
+    font-size: 24px;
+    padding: 0 5px;
+    line-height: 24px;
+}
+
+.regBlock .reg-step > .body {
+    min-height: 400px;
+    width: 100%;
+    margin: -6px 0 0;
+    padding: 20px 20px 0;
+    text-align: center;
+}
+
+.regBlock .reg-step > .title > div {
+    width: 260px;
+    display: table-cell;
+    text-align: left;
+    padding: 20px;
+    background: none;
+    color: #8a8b8c;
+    border: none;
+}
+
+/*.regBlock .reg-step > .title > div:nth-child(1).active + div*/
+/*{*/
+    /*border-right: 1px solid #e5e5e5;*/
+/*}*/
+
+.regBlock .reg-step > .title > div.active,
+.regBlock .reg-step > .body {
+    background: #f9f9f9;
+}
+
+.regBlock .reg-step .form-group-title {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #e7ecf0;
+}
+
+.reg-form,
+.form-row {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.form-group {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+.form-group.step1 {
+    width: 200px;
+}
+
+.form-group.step2 {
+    width: 560px;
+}
+
+.step3 {
+    width: 480px !important;
+    padding: 24px 40px !important;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.form-group.step3:nth-of-type(3) {
+    border-bottom: none;
+}
+
+.reg-form label,
+.reg-form input,
+.reg-form a,
+.reg-form p {
+    display: inline-block;
+    font-size: 11px;
+}
+
+.reg-form label {
+    /*width: 260px;*/
+    text-align: right;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 0 5px;
+    color: #484848;
+    opacity: 1;
+}
+
+.reg-form input {
+    width: 200px;
+    padding: 0 5px;
+}
+
+.reg-form input:focus {
+    border-color: #3fb6e3;
+}
+
+.required-icon {
+    width: 10px;
+    color: #484848;
+    font-size: 14px;
+    padding: 0;
+    top: -5px;
+    position: relative;
+}
+
+.reg-form p.input-alert {
+    color: #df6352;
+}
+
+input.input-alert,
+input.mobile-number.input-alert {
+    border-color: #df6352;
+}
+
+.req-desc {
+    padding-left: 255px !important;
+    font-size: 11px;
+    text-align: left;
+}
+
+.user-exists {
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+}
+
+.user {
+    display: inline-block;
+}
+
+a.reg-button {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0 20px;
+    background: #3fb6e3;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 0.9;
+}
+
+a.reg-button:hover {
+    transition: all 300ms;
+    opacity: 1;
+}
+
+a.reg-button.skip {
+    color: #b0b0b0;
+    background: none;
+}
+
+a.reg-button.skip:hover {
+    text-decoration: underline;
+}
+
+a.reg-button > span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 3px;
+    height: 32px;
+}
+
+a.reg-button.prev {
+    float: left;
+}
+
+a.reg-button.next {
+    float: right;
+}
+
+a.reg-button i {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.form-group.soc-block {
+    vertical-align: top;
+}
+
+.form-group.soc-block label {
+    vertical-align: top;
+    margin: 5px 0;
+}
+
+.form-group.soc-block a {
+
+}
+
+.load-avatar {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    padding: 0;
+}
+
+.add-friend-list {
+    display: inline-block;
+    width: 100%;
+}
+
+.add-fr-list-el {
+    width: 100%;
+    display: inline-block;
+    background: #f5f8fa;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid #e9ebed;
+}
+
+.add-fr-list-el:last-child {
+    border: none;
+}
+
+.add-fr-list-el .img-col,
+.add-fr-list-el .info-col,
+.add-fr-list-el .add-button {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.add-fr-list-el .img-col-mask {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.add-fr-list-el .img-col-mask > img {
+    width: 120%;
+    margin-left: -10%;
+}
+
+.add-fr-list-el .img-col-mask .soc-icon-mini {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.add-fr-list-el .info-col {
+    width: 310px;
+    padding: 0 0 0 10px;
+}
+
+.add-fr-list-el .info-col .name {
+    font-size: 14px;
+    color: #3db6e1;
+}
+
+.add-fr-list-el .info-col .loc {
+    font-size: 12px;
+    color: #4f4f4f;
+    opacity: 0.8;
+}
+
+.add-fr-list-el .add-button {
+    background: #4fbce3;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 160px;
+    height: 32px;
+    color: #ffffff;
+    padding: 0 10px 0 20px;
+    opacity: 0.7;
+}
+
+.add-fr-list-el .add-button:hover {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.add-fr-list-el .add-button > span {
+    font-size: 11px;
+    line-height: 32px;
+    display: table-cell;
+    padding: 0 5px 0 0;
+    margin: 0;
+    float: left;
+    text-align: right;
+    width: 110px;
+}
+
+.add-fr-list-el .add-button > i {
+    font-size: 18px;
+    padding: 8px 0 0;
+}
+
+.add-fr-list-el .add-button.cancel {
+    background: none;
+    color: #4f4f4f;
+}
+
+textarea {
+    font-size: 12px;
+    border: 1px solid #c5d1d5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #a0a0a0;
+    resize: none;
+    /*margin-bottom: 10px;*/
+    padding: 5px;
+    font-family: OpenSansRegular, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+textarea.chartLeftArea {
+    padding: 5px 30px 5px 5px;
+    height: 80px;
+}
+
+.form-group.step3 textarea {
+    width: 400px;
+    height: 80px;
+    padding: 5px 30px 5px 5px;
+}
+
+.charsLeft {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    color: #a0a0a0;
+    font-size: 12px;
+    top: 60px;
+    left: 373px;
+    font-weight: 400;
+}
+
+.vp-add-photo {
+    display: inline-block;
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    color: #7f7f7f;
+    font-size: 11px;
+}
+
+.vp-add-photo > i {
+    padding: 0 10px;
+}

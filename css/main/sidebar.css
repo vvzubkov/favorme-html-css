@@ -1,15 +1,15 @@
-.sidebar {
+.sideBar {
     display: block;
     position: relative;
     float: left;
     padding: 8px 0 0;
 }
 
-.sidebar.left {
+.sideBar.left {
     width: 170px;
 }
 
-.sidebar.right {
+.sideBar.right {
     width: 150px;
 }
 
@@ -22,16 +22,16 @@
     width: 100%;
 }
 
-.sidebar .login-block,
-.sidebar .filter-block {
+.sideBar .login-block,
+.sideBar .filter-block {
     padding: 16px 0;
 }
 
-.sidebar .login-block + .filter-block {
+.sideBar .login-block + .filter-block {
     padding: 0 0 16px;
 }
 
-.sidebar .login-block {
+.sideBar .login-block {
     padding: 0 0 16px;
 }
 
@@ -41,7 +41,7 @@
     padding: 0;
 }
 
-.sidebar a {
+.sideBar a {
     color: #3db6e1;
     display: inline-block;
     font-size: 0.917em;
@@ -50,7 +50,7 @@
     text-align: center;
 }
 
-/*------ sidebar-nav ----------*/
+/*------ sideBar-nav ----------*/
 .sidebar-nav {
     padding: 0 0 8px;
 }

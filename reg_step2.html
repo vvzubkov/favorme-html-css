@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!------ CSS ----->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/add/font-awesome.min.css"/>
-    <link href="css/add/owl.carousel.min.css" media="screen" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/add/intlTelInput.css"/>
-    <link rel="stylesheet" href="css/add/jquery.scrollbar.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/add/jquery-ui.css"/>
     <link rel="stylesheet" href="css/add/nprogress.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/add/select.css"/>
+    <link rel="stylesheet" href="css/modifier.css"/>
 
     <!------ JS ----->
     <script type="text/javascript" src="js/add/jquery-1.11.1.min.js"></script>
@@ -24,27 +22,29 @@
     <script type="text/javascript" src="js/add/select.js"></script>
     <script type="text/javascript" src="js/add/jquery.scrollbar.min.js"></script>
     <script type="text/javascript" src="js/add/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="js/add/jquery.limit.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/add/icheck.js"></script>
+    <script type="text/javascript" src="js/add/jquery.clearsearch.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
     <script type="text/javascript" src="js/source.js"></script>
+    <script type="text/javascript" src="js/gs.js"></script>
 
 </head>
 <body>
     <div id="wrap">
         <header id="header">
             <div class="c-block">
-                <div class="ta-l">
+                <div class="dib f-l w-50perc ta-l">
                     <div class="logo-block">
                         <a class="logo" href="/">
-                            <img src="images/logo.png" alt=""/>
+                            <img src="images/logo/logo.png" alt=""/>
                         </a>
-                        <a class="logo-f">О проекте</a>
                     </div>
-                </div>
-                <div class="ta-r">
                 </div>
             </div>
         </header>
-            <div id="sTop-button" class="clear" data-scroll="0">
+        <div id="sTop-button" class="clear" data-scroll="0">
                 <span class="up active">
                     <i class="fa fa-chevron-up"></i>
                     <p>Вверх</p>
@@ -55,20 +55,19 @@
             </div>
         <main id="main">
             <div class="c-block">
-                <div class="sidebar left ta-l">
-                    <div class="sidebar-nav">
-                        <nav>
+                <div class="sideBar left ta-l">
+                    <div class="sidebar-block">
+                        <nav class="sidebar-nav">
                             <a href="">Возможности</a>
                             <a href="">Потребности</a>
-                            <a href="">Друзья</a>
                         </nav>
                     </div>
-                    <div class="favorme-about">
-                        <h3 class="title c-blue fw-extra-bold">Favorme - это :</h3>
-                        <ul>
-                            <li>
+                    <div class="sidebar-block">
+                        <h3 class="title c-dark-gray fw-extra-bold">Статистика</h3>
+                        <ul class="favorme-about">
+                            <li class="pad10-0">
                                 <div>
-                                    <img src="images/users-icon.png" alt=""/>
+                                    <img src="images/users/users-icon.png" alt=""/>
                                 </div>
                                 <div>
                                     <p>пользователей</p>
@@ -86,60 +85,63 @@
                             </li>
                             <li>
                                 <div>
-                                    <img src="images/needs-icon.png" alt=""/>
+                                    <img src="images/icons/needs-icon.png" alt=""/>
                                 </div>
                                 <div>
                                     <p>потребностей</p>
+
                                     <p>101 941</p>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img src="images/city-icon.png" alt=""/>
+                                    <img src="images/icons/city-icon.png" alt=""/>
                                 </div>
                                 <div>
                                     <p>городов</p>
+
                                     <p>53 127</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="app-links">
-                        <h3 class="title">Приложения для iPhone <br>и Android</h3>
-                        <a href="android"><img src="images/google-play-icon.png" alt="google-play-icon"/></a>
-                        <a href="iphone"><img src="images/app-store-icon.png" alt="app-store-icon"/></a>
+                    <div class="sidebar-block app-links">
+                        <h3 class="title c-dark-gray">Установить приложение</h3>
+                        <a href="android"><img src="images/icons/google-play-icon.png" alt="google-play-icon"/></a>
+                        <a href="iphone"><img src="images/icons/app-store-icon.png" alt="app-store-icon"/></a>
                     </div>
-                    <div class="send-app-block">
+                    <div class="sidebar-block send-app-block">
                         <form id="send-app-form" action="">
-                            <p>Отправить ссылку на скачивание приложения</p>
-                            <input id="send-app-tel" type="text" placeholder="+"/>
-                            <label class="button bg-blue" for="send-app-submit">Войти</label>
+                            <p class="c-dark-gray">Отправить ссылку на скачивание приложения</p>
+                            <input id="send-app-tel" type="tel" class="mobile-number"/>
+                            <label class="button bg-blue" for="send-app-submit">Отправить</label>
                             <input id="send-app-submit" type="submit"/>
                         </form>
                     </div>
                 </div>
-                <div class="reg-block ta-c">
+                <div class="regBlock ta-c">
                     <div class="reg-step">
                         <div class="title">
                             <div>
-                                <h3 class="c-blue">Шаг 1 <i class="fa fa-check"></i></h3>
-                                <p>Расскажите о себе</p>
+                                <h3 class="c-blue">Шаг 1</h3>
+                                <p>Информаци о Вас</p>
                             </div>
-                            <div class="active sh">
+                            <div class="active">
                                 <h3 class="c-blue">Шаг 2</h3>
-                                <p>Укажите свое окружение</p>
+                                <p>Ваше окружение</p>
                             </div>
                             <div>
                                 <h3 class="c-blue">Шаг 2</h3>
-                                <p>Создайте первые возможности и потребности</p>
+                                <p>Возможности и потребности</p>
                             </div>
                         </div>
-                        <div class="body sh">
+                        <div class="body">
                             <h3 class="c-blue">Укажите своих друзей, чтобы быть в курсе возможностей и потребностей окружения.</h3>
                             <div class="form-group soc-block large">
-                                <a class="soc-icon logged" href="/"><img src="images/vk-icon.png" alt=""/></a>
-                                <a class="soc-icon logged" href="/"><img src="images/fb-icon.png" alt=""/></a>
-                                <a class="soc-icon" href="/"><img src="images/od-icon.png" alt=""/></a>
+                                <a class="soc-icon soc-icon-trigger"><img src="images/icons/vk-icon.png" alt=""/></a>
+                                <a class="soc-icon soc-icon-trigger"><img src="images/icons/fb-icon.png" alt=""/></a>
+                                <a class="soc-icon soc-icon-trigger"><img src="images/icons/od-icon.png" alt=""/></a>
+                                <a class="soc-icon soc-icon-trigger"><img src="images/icons/twitter-icon.png" alt=""/></a>
                             </div>
                             <div class="form-group step2">
                                 <ul class="add-fr-list">
@@ -147,8 +149,8 @@
                                         <div class="w-23part">
                                             <div class="img-col">
                                                 <div class="img-col-mask">
-                                                    <img class="soc-icon-mini" src="images/vk-icon.png" alt=""/>
-                                                    <img src="images/user2.png" alt=""/>
+                                                    <img class="soc-icon-mini" src="images/icons/vk-icon.png" alt=""/>
+                                                    <img src="images/users/user2.png" alt=""/>
                                                 </div>
                                             </div>
                                             <div class="data-col">
@@ -164,8 +166,8 @@
                                         <div class="w-23part">
                                             <div class="img-col">
                                                 <div class="img-col-mask">
-                                                    <img class="soc-icon-mini" src="images/vk-icon.png" alt=""/>
-                                                    <img src="images/user4.png" alt=""/>
+                                                    <img class="soc-icon-mini" src="images/icons/vk-icon.png" alt=""/>
+                                                    <img src="images/users/user4.png" alt=""/>
                                                 </div>
                                             </div>
                                             <div class="data-col">
@@ -181,8 +183,8 @@
                                         <div class="w-23part">
                                             <div class="img-col">
                                                 <div class="img-col-mask">
-                                                    <img class="soc-icon-mini" src="images/vk-icon.png" alt=""/>
-                                                    <img src="images/user3.png" alt=""/>
+                                                    <img class="soc-icon-mini" src="images/icons/vk-icon.png" alt=""/>
+                                                    <img src="images/users/user3.png" alt=""/>
                                                 </div>
                                             </div>
                                             <div class="data-col">
@@ -198,8 +200,8 @@
                                         <div class="w-23part">
                                             <div class="img-col">
                                                 <div class="img-col-mask">
-                                                    <img class="soc-icon-mini" src="images/vk-icon.png" alt=""/>
-                                                    <img src="images/user1.png" alt=""/>
+                                                    <img class="soc-icon-mini" src="images/icons/vk-icon.png" alt=""/>
+                                                    <img src="images/users/user1.png" alt=""/>
                                                 </div>
                                             </div>
                                             <div class="data-col">
@@ -213,31 +215,24 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="form-group step2">
+                            <div class="form-group">
                                 <a class="reg-button prev" href="/"><span><i class="fa fa-long-arrow-left"></i></span><span>Назад</span></a>
                                 <a class="reg-button next" href="/"><span>Далее</span><span><i class="fa fa-long-arrow-right"></i></span></a>
                                 <a class="reg-button skip next" href=""><span>Пропустить</span></a>
                             </div>
                         </div>
                     </div>
+                    <footer id="footer">
+                        <nav class="w-34part ta-l">
+                            <a href="/">О проекте</a>
+                            <a href="/">Правила</a>
+                            <a class="md-trigger" data-modal="callBack">Обратная связь</a>
+                        </nav>
+                        <div class="copyright w-14part ta-r"><i class="fa fa-copyright"></i> Favorme 2014</div>
+                    </footer>
                 </div>
             </div>
         </main>
-        <div class="push"></div>
     </div>
-    <footer id="footer">
-        <div class="c-block">
-            <nav>
-                <a href="/">Помощь</a>
-                <a href="/">Правила</a>
-                <a href="/">Соглашения</a>
-                <a href="/">Подписка</a>
-                <a href="/">Обратная связь</a>
-                <a href="/">Техническая поддержка</a>
-                <a href="/">Сообщение об ошибке</a>
-            </nav>
-            <div class="copyright"> <i class="fa fa-copyright"></i> Favorme 2014</div>
-        </div>
-    </footer>
 </body>
 </html>

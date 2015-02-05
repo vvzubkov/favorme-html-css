@@ -1,0 +1,80 @@
+.soc-block .soc-icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    opacity: 0.2;
+}
+
+.soc-icon:hover,
+.soc-icon.logged {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.soc-icon-trigger {
+
+    /*filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); *//* Firefox 3.5+ */
+    /*filter: grayscale(100%); *//* Current draft standard */
+    /*-webkit-filter: grayscale(100%); *//* New WebKit */
+    /*-moz-filter: grayscale(100%);*/
+    /*-ms-filter: grayscale(100%);*/
+    /*-o-filter: grayscale(100%);*/
+    transition: all 300ms;
+    opacity: 0.2;
+}
+
+.soc-icon-trigger .soc-name {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    width: auto;
+    padding: 3px 5px;
+}
+
+.soc-icon-trigger:hover .soc-name,
+.soc-icon-trigger.logged .soc-name {
+    background: #eeeeee;
+}
+
+.soc-icon-trigger .connect {
+    opacity: 0;
+}
+
+.soc-icon-trigger:hover .connect {
+    opacity: 1;
+}
+
+.soc-icon-trigger:hover,
+.soc-icon-trigger.logged {
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: grayscale(0); /* Current draft standard */
+    -webkit-filter: grayscale(0%); /* New WebKit */
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    opacity: 1;
+}
+
+.soc-block.large .soc-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 30px;
+}
+
+.soc-block.small .soc-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.soc-block .soc-icon > img {
+    width: 100%;
+}
