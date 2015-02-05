@@ -512,7 +512,6 @@ $(window).on('load',function(){
     });
 
 
-
     var hb = document.querySelectorAll('.popover-trigger');
 
     for (var i=0; i < hb.length; i++) {
