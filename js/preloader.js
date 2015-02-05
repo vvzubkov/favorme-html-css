@@ -44,18 +44,6 @@ $(window).on('load', function () {
         }
     );
 
-    $(function(){
-        var _this = $('.charsLeft');
-        var height = _this.closest('.pos-rel')[0].offsetHeight - 34;
-        var width = _this.closest('.pos-rel')[0].offsetWidth - 27;
-        var top = _this.closest('.pos-rel')[0].offsetTop;
-        console.log(_this.closest('.pos-rel'));
-        console.log(top);
-        console.log(height);
-        console.log(width);
-        _this.css({left:width, top:height - top});
-    });
-
     $('#dateFilter').select2({
         placeholder: "Не выбрано",
         allowClear: true

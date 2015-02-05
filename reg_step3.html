@@ -241,6 +241,14 @@
         });
 
         $('#reg-vp-textarea-2').limit('160', '#charsLeft-2');
+
+        $(function(){
+            var _this = $('.charsLeft');
+            var height = _this.closest('.pos-rel')[0].offsetHeight - 34;
+            var width = _this.closest('.pos-rel')[0].offsetWidth - 27;
+            var top = _this.closest('.pos-rel')[0].offsetTop;
+            _this.css({left:width, top:height - top});
+        });
     });
 </script>
 </html>
