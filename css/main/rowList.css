@@ -59,3 +59,17 @@
 .fv-trust-frList {
     height: 396px;
 }
+
+.bd-gor-list
+{
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.bd-gor-list > li
+{
+    border-bottom: 1px solid #ececec;
+}
+.bd-gor-list > li:last-child
+{
+    border-bottom: none;
+}

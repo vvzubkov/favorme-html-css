@@ -51,6 +51,7 @@
                     </div>
                     <i class="fa fa-caret-down"></i>
                 </a>
+
                 <div class="user-profile-menu">
                     <img class="angle-icon" src="images/angle-icon.png" alt=""/>
                     <a href=""><i class="fa fa-pencil"></i>
@@ -81,14 +82,16 @@
                         <li><a class="md-trigger" data-modal="add-new-share-own"><img src="images/icons/share.png"
                                                                                       alt=""/></a></li>
                         <li><a href="/"><img src="images/icons/addContact.png" alt=""/></a></li>
-                        <li><a class="md-trigger" data-modal="add-new-vp"><img src="images/icons/addVP.png" alt=""/></a></li>
+                        <li><a class="md-trigger" data-modal="add-new-vp"><img src="images/icons/addVP.png" alt=""/></a>
+                        </li>
                     </ul>
                     <span class="vf-fixed-menu">
                         <a href="/"><span class="name"><img src="images/v-icon-fixed.png" alt=""/></span><span
                                 class="amount">+15</span></a>
                         <a href="/"><span class="name"><img src="images/icons/p-icon-fixed.png" alt=""/></span><span
                                 class="amount">+15</span></a>
-                        <a href="/"><span class="name"><img src="images/icons/message-icon-fixed.png" alt=""/></span><span
+                        <a href="/"><span class="name"><img src="images/icons/message-icon-fixed.png"
+                                                            alt=""/></span><span
                                 class="amount">+15</span></a>
                     </span>
                     <nav>
@@ -102,23 +105,21 @@
                 </div>
             </div>
             <div class="content ta-c">
-                <div class="sh">
-                    <section class="c-title">
-                        <div>
-                            <div class="vp-name c-blue">Возможности:</div>
-                            <a href="/" class="vp-type active">Друзей <span class="amount">+3</span></a>
-                            <a href="/" class="vp-type">Окружения <span>+12</span>
+                <section class="c-title">
+                    <div>
+                        <div class="vp-name c-blue">Возможности:</div>
+                        <a href="/" class="vp-type active">Друзей <span class="amount">+3</span></a>
+                        <a href="/" class="vp-type">Окружения <span>+12</span>
 
-                                <div class="search-marker"></div>
-                            </a>
-                            <a href="/" class="vp-type">Мои <span class="amount"></span></a>
-                        </div>
-                    </section>
-                    <form id="search" class="ta-l">
-                        <input class="search-line clearble" type="text"
-                               placeholder="Ищите интересующие вас возможности и потребности" autofocus tabindex="1"/>
-                    </form>
-                </div>
+                            <div class="search-marker"></div>
+                        </a>
+                        <a href="/" class="vp-type">Мои <span class="amount"></span></a>
+                    </div>
+                </section>
+                <form id="search" class="ta-l">
+                    <input class="search-line clearble" type="text"
+                           placeholder="Ищите интересующие вас возможности и потребности" autofocus tabindex="1"/>
+                </form>
                 <a class="show-more-vp">еще 12 новых возможностей</a>
                 <ul class="vp-list">
                     <p class="title">Новое</p>
@@ -321,19 +322,23 @@
                                         <div class="popover-block" data-popover-block="popover-1">
                                             <ul class="fv-trust-list">
                                                 <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user1.png" alt=""/>
+                                                    <div class="img-mask small"><img src="images/users/user1.png"
+                                                                                     alt=""/>
                                                     </div>
                                                 </a></li>
                                                 <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user2.png" alt=""/>
+                                                    <div class="img-mask small"><img src="images/users/user2.png"
+                                                                                     alt=""/>
                                                     </div>
                                                 </a></li>
                                                 <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user3.png" alt=""/>
+                                                    <div class="img-mask small"><img src="images/users/user3.png"
+                                                                                     alt=""/>
                                                     </div>
                                                 </a></li>
                                                 <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user4.png" alt=""/>
+                                                    <div class="img-mask small"><img src="images/users/user4.png"
+                                                                                     alt=""/>
                                                     </div>
                                                 </a></li>
                                                 <li class="fv-trust-el showall md-trigger" data-modal="fv-trust-frList">
@@ -609,6 +614,14 @@
                         </div>
                     </li>
                 </ul>
+                <footer id="footer">
+                    <nav class="w-34part ta-l">
+                        <a href="/">О проекте</a>
+                        <a href="/">Правила</a>
+                        <a class="md-trigger" data-modal="callBack">Обратная связь</a>
+                    </nav>
+                    <div class="copyright w-14part ta-r"><i class="fa fa-copyright"></i> Favorme 2014</div>
+                </footer>
             </div>
             <div class="sideBar right ta-l">
                 <div class="filter-block">
@@ -625,19 +638,6 @@
             </div>
         </div>
     </main>
-    <footer id="footer">
-        <div class="c-block">
-
-            <div class="dib" style="width:640px; padding: 0 0 0 20px">
-                <nav class="w-34part ta-l">
-                    <a>О проекте</a>
-                    <a>Правила</a>
-                    <a class="md-trigger" data-modal="callBack">Обратная связь</a>
-                </nav>
-                <div class="copyright w-14part ta-r"><i class="fa fa-copyright"></i> Favorme 2014</div>
-            </div>
-        </div>
-    </footer>
 </div>
 
 <div class="md-modal md-effect-5" id="add-fv-trust">
@@ -2366,7 +2366,8 @@
                         <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
                     </div>
                     <div class="dib w-full" data-pos="4">
-                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt="" style="height: 1000px;"/>
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
 
                         <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
                     </div>
@@ -2382,7 +2383,8 @@
                         <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
                     </div>
                     <div class="dib w-full" data-pos="8">
-                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt="" style="height: 1000px;"/>
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
 
                         <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
                     </div>
@@ -2398,7 +2400,8 @@
                         <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
                     </div>
                     <div class="dib w-full" data-pos="12">
-                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt="" style="height: 1000px;"/>
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
 
                         <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
                     </div>
@@ -2414,7 +2417,8 @@
                         <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
                     </div>
                     <div class="dib w-full" data-pos="16">
-                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt="" style="height: 1000px;"/>
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
 
                         <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
                     </div>
@@ -2490,14 +2494,11 @@
         });
     });
     $(function () {
-        // init plugin (with callback)
         $('.clearble').clearSearch({
             callback: function () {
                 console.log("cleared");
             }
         });
-        // change width
-//            $('.clearble').width('430px').change();
     });
 
 </script>

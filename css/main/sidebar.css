@@ -134,6 +134,8 @@
     color: #7e7e7e;
     margin: 0;
     padding: 0;
+    width: 100%;
+    display: block;
 }
 
 .favorme-about > li > div > p:nth-child(1) {

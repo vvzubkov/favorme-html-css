@@ -1,0 +1,57 @@
+#sTop-button {
+    width: 150px;
+    height: 100%;
+    background: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 5;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#sTop-button > .sTop-col {
+    width: 75px;
+    height: 100%;
+    background: #c3e3f0;
+    color: #595e61;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+#sTop-button:hover {
+    opacity: 0.5 !important;
+    transition: opacity 300ms !important;
+}
+
+#sTop-button i {
+    font-size: 24px;
+}
+
+#sTop-button > .sTop-col > span {
+    position: absolute;
+    display: none;
+}
+
+#sTop-button > .sTop-col > span.up {
+    position: absolute;
+    top: 45%;
+    left: 24px;
+    display: none;
+}
+
+#sTop-button > .sTop-col > span.down {
+    position: absolute;
+    top: 1%;
+    left: 24px;
+    display: none;
+}
+
+#sTop-button > .sTop-col > span.active {
+    display: block;
+}

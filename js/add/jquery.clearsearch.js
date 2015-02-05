@@ -78,7 +78,7 @@
 						var width = $this.outerWidth(),
 							height = $this.outerHeight();
 						btn.css({
-							top : height / 2 - btn.height() / 4,
+							top : height / 2 - btn.height() / 2,
 							left : width+5
 						});
 					}

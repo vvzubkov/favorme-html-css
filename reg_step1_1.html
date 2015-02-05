@@ -6,18 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!------ CSS ----->
+    <link rel="stylesheet" href="css/reset.css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,cyrillic-ext'
           rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/add/font-awesome.min.css"/>
-    <link href="css/add/owl.carousel.min.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/add/intlTelInput.css"/>
-    <link rel="stylesheet" href="css/add/jquery.scrollbar.css"/>
-    <link rel="stylesheet" href="css/add/nprogress.css"/>
-    <link rel="stylesheet" href="css/add/component.css"/>
     <link rel="stylesheet" href="css/add/jquery-ui.css"/>
-    <link rel="stylesheet" href="css/add/select.css"/>
-    <link href="css/add/icheck-blue.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/add/nprogress.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/modifier.css"/>
 
@@ -31,11 +24,11 @@
     <script type="text/javascript" src="js/add/intlTelInput.min.js"></script>
     <script type="text/javascript" src="js/add/jquery.limit.js"></script>
     <script type="text/javascript" src="js/modalEffects/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/add/icheck.js"></script>
+    <script type="text/javascript" src="js/add/jquery.clearsearch.js"></script>
     <script type="text/javascript" src="js/preloader.js"></script>
     <script type="text/javascript" src="js/source.js"></script>
     <script type="text/javascript" src="js/gs.js"></script>
-    <script src="js/add/icheck.js"></script>
-    <script src="js/add/jquery.clearsearch.js"></script>
 
 </head>
 <body>
@@ -121,7 +114,7 @@
                     <form id="send-app-form" action="">
                         <p class="c-dark-gray">Отправить ссылку на скачивание приложения</p>
                         <input id="send-app-tel" type="tel" class="mobile-number"/>
-                        <label class="button bg-blue" for="send-app-submit">Отправить</label>
+                        <label class="button button-middle bg-blue" for="send-app-submit">Отправить</label>
                         <input id="send-app-submit" type="submit"/>
                     </form>
                 </div>
@@ -144,7 +137,7 @@
                     </div>
                     <div class="body">
                         <form class="reg-form" action="">
-                            <div class="form-group">
+                            <div class="form-group pad0-20">
                                 <h3 class="c-blue form-group-title">Подтверждение регистрации</h3>
                                 <div class="form-row">
                                     <label class="w-13part">Номер телефона</label>
@@ -163,6 +156,11 @@
                                             телефон <strong>бесплатное</strong> сообщение с кодом</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form-group pad10-20">
+                                <a class="button button-middle f-r bg-blue w-auto next" href="/">
+                                    <span class="dib pad0-10">Далее</span><i class="fa fa-long-arrow-right"></i>
+                                </a>
                             </div>
                         </form>
                     </div>

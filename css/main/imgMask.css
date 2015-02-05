@@ -1,0 +1,100 @@
+.img-mask {
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: inline-block !important;
+    padding: 0 !important;
+    position: relative;
+    margin: 0 0 -4px 0;
+}
+
+.vp-photo-mask {
+    width: 45px;
+    display: inline-block;
+    height: 45px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    margin: 0 0 -4px 0;
+}
+
+.img-mask.avatar {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    background: #eaeaea;
+    margin: 5px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.img-mask.large {
+    width: 60px;
+    height: 60px;
+}
+
+.img-mask.middle {
+    width: 40px;
+    height: 40px;
+}
+
+.img-mask.small {
+    width: 30px;
+    height: 30px;
+}
+
+.img-mask.mini {
+    width: 18px;
+    height: 18px;
+}
+
+.img-mask > img {
+    width: 110%;
+    margin-left: -5%;
+}
+
+.soc-icon-mini {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.img-mask + .vp-icon-mini {
+    position: absolute;
+    font-weight: 700;
+    width: 16px;
+    height: 16px;
+    font-size: 0.9em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #ffffff;
+}
+
+.img-mask.small + .soc-icon-mini.right {
+    top: -2px;
+    left: 16px;
+}
+
+.img-mask.middle + .soc-icon-mini.right {
+    top: -2px;
+    left: 32px;
+}
+
+.img-mask.middle + .vp-icon-mini {
+    top: 34px;
+    right: 5px;
+}
