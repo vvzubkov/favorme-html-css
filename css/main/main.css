@@ -1,4 +1,5 @@
 @import "stopButton.css";
+@import "contentTitle.css";
 @import "imgMask.css";
 @import "searchBlock.css";
 @import "sidebar.css";
@@ -6,6 +7,7 @@
 @import "rowList.css";
 @import "tabs.css";
 @import "socBlock.css";
+@import "carousel.css";
 @import "../add/icheck-blue.css";
 @import "../add/icheck-green.css";
 @import "../add/select.css";
@@ -61,6 +63,7 @@ a.name {
     font-weight: 700;
     padding: 1px 0 !important;
     line-height: normal !important;
+    display: block;
 }
 
 a.name:hover,
@@ -74,4 +77,5 @@ p.loc,
     font-size: 12px;
     padding: 1px 0;
     line-height: normal !important;
+    display: block;
 }

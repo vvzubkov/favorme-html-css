@@ -1,0 +1,92 @@
+.c-title {
+    background: #ffffff;
+    text-align: left;
+}
+
+.c-title a {
+    display: inline-block;
+    line-height: 28px;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    color: #363636;
+    padding: 0px 8px 0px 8px;
+}
+
+.c-title div.vp-name,
+div.vp-name {
+    font-size: 1.167em;
+    font-weight: 700;
+    /*color: #3db6e1;*/
+    display: inline-block;
+}
+
+.c-title a.vp-type,
+a.vp-type {
+    display: inline-block;
+    line-height: 28px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    color: #363636;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0px 8px 0px 8px;
+    position: relative;
+}
+
+a.vp-type .search-marker {
+    position: absolute;
+    top: -5px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #3db6e1;
+    display: block;
+}
+
+.c-title > div:last-child {
+    padding: 16px 16px 16px 8px;
+}
+
+.c-title > div:first-child {
+    padding: 16px 8px 16px 16px;
+}
+
+.c-title a.vp-type:hover,
+a.vp-type:hover {
+    color: #3db6e1;
+    transition: color 300ms;
+}
+
+.c-title a.vp-type > span,
+a.vp-type > span {
+    color: #3db6e1;
+}
+
+.c-title a.vp-type.active,
+.c-title a.vp-type.active > span,
+a.vp-type.active,
+a.vp-type.active > span {
+    background: #3db6e1;
+    color: #ffffff;
+    padding: 0 8px;
+    transition: all 300ms;
+    display: inline-block;
+}
+
+.c-title a.vp-type.active,
+a.vp-type.active {
+    margin-left: 8px;
+}
+
+.c-title a.vp-type.active > span {
+    color: #ffffff;
+}

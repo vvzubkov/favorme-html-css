@@ -255,6 +255,10 @@
     color: #636363;
 }
 
+.bg-white {
+    background-color: #ffffff !important;
+}
+
 .bg-blue {
     background-color: #3eb6e2 !important;
 }
@@ -269,6 +273,11 @@
 
 .bg-blue-light {
     background: rgba(61, 182, 225, 0.05);
+}
+
+.bd-1-blue
+{
+    border: 1px solid #3eb6e2;
 }
 
 .grayscale {
