@@ -248,6 +248,7 @@
 .c-white {
     color: #ffffff !important;
 }
+
 .c-blue {
     color: #3eb6e2 !important;
 }
@@ -296,14 +297,18 @@
     background: rgba(61, 182, 225, 0.05);
 }
 
-
 /*----- Border -------*/
-.bd-r5
-{
+.bd-r5 {
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
 }
+
+
+.td-u:hover {
+    text-decoration: underline;
+}
+
 .bd-1-blue {
     border: 1px solid #3eb6e2;
 }
@@ -316,6 +321,14 @@
     border-bottom: 1px solid #ececec;
 }
 
+.bdb-1-gray2 {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.bdb-1-blue {
+    border-bottom: 1px solid #3eb6e2;
+}
+
 .grayscale {
     filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
     filter: grayscale(100%); /* Current draft standard */
@@ -323,4 +336,9 @@
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
+}
+
+/*----- other -------*/
+.scroll-element.scroll-x {
+    display: none !important;
 }

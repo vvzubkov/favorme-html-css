@@ -41,7 +41,10 @@ footer {
     text-align: center;
     position: relative;
 }
-
+section
+{
+    display: inline-block;
+}
 h3 {
     font-size: 14px;
 }
@@ -150,15 +153,6 @@ label {
     opacity: 1;
     transition: opacity 300ms;
 }
-
-
-
-
-
-
-
-
-
 
 #send-app-form p {
     font-size: 0.917em;
@@ -766,6 +760,7 @@ input.hidden-input + label {
     top: 40px;
 }
 
+
 .fr-inbook-menu {
     display: inline-block;
     vertical-align: top;
@@ -1086,25 +1081,9 @@ div.fr-possible > .show-all {
 
 /*------ other - modif --------*/
 
-.scroll-element.scroll-x {
-    display: none !important;
-}
-
 .slim {
     line-height: 24px;
     height: 24px;
-}
-
-.bdb-g {
-    border-bottom: 1px solid #f2f2f2;
-}
-
-.bdb-b {
-    border-bottom: 1px solid #3eb6e2;
-}
-
-.td-u:hover {
-    text-decoration: underline;
 }
 
 .del-img {
