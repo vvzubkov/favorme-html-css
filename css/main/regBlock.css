@@ -149,12 +149,6 @@ textarea.chartLeftArea {
     height: 80px;
 }
 
-.form-group.step3 textarea {
-    width: 400px;
-    height: 80px;
-    padding: 5px 30px 5px 5px;
-}
-
 .charsLeft {
     display: block;
     width: 20px;

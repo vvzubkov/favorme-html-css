@@ -71,6 +71,7 @@
                             </div>
                             <div>
                                 <p>пользователей</p>
+
                                 <p>12 908</p>
                             </div>
                         </li>
@@ -80,6 +81,7 @@
                             </div>
                             <div>
                                 <p>возможностей</p>
+
                                 <p>122 908</p>
                             </div>
                         </li>
@@ -114,7 +116,7 @@
                     <form id="send-app-form" action="">
                         <p class="c-dark-gray">Отправить ссылку на скачивание приложения</p>
                         <input id="send-app-tel" type="tel" class="mobile-number"/>
-                        <label class="button bg-blue" for="send-app-submit">Отправить</label>
+                        <label class="button button-middle bg-blue" for="send-app-submit">Отправить</label>
                         <input id="send-app-submit" type="submit"/>
                     </form>
                 </div>
@@ -124,21 +126,25 @@
                     <div class="title">
                         <div class="">
                             <h3 class="c-blue">Шаг 1</h3>
+
                             <p>Информаци о Вас</p>
                         </div>
                         <div class="">
                             <h3 class="c-blue">Шаг 2</h3>
+
                             <p>Ваше окружение</p>
                         </div>
                         <div class="active">
                             <h3 class="c-blue">Шаг 2</h3>
+
                             <p>Возможности и потребности</p>
                         </div>
                     </div>
                     <div class="body">
                         <div class="form-group pad0-20">
                             <section>
-                                <h3 class="c-blue form-group-title mar0">Создайте свою первую возможность или потребность.</h3>
+                                <h3 class="c-blue form-group-title mar0">Создайте свою первую возможность или
+                                    потребность.</h3>
                             </section>
                         </div>
                         <div class="form-group pad0">
@@ -150,16 +156,17 @@
                                             <li class="button button-middle w-50perc">Потребность</li>
                                         </section>
                                     </ul>
-                                    <section class="pad10-36 ta-l">
-                                        <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Продам</a>
-                                        <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Сдам</a>
-                                        <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Есть вакансия</a>
-                                        <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Окажу услугу</a>
-                                    </section>
                                     <div class="form-group box pad0-36 bdb-1-gray">
-                                        <section class="pad10-0 pos-rel">
-                                            <textarea class="chartLeftArea w-full" name="reg-vp-textarea" id="reg-vp-textarea-1"
-                                              placeholder="Опишите возможность"></textarea>
+                                        <section class="pad10-0 ta-l">
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Продам</a>
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Сдам</a>
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Есть вакансия</a>
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Окажу услугу</a>
+                                        </section>
+                                        <section class="pad5-0 pos-rel">
+                                            <textarea class="chartLeftArea w-full" name="reg-vp-textarea"
+                                                      id="reg-vp-textarea-1"
+                                                      placeholder="Опишите возможность"></textarea>
                                             <span class="charsLeft" id="charsLeft-1"></span>
                                         </section>
                                         <section class="pad10-0-20 ta-l">
@@ -174,8 +181,15 @@
                                         </section>
                                     </div>
                                     <div class="form-group box pad0-36 hidden bdb-1-gray">
-                                        <section class="pad10-0 pos-rel">
-                                            <textarea class="chartLeftArea w-full" name="reg-vp-textarea" id="reg-vp-textarea-2"
+                                        <section class="pad10-0 ta-l">
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Куплю</a>
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Сниму</a>
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Ищу работу</a>
+                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray">Нужна услуга</a>
+                                        </section>
+                                        <section class="pad5-0 pos-rel">
+                                            <textarea class="chartLeftArea w-full" name="reg-vp-textarea"
+                                                      id="reg-vp-textarea-2"
                                                       placeholder="Опишите возможность"></textarea>
                                             <span class="charsLeft" id="charsLeft-2"></span>
                                         </section>
@@ -227,7 +241,45 @@
         </div>
     </main>
 </div>
-</body>
+
+<div class="md-modal md-effect-5" id="callBack">
+    <div class="md-content" style="background: none; width:480px;">
+        <form action="">
+            <header class="pad10-0">
+                <div class="dib w-full pad10-0">
+                    <h3 class="w-95perc ta-l">Обратная связь</h3>
+                    <a class="w-auto md-close pad0"><i class="fa fa-close"></i></a>
+                </div>
+            </header>
+            <main>
+                <p class="dib w-full ta-l">В случае возникновения проблем, вопросов и предложений можете описать их
+                    здесь</p>
+
+                <div action="" class="dib w-full pad10-0 ta-l">
+                    <textarea name="" id="" class="dib w-full pad10" placeholder="Опишите проблему, вопрос, предложение"
+                              style="height:60px"></textarea>
+                    <input type="email" class="w-13part pad0-10" placeholder="Ваш Email"/>
+                </div>
+            </main>
+            <footer>
+                <div class="dib w-full ta-r">
+                    <button type="button" class="button w-auto bg-blue"><p class="pad0-10">Отправить</p></button>
+                </div>
+            </footer>
+        </form>
+    </div>
+</div>
+
+<div class="md-overlay"></div>
+
+<script src="js/modalEffects/classie.js"></script>
+<script src="js/modalEffects/modalEffects.js"></script>
+<script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/modalEffects/';
+</script>
+<script src="js/modalEffects/cssParser.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function () {
         $("#reg-city-choise-1").select2({
@@ -244,13 +296,15 @@
 
         $('#reg-vp-textarea-2').limit('160', '#charsLeft-2');
 
-        $(function(){
+        $(function () {
             var _this = $('.charsLeft');
             var height = _this.closest('.pos-rel')[0].offsetHeight - 34;
             var width = _this.closest('.pos-rel')[0].offsetWidth - 27;
             var top = _this.closest('.pos-rel')[0].offsetTop;
-            _this.css({left:width, top:height - top});
+            _this.css({left: width, top: height});
         });
     });
 </script>
+
+</body>
 </html>
