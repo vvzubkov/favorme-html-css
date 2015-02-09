@@ -88,8 +88,10 @@ input {
     color: #484848;
 }
 
-input:focus {
+input:focus,
+input:hover {
     border-color: #3fb6e3;
+    transition: border-color 300ms;
 }
 
 input[type=submit] {
