@@ -169,6 +169,13 @@ input.hidden-input + label {
     cursor: pointer;
 }
 
+.trigger-radio.selected
+{
+    opacity: 1;
+    background: #ffffff;
+    transition: all 300ms;
+}
+
 /*--------- vf-fixed-menu ----------*/
 .vf-fixed-menu {
     position: fixed;
