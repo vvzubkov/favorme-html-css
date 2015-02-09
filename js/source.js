@@ -65,6 +65,16 @@ $(window).on('load',function(){
             (e.item.index == 0) ? $('.carousel-nav .prev').removeClass('active') : $('.carousel-nav .prev').addClass('active');
             (e.item.count - e.item.index == e.page.size) ? $('.carousel-nav .next').removeClass('active') : $('.carousel-nav .next').addClass('active');
         });
+    owl.on('drag.owl.carousel ',
+        function(e) {
+            //console.log($(this));
+            //console.log(e.item.index);
+            //console.log(e.item.count);
+            //console.log(e.item.size);
+            (e.item.index == 0) ? $('.carousel-nav .prev').removeClass('active') : $('.carousel-nav .prev').addClass('active');
+            (e.item.count - e.item.index == e.page.size) ? $('.carousel-nav .next').removeClass('active') : $('.carousel-nav .next').addClass('active');
+            $autoplay = false;
+        });
     owl.on('changed.owl.carousel ',
         function(e) {
             //console.log(e.item.index);
