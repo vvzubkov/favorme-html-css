@@ -112,9 +112,14 @@
 .favorme-about,
 .favorme-about > li {
     display: inline-block;
+    text-align: left;
+    width: 100%;
 }
 
-.favorme-about > li > div {
+.favorme-about > li > a {
+    display: inline-block;
+}
+.favorme-about > li > a > div {
     display: table-cell;
     vertical-align: middle;
     padding: 10px 0;
@@ -122,32 +127,33 @@
     height: 22px;
 }
 
-.favorme-about > li > div > img {
+.favorme-about > li > a > div > img {
     height: 22px;
 }
 
-.favorme-about > li > div:nth-child(1) {
+.favorme-about > li > a > div:nth-child(1) {
     padding-right: 10px;
 }
 
-.favorme-about > li > div > p {
+.favorme-about > li > a > div > p {
     color: #7e7e7e;
     margin: 0;
     padding: 0;
     width: 100%;
     display: block;
+    text-align: left;
 }
 
-.favorme-about > li > div > p:nth-child(1) {
-    font-size: 0.875em;
-    line-height: 0.875em;
+.favorme-about > li > a > div > p:nth-child(1) {
+    font-size: 12px;
+    line-height: 12px;
     font-weight: 400;
     vertical-align: top;
 }
 
-.favorme-about > li > div > p:nth-child(2) {
-    font-size: 1.125em;
-    line-height: 1.125em;
+.favorme-about > li > a > div > p:nth-child(2) {
+    font-size: 16px;
+    line-height: 16px;
     font-weight: 700;
     vertical-align: bottom;
 }
