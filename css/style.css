@@ -176,9 +176,33 @@ input.hidden-input + label {
 .trigger-radio.selected
 {
     opacity: 1;
-    background: #ffffff;
+    background: #e8f7f1;
     transition: all 300ms;
 }
+
+.del-img-col
+{
+    position: absolute;
+    top:4px;
+    left:48px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #2bdf74;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+}
+.del-img-col:hover
+{
+    background: #248d4f;
+    transition: background 300ms;
+}
+
 
 /*--------- vf-fixed-menu ----------*/
 .vf-fixed-menu {

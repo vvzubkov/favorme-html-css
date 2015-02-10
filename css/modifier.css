@@ -75,8 +75,12 @@
     padding: 5px !important;
 }
 
+.pad0-5 {
+    padding: 0 5px !important;
+}
+
 .pad5-0 {
-    padding: 5px 0px !important;
+    padding: 5px 0 !important;
 }
 
 .pad5-10 {
@@ -181,7 +185,7 @@
 }
 
 .w-half {
-    width: 49%;
+    width: 49.5%;
 }
 
 .w-13part {
@@ -293,7 +297,11 @@
     background-color: #b3b3b3;
 }
 
-.bg-blue-light {
+.bg-light-gray {
+    background-color: #eef0f1;
+}
+
+.bg-light-blue {
     background: rgba(61, 182, 225, 0.05);
 }
 

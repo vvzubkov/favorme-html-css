@@ -33,7 +33,12 @@
     border: 1px solid #cccccc;
     text-align: center;
 }
-
+.img-mask.avatar > img
+{
+    width: 130%;
+    margin-left: -15%;
+    margin-top: -15%;
+}
 .img-mask.large {
     width: 60px;
     height: 60px;
@@ -71,10 +76,11 @@
     border-radius: 50%;
     padding: 0;
 }
-.soc-icon-mini > img
-{
+
+.soc-icon-mini > img {
     width: 100%;
 }
+
 .img-mask + .vp-icon-mini {
     position: absolute;
     font-weight: 700;
@@ -96,6 +102,7 @@
     top: -2px;
     left: 32px;
 }
+
 .img-mask.middle + .soc-icon-mini.right.bottom {
     top: 28px;
     left: 28px;

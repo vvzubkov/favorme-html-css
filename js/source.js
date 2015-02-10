@@ -89,12 +89,11 @@ $(window).on('load',function(){
         e.preventDefault();
         if (!$(this).hasClass('selected'))
         {
-            $(this).closest('.radio-c').find('.selected').removeClass('selected');
             $(this).addClass('selected');
         }
         else if ($(this).hasClass('selected'))
         {
-            $(this).closest('.radio-c').find('.selected').removeClass('selected');
+            $(this).removeClass('selected');
         }
     });
 

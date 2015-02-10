@@ -164,50 +164,188 @@
                                     </ul>
                                     <div class="form-group box pad0-36 bdb-1-gray">
                                         <section class="pad10-0 ta-l radio-c">
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Продам</a>
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Сдам</a>
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Есть вакансия</a>
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Окажу услугу</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Продам</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сдам</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Есть вакансия</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Окажу услугу</a>
                                         </section>
-                                        <section class="pad5-0 pos-rel">
+                                        <section class="pad0 pos-rel">
                                             <textarea class="chartLeftArea w-full" name="reg-vp-textarea"
                                                       id="reg-vp-textarea-1"
                                                       placeholder="Опишите возможность"></textarea>
                                             <span class="charsLeft" id="charsLeft-1"></span>
                                         </section>
                                         <section class="pad10-0-20 ta-l">
-                                            <select name="reg-city-choise" id="reg-city-choise-1" style="width: 160px;">
-                                                <option value=""></option>
-                                                <option>Москва, Россия</option>
-                                                <option>Киев, Украина</option>
-                                                <option>Минск, Беларусь</option>
-                                            </select>
-                                            <a class="vp-add-photo" href="/"><i
-                                                    class="fa fa-camera"></i><span>Добавить фото</span></a>
+                                            <section class="bg-light-gray ta-l">
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-1.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-2.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-3.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-4.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-1.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-2.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-3.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-4.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                            </section>
+                                            <section class="pad5-0">
+                                                <section class="pad0">
+                                                    <div class="progressbar dib w-half va-middle">
+                                                        <div id="progressbar1"></div>
+                                                        <script>
+                                                            $(function() {
+                                                                $( "#progressbar1" ).progressbar({
+                                                                    value: 64,
+                                                                    change: function() {
+                                                                        if ($(this).attr('aria-valuenow') == 100)
+                                                                        {
+                                                                            $(this).animate({opacity:0},500);
+                                                                            $(this).closest('.progressbar').prev('.imgBlock').removeClass('hide').css({opacity:0}).animate({opacity:1},500);
+                                                                        }
+                                                                    }
+                                                                });
+                                                            });
+                                                        </script>
+                                                    </div>
+                                                    <div class="dib w-half button button-slim c-black ta-l pad0-5">
+                                                        <p class="dib w-auto pad0">Название фото</p>
+                                                        <span class="dib w-auto"><i class="fa fa-close"></i></span>
+                                                    </div>
+                                                </section>
+                                                <section class="pad0">
+                                                    <div class="progressbar dib w-half va-middle">
+                                                        <div id="progressbar2"></div>
+                                                        <script>
+                                                            $(function() {
+                                                                $( "#progressbar2" ).progressbar({
+                                                                    value: 5,
+                                                                    change: function() {
+                                                                        if ($(this).attr('aria-valuenow') == 100)
+                                                                        {
+                                                                            $(this).animate({opacity:0},500);
+                                                                            $(this).closest('.progressbar').prev('.imgBlock').removeClass('hide').css({opacity:0}).animate({opacity:1},500);
+                                                                        }
+                                                                    }
+                                                                });
+                                                            });
+                                                        </script>
+                                                    </div>
+                                                    <div class="dib w-half button button-slim c-black ta-l pad0-5">
+                                                        <p class="dib w-auto pad0">Название фото 2</p>
+                                                        <span class="dib w-auto"><i class="fa fa-close"></i></span>
+                                                    </div>
+                                                </section>
+                                            </section>
+                                            <section class="pad5-0 ta-l">
+                                                <div class="dib w-half va-middle ta-l">
+                                                    <select name="reg-city-choise" id="reg-city-choise-1" style="width: 160px;">
+                                                        <option value=""></option>
+                                                        <option>Москва, Россия</option>
+                                                        <option>Киев, Украина</option>
+                                                        <option>Минск, Беларусь</option>
+                                                    </select>
+                                                </div>
+                                                <div class="dib w-half va-middle ta-r">
+                                                    <input class="hidden-input" id="vp-add-photo-1" type="file"/>
+                                                    <label class="button button-slim va-middle w-auto c-dark-gray pad0" for="vp-add-photo-1">
+                                                        <i class="fa fa-camera"></i><span class="dib pad0-5">Добавить фото</span></label>
+                                                </div>
+                                            </section>
                                         </section>
                                     </div>
                                     <div class="form-group box pad0-36 hidden bdb-1-gray">
                                         <section class="pad10-0 ta-l radio-c">
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Куплю</a>
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Сниму</a>
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Ищу работу</a>
-                                            <a class="button button-middle w-auto bd-1-green bd-r5 c-gray trigger-radio">Нужна услуга</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Куплю</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сниму</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Ищу работу</a>
+                                            <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Нужна услуга</a>
                                         </section>
-                                        <section class="pad5-0 pos-rel">
+                                        <section class="pad0 pos-rel">
                                             <textarea class="chartLeftArea w-full" name="reg-vp-textarea"
                                                       id="reg-vp-textarea-2"
-                                                      placeholder="Опишите возможность"></textarea>
+                                                      placeholder="Опишите потребность"></textarea>
                                             <span class="charsLeft" id="charsLeft-2"></span>
                                         </section>
                                         <section class="pad10-0-20 ta-l">
-                                            <select name="reg-city-choise" id="reg-city-choise-2" style="width: 160px;">
-                                                <option value=""></option>
-                                                <option>Москва, Россия</option>
-                                                <option>Киев, Украина</option>
-                                                <option>Минск, Беларусь</option>
-                                            </select>
-                                            <a class="vp-add-photo" href="/"><i
-                                                    class="fa fa-camera"></i><span>Добавить фото</span></a>
+                                            <section class="bg-light-gray ta-l">
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-1.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-2.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-3.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                                <div class="dib pad10 pos-rel">
+                                                    <div class="vp-photo-mask">
+                                                        <img src="images/vp-photo-4.png" alt=""/>
+                                                    </div>
+                                                    <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                                </div>
+                                            </section>
+                                            <section class="pad5-0 ta-l">
+                                                <div class="dib w-half va-middle ta-l">
+                                                    <select name="reg-city-choise" id="reg-city-choise-2" style="width: 160px;">
+                                                        <option value=""></option>
+                                                        <option>Москва, Россия</option>
+                                                        <option>Киев, Украина</option>
+                                                        <option>Минск, Беларусь</option>
+                                                    </select>
+                                                </div>
+                                                <div class="dib w-half va-middle ta-r">
+                                                    <input class="hidden-input" id="vp-add-photo-2" type="file"/>
+                                                    <label class="button button-slim va-middle w-auto c-dark-gray pad0" for="vp-add-photo-2">
+                                                        <i class="fa fa-camera"></i><span class="dib pad0-5">Добавить фото</span></label>
+                                                </div>
+                                            </section>
                                         </section>
                                     </div>
                                 </div>
