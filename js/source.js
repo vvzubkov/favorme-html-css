@@ -181,19 +181,19 @@ $(window).on('load',function(){
         el.addClass('current');
     });
 
-    $(document).on('click', '.massege-button', function(e){
+    $(document).on('click', '.dialog-button', function(e){
         e.preventDefault();
-        if (!$(this).closest('.vp-el-content').next('.vp-el-comments').hasClass('visible'))
+        if (!$(this).closest('.vp-content').next('.vp-dialog').hasClass('visible'))
         {
-            $(this).closest('.vp-el-content').next('.vp-el-comments').slideDown(500,function(){
+            $(this).closest('.vp-content').next('.vp-dialog').slideDown(500,function(){
                 $(this).animate({opacity:1},300,function(){
                     $(this).addClass('visible')
                 });
             })
         }
-        else if ($(this).closest('.vp-el-content').next('.vp-el-comments').hasClass('visible'))
+        else if ($(this).closest('.vp-content').next('.vp-dialog').hasClass('visible'))
         {
-            $(this).closest('.vp-el-content').next('.vp-el-comments').animate({opacity:0},300,function(){
+            $(this).closest('.vp-content').next('.vp-dialog').animate({opacity:0},300,function(){
                 $(this).slideUp(500, function(){
                     $(this).removeClass('visible')
                 })

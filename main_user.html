@@ -79,34 +79,43 @@
             <div class="sideBar left ta-l">
                 <div class="sidebar-nav">
                     <ul class="share-nav">
-                        <li><a class="md-trigger" data-modal="add-new-share-own"><img src="images/icons/share.png"
-                                                                                      alt=""/></a></li>
-                        <li><a href="/"><img src="images/icons/addContact.png" alt=""/></a></li>
-                        <li><a class="md-trigger" data-modal="add-new-vp"><img src="images/icons/addVP.png" alt=""/></a>
+                        <li><a class="md-trigger" data-modal="add-new-share-own">
+                            <img src="images/icons/share.png" alt=""/></a></li>
+                        <li><a href="/">
+                            <img src="images/icons/addContact.png" alt=""/></a></li>
+                        <li><a class="md-trigger" data-modal="add-new-vp">
+                            <img src="images/icons/addVP.png" alt=""/></a>
                         </li>
                     </ul>
                     <span class="vf-fixed-menu">
-                        <a href="/"><span class="name"><img src="images/v-icon-fixed.png" alt=""/></span><span
-                                class="amount">+15</span></a>
-                        <a href="/"><span class="name"><img src="images/icons/p-icon-fixed.png" alt=""/></span><span
-                                class="amount">+15</span></a>
-                        <a href="/"><span class="name"><img src="images/icons/message-icon-fixed.png"
-                                                            alt=""/></span><span
-                                class="amount">+15</span></a>
+                        <a href="/">
+                            <span class="name"><img src="images/v-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                        <a href="/">
+                            <span class="name"><img src="images/icons/p-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                        <a href="/">
+                            <span class="name"><img src="images/icons/message-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
                     </span>
-                    <nav>
-                        <a href="">Возможности <span>+15</span></a>
-                        <a href="">Потребности</a>
-                        <a href="">Диалоги</a>
-                        <a href="">Друзья <span>+3</span></a>
-                        <a href="">Активность</a>
-                        <a href="">Настройки</a>
-                    </nav>
+                    <div class="sidebar-block">
+                        <nav class="sidebar-nav">
+                            <a href="/">Возможности <span>+15</span></a>
+                            <a href="/">Потребности</a>
+                            <a href="/">Диалоги</a>
+                            <a href="/">Друзья <span>+3</span></a>
+                            <a href="/">Активность</a>
+                            <a href="/">Настройки</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
             <div class="content ta-c">
                 <section class="c-title">
-                    <div>
+                    <section class="pad20-0 ta-l">
                         <div class="vp-name c-blue">Возможности:</div>
                         <a href="/" class="vp-type active">Друзей <span class="amount">+3</span></a>
                         <a href="/" class="vp-type">Окружения <span>+12</span>
@@ -114,240 +123,261 @@
                             <div class="search-marker"></div>
                         </a>
                         <a href="/" class="vp-type">Мои <span class="amount"></span></a>
-                    </div>
+                    </section>
                 </section>
                 <form id="search" class="ta-l">
                     <input class="search-line clearble" type="text"
                            placeholder="Ищите интересующие вас возможности и потребности" autofocus tabindex="1"/>
                 </form>
-                <a class="show-more-vp">еще 12 новых возможностей</a>
-                <ul class="vp-list">
-                    <p class="title">Новое</p>
-                    <li class="vp-el">
-                        <div class="vp-el-content sh">
-                            <div class="body">
+                <a class="button dib w-full bg-light-blue pad10-0 mar10-0 c-blue">еще 12 новых возможностей</a>
+                <ul class="row-list">
+                    <li class="row-list-el pad0-0-10">
+                        <div class="vp-content">
+                        <div class="body">
+                            <div class="img-col">
+                                <a href="/" class="img-mask middle">
+                                    <img src="images/users/user2.png" alt=""/>
+                                </a>
+                                <span class="vp-icon-mini bg-blue">В</span>
+                            </div>
+                            <div class="data-col ta-l">
+                                <section class="pad10-0 ta-l">
+                                    <a href="/" class="dib w-auto name c-blue">Елизавета Иванова</a>
+                                    <p class="dib w-full c-dark-gray">создана для всех</p>
+                                </section>
+                                <section class="ta-l">
+                                    <a href="/" class="text c-dark-gray">Продаю щенков мопса не дорого с родословной и документами,
+                                        Продаю щенков мопса не дорого с родословной и документами, Продаю щенков мопса
+                                        не дорого с родословной и документами , Продаю щенков мопса не дорого с
+                                        родословной и документами</a>
+                                </section>
+                                <section class="ta-l pad10-0">
+                                    <section class="ta-l pad0-0-5">
+                                        <p class="dib w-auto pad0 c-gray va-middle">15 фотографий</p>
+                                        <a class="button button-slim fz12 c-blue w-auto md-trigger md-gallery" data-modal="modal-gallery" data-pos="1">посмотреть все</a>
+                                    </section>
+                                    <ul class="gallery-preview">
+                                        <li class="gallery-preview-el md-trigger md-gallery"
+                                            data-modal="modal-gallery" data-pos="1">
+                                            <img src="images/imgGallery/img1.png" alt=""/>
+                                        </li>
+                                        <li class="gallery-preview-el md-trigger md-gallery"
+                                            data-modal="modal-gallery" data-pos="2">
+                                            <img src="images/imgGallery/img2.png" alt=""/>
+                                        </li>
+                                        <li class="gallery-preview-el md-trigger md-gallery"
+                                            data-modal="modal-gallery" data-pos="3">
+                                            <img src="images/imgGallery/img3.png" alt=""/>
+                                        </li>
+                                        <li class="gallery-preview-el md-trigger md-gallery"
+                                            data-modal="modal-gallery" data-pos="4">
+                                            <img src="images/imgGallery/img4.png" alt=""/>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="ta-l pad0-0-10 ">
+                                    <p class="dib w-auto c-dark-gray">Львов, Украина</p>
+                                    <span class="dib w-auto c-dark-gray"> | </span>
+                                    <p class="dib w-auto c-gray">сегодня 19:45</p>
+                                </section>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="dib w-half ta-l">
+                                <div class="dib pos-rel popover-trigger" data-popover-button="popover-1">
+                                    <a class="button button-ultraslim w-auto pad0-5 fv-trust-button bd-1-blue">
+                                        <img class="dib w-auto va-middle" src="images/logo/logo-mini-active.png" alt=""/>
+                                        <p class="dib w-auto c-blue fz12 pad0-5">99</p>
+                                    </a>
+                                    <div class="popover-block" data-popover-block="popover-1">
+                                        <ul class="fv-trust-list">
+                                            <li class="fv-trust-el"><a href="/">
+                                                <div class="img-mask small"><img src="images/users/user1.png"
+                                                                                 alt=""/>
+                                                </div>
+                                            </a></li>
+                                            <li class="fv-trust-el"><a href="/">
+                                                <div class="img-mask small"><img src="images/users/user2.png"
+                                                                                 alt=""/>
+                                                </div>
+                                            </a></li>
+                                            <li class="fv-trust-el"><a href="/">
+                                                <div class="img-mask small"><img src="images/users/user3.png"
+                                                                                 alt=""/>
+                                                </div>
+                                            </a></li>
+                                            <li class="fv-trust-el"><a href="/">
+                                                <div class="img-mask small"><img src="images/users/user4.png"
+                                                                                 alt=""/>
+                                                </div>
+                                            </a></li>
+                                            <li class="fv-trust-el showall md-trigger" data-modal="fv-trust-frList">
+                                                <a>показать всех кто доверяет</a></li>
+                                        </ul>
+                                        <img class="angle-icon" src="/images/fv-trust-angle-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <a class="button button-ultraslim bd-1-blue w-auto pad0-5 dialog-button">
+                                    <img class="dib w-auto va-middle" src="images/icons/message-icon-active.png" alt=""/>
+                                    <p class="dib w-auto c-blue fz12 pad0-5">150</p>
+                                </a>
+                                <a class="button button-ultraslim bd-1-blue w-auto pad0-5 share-button md-trigger grayscale" data-modal="add-new-share-fr">
+                                    <img class="dib w-auto va-middle" src="images/icons/share-icon-active.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="dib w-half ta-r">
+                                <p>Рассказал всем</p>
+                                <a class="set-my-fav md-trigger" data-modal="add-fv-trust"></a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="vp-dialog">
+                        <a class="show-all-comments">Показать все диалоги</a>
+                        <ul class="dialog-list">
+                            <li class="dialog-list-el last">
                                 <div class="img-col">
                                     <a href="/" class="img-mask middle">
                                         <img src="images/users/user4.png" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="message-col">
+                                    <p><a href="/" class="name">Елизавета Иванова <span>автор</span></a> <span
+                                            class="m-time">13:45</span></p>
+                                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet.</p>
+                                    <div class="message-answer">
+                                        <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
+                                            <span>Ответить</span></a>
+
+                                        <form action="" class="answer-form">
+                                            <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
+                                            <input type="text" placeholder="Быстрый ответ на сообщение"/>
+                                            <label for="enter-answer"
+                                                   class="button bg-blue enter-answer">Ответить</label>
+                                            <input id="enter-answer" type="submit"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dialog-list-el last">
+                                <div class="img-col">
+                                    <a href="/" class="img-col-mask">
+                                        <img src="images/users/user4.png" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="message-col">
+                                    <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
+
+                                    <p>Этот человек может быть из вашего</p>
+
+                                    <div class="message-answer">
+                                        <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
+                                            <span>Ответить</span></a>
+
+                                        <form action="" class="answer-form">
+                                            <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
+                                            <input type="text" placeholder="Быстрый ответ на сообщение"/>
+                                            <label for="enter-answer"
+                                                   class="button bg-blue enter-answer">Ответить</label>
+                                            <input id="enter-answer" type="submit"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dialog-list-el last">
+                                <div class="img-col">
+                                    <a href="/" class="img-col-mask">
+                                        <img src="images/users/user4.png" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="message-col">
+                                    <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
+
+                                    <p>Этот человек может быть из вашего</p>
+
+                                    <div class="message-reply">
+                                        <a href="/" class="user-img"><img src="images/users/user1.png" alt=""/></a>
+
+                                        <p class="text">Очень длинный ответ, самый длинный который можно себе
+                                            придумать, потому что придумать еще короче сложно</p>
+                                    </div>
+                                    <div class="message-answer">
+                                        <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
+                                            <span>Ответить</span></a>
+
+                                        <form action="" class="answer-form">
+                                            <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
+                                            <input type="text" placeholder="Быстрый ответ на сообщение"/>
+                                            <label for="enter-answer"
+                                                   class="button bg-blue enter-answer">Ответить</label>
+                                            <input id="enter-answer" type="submit"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dialog-list-el">
+                                <div class="img-col">
+                                    <div class="img-col-mask">
+                                        <img src="images/users/user4.png" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="message-col">
+                                    <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
+
+                                    <p>Этот человек может быть из вашего</p>
+                                </div>
+                            </li>
+                            <li class="dialog-list-el">
+                                <div class="img-col">
+                                    <div class="img-col-mask">
+                                        <img src="images/users/user4.png" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="message-col">
+                                    <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
+
+                                    <p>Этот человек может быть из вашего</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="row-list-el pad0-0-10">
+                        <div class="vp-content">
+                            <div class="body">
+                                <div class="img-col">
+                                    <a href="/" class="img-mask middle">
+                                        <img src="images/users/user2.png" alt=""/>
                                     </a>
                                     <span class="vp-icon-mini bg-blue">В</span>
                                 </div>
-                                <div class="info-col">
-                                    <a href="/" class="name">Елизавета Иванова</a>
-
-                                    <p class="create-type">создана для всех</p>
-                                    <a href="/" class="text">Продаю щенков мопса не дорого с родословной и документами,
-                                        Продаю щенков мопса не дорого с родословной и документами, Продаю щенков мопса
-                                        не дорого с родословной и документами , Продаю щенков мопса не дорого с
-                                        родословной и документами</a>
-
-                                    <div class="image-preview-block">
-                                        <p class="dib w-auto pad0 c-gray">15 фотографий</p>
-                                        <a class="md-trigger dib w-auto md-gallery" data-modal="modal-gallery"
-                                           data-pos="1">посмотреть все</a>
-                                        <ul class="gallery-preview">
-                                            <li class="gallery-preview-el md-trigger md-gallery"
-                                                data-modal="modal-gallery" data-pos="1">
-                                                <img src="images/imgGallery/img1.png" alt=""/>
-                                            </li>
-                                            <li class="gallery-preview-el md-trigger md-gallery"
-                                                data-modal="modal-gallery" data-pos="2">
-                                                <img src="images/imgGallery/img2.png" alt=""/>
-                                            </li>
-                                            <li class="gallery-preview-el md-trigger md-gallery"
-                                                data-modal="modal-gallery" data-pos="3">
-                                                <img src="images/imgGallery/img3.png" alt=""/>
-                                            </li>
-                                            <li class="gallery-preview-el md-trigger md-gallery"
-                                                data-modal="modal-gallery" data-pos="4">
-                                                <img src="images/imgGallery/img4.png" alt=""/>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <p class="ld"><span class="location">Львов, Украина</span> | <span class="date">сегодня 19:45</span>
-                                    </p>
+                                <div class="data-col ta-l">
+                                    <section class="pad10-0 ta-l">
+                                        <a href="/" class="dib w-auto name c-blue">Елизавета Иванова</a>
+                                        <p class="dib w-full c-dark-gray">создана для всех</p>
+                                    </section>
+                                    <section class="ta-l">
+                                        <a href="/" class="text c-dark-gray">Продаю щенков мопса не дорого с родословной и документами,
+                                            Продаю щенков мопса не дорого с родословной и документами, Продаю щенков мопса
+                                            не дорого с родословной и документами , Продаю щенков мопса не дорого с
+                                            родословной и документами</a>
+                                    </section>
+                                    <section class="ta-l pad0-0-10 ">
+                                        <p class="dib w-auto c-dark-gray">Львов, Украина</p>
+                                        <span class="dib w-auto c-dark-gray"> | </span>
+                                        <p class="dib w-auto c-gray">сегодня 19:45</p>
+                                    </section>
                                 </div>
                             </div>
                             <div class="footer">
                                 <div class="ta-l">
-                                    <a class="fv-trust-button grayscale no-right-padding"></a>
-                                    <a class="massege-button">0</a>
-                                    <a class="share-button md-trigger grayscale" data-modal="add-new-share-fr"></a>
-                                </div>
-                                <div class="ta-r">
-                                    <a class="set-my-fav grayscale md-trigger" data-modal="add-fv-trust"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vp-el-comments sh">
-                            <a class="show-all-comments">Показать все диалоги</a>
-                            <ul class="comments-list">
-                                <li class="comments-el last">
-                                    <div class="img-col">
-                                        <a href="/" class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
+                                    <div class="dib pos-rel">
+                                        <a class="button button-slim fv-trust-button bd-1-blue pad0-10 grayscale">
+                                            <img class="dib w-auto va-middle" src="images/logo/logo-mini-active.png" alt=""/>
                                         </a>
                                     </div>
-                                    <div class="message-col">
-                                        <p><a href="/" class="name">Елизавета Иванова <span>автор</span></a> <span
-                                                class="m-time">13:45</span></p>
-
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                                            auctor aliquet.</p>
-
-                                        <div class="message-answer">
-                                            <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
-                                                <span>Ответить</span></a>
-
-                                            <form action="" class="answer-form">
-                                                <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
-                                                <input type="text" placeholder="Быстрый ответ на сообщение"/>
-                                                <label for="enter-answer"
-                                                       class="button bg-blue enter-answer">Ответить</label>
-                                                <input id="enter-answer" type="submit"/>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="comments-el last">
-                                    <div class="img-col">
-                                        <a href="/" class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-
-                                        <div class="message-answer">
-                                            <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
-                                                <span>Ответить</span></a>
-
-                                            <form action="" class="answer-form">
-                                                <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
-                                                <input type="text" placeholder="Быстрый ответ на сообщение"/>
-                                                <label for="enter-answer"
-                                                       class="button bg-blue enter-answer">Ответить</label>
-                                                <input id="enter-answer" type="submit"/>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="comments-el last">
-                                    <div class="img-col">
-                                        <a href="/" class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-
-                                        <div class="message-reply">
-                                            <a href="/" class="user-img"><img src="images/users/user1.png" alt=""/></a>
-
-                                            <p class="text">Очень длинный ответ, самый длинный который можно себе
-                                                придумать, потому что придумать еще короче сложно</p>
-                                        </div>
-                                        <div class="message-answer">
-                                            <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
-                                                <span>Ответить</span></a>
-
-                                            <form action="" class="answer-form">
-                                                <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
-                                                <input type="text" placeholder="Быстрый ответ на сообщение"/>
-                                                <label for="enter-answer"
-                                                       class="button bg-blue enter-answer">Ответить</label>
-                                                <input id="enter-answer" type="submit"/>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="comments-el">
-                                    <div class="img-col">
-                                        <div class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-                                    </div>
-                                </li>
-                                <li class="comments-el">
-                                    <div class="img-col">
-                                        <div class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="vp-el">
-                        <div class="vp-el-content sh">
-                            <div class="body">
-                                <div class="img-col">
-                                    <a href="/" class="img-mask middle">
-                                        <img src="images/users/user4.png" alt=""/>
-                                    </a>
-                                    <span class="vp-icon-mini bg-green">П</span>
-                                </div>
-                                <div class="info-col">
-                                    <a href="/" class="name">Елизавета Иванова</a>
-
-                                    <p class="create-type">создана для всех</p>
-                                    <a href="/" class="text">Продаю щенков мопса не дорого с родословной и документами,
-                                        Продаю щенков мопса не дорого с родословной и документами, Продаю щенков мопса
-                                        не дорого с родословной и документами , Продаю щенков мопса не дорого с
-                                        родословной и документами</a>
-
-                                    <p class="ld"><span class="location">Львов, Украина</span> | <span class="date">сегодня 19:45</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="ta-l">
-                                    <div class="dib pos-rel popover-trigger " data-popover-button="popover-1">
-                                        <a class="fv-trust-button">1</a>
-
-                                        <div class="popover-block" data-popover-block="popover-1">
-                                            <ul class="fv-trust-list">
-                                                <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user1.png"
-                                                                                     alt=""/>
-                                                    </div>
-                                                </a></li>
-                                                <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user2.png"
-                                                                                     alt=""/>
-                                                    </div>
-                                                </a></li>
-                                                <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user3.png"
-                                                                                     alt=""/>
-                                                    </div>
-                                                </a></li>
-                                                <li class="fv-trust-el"><a href="/">
-                                                    <div class="img-mask small"><img src="images/users/user4.png"
-                                                                                     alt=""/>
-                                                    </div>
-                                                </a></li>
-                                                <li class="fv-trust-el showall md-trigger" data-modal="fv-trust-frList">
-                                                    <a>показать всех кто доверяет</a></li>
-                                            </ul>
-                                            <img class="angle-icon" src="/images/fv-trust-angle-icon.png" alt="">
-                                        </div>
-                                    </div>
-                                    <a class="massege-button">0</a>
+                                    <a class="dialog-button">0</a>
                                     <a class="share-button md-trigger grayscale" data-modal="add-new-share-fr"></a>
                                 </div>
                                 <div class="ta-r">
@@ -356,10 +386,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="vp-el-comments sh">
+                        <div class="vp-dialog">
                             <a class="show-all-comments">Показать все диалоги</a>
-                            <ul class="comments-list">
-                                <li class="comments-el last">
+                            <ul class="dialog-list">
+                                <li class="dialog-list-el last">
                                     <div class="img-col">
                                         <a href="/" class="img-col-mask">
                                             <img src="images/users/user4.png" alt=""/>
@@ -386,7 +416,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="comments-el last">
+                                <li class="dialog-list-el last">
                                     <div class="img-col">
                                         <a href="/" class="img-col-mask">
                                             <img src="images/users/user4.png" alt=""/>
@@ -411,7 +441,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="comments-el last">
+                                <li class="dialog-list-el last">
                                     <div class="img-col">
                                         <a href="/" class="img-col-mask">
                                             <img src="images/users/user4.png" alt=""/>
@@ -442,7 +472,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="comments-el">
+                                <li class="dialog-list-el">
                                     <div class="img-col">
                                         <div class="img-col-mask">
                                             <img src="images/users/user4.png" alt=""/>
@@ -454,151 +484,7 @@
                                         <p>Этот человек может быть из вашего</p>
                                     </div>
                                 </li>
-                                <li class="comments-el">
-                                    <div class="img-col">
-                                        <div class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="vp-el">
-                        <div class="vp-el-content sh">
-                            <div class="body">
-                                <div class="img-col">
-                                    <a href="/" class="img-mask middle">
-                                        <img src="images/users/user4.png" alt=""/>
-                                    </a>
-                                    <span class="vp-icon-mini bg-blue">В</span>
-                                </div>
-                                <div class="info-col">
-                                    <a href="/" class="name">Елизавета Иванова</a>
-
-                                    <p class="create-type">создана для всех</p>
-                                    <a href="/" class="text">Продаю щенков мопса не дорого с родословной и документами,
-                                        Продаю щенков мопса не дорого с родословной и документами, Продаю щенков мопса
-                                        не дорого с родословной и документами , Продаю щенков мопса не дорого с
-                                        родословной и документами</a>
-
-                                    <p class="ld"><span class="location">Львов, Украина</span> | <span class="date">сегодня 19:45</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="ta-l">
-                                    <a class="massege-button">0</a>
-                                </div>
-                                <div class="ta-r">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vp-el-comments sh">
-                            <a class="show-all-comments">Показать все диалоги</a>
-                            <ul class="comments-list">
-                                <li class="comments-el last">
-                                    <div class="img-col">
-                                        <a href="/" class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="message-col">
-                                        <p><a href="/" class="name">Елизавета Иванова <span>автор</span></a> <span
-                                                class="m-time">13:45</span></p>
-
-                                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                                            auctor aliquet.</p>
-
-                                        <div class="message-answer">
-                                            <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
-                                                <span>Ответить</span></a>
-
-                                            <form action="" class="answer-form">
-                                                <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
-                                                <input type="text" placeholder="Быстрый ответ на сообщение"/>
-                                                <label for="enter-answer"
-                                                       class="button bg-blue enter-answer">Ответить</label>
-                                                <input id="enter-answer" type="submit"/>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="comments-el last">
-                                    <div class="img-col">
-                                        <a href="/" class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-
-                                        <div class="message-answer">
-                                            <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
-                                                <span>Ответить</span></a>
-
-                                            <form action="" class="answer-form">
-                                                <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
-                                                <input type="text" placeholder="Быстрый ответ на сообщение"/>
-                                                <label for="enter-answer"
-                                                       class="button bg-blue enter-answer">Ответить</label>
-                                                <input id="enter-answer" type="submit"/>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="comments-el last">
-                                    <div class="img-col">
-                                        <a href="/" class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </a>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-
-                                        <div class="message-reply">
-                                            <a href="/" class="user-img"><img src="images/users/user1.png" alt=""/></a>
-
-                                            <p class="text">Очень длинный ответ, самый длинный который можно себе
-                                                придумать, потому что придумать еще короче сложно</p>
-                                        </div>
-                                        <div class="message-answer">
-                                            <a class="show-answer-form"><i class="fa fa-mail-reply"></i>
-                                                <span>Ответить</span></a>
-
-                                            <form action="" class="answer-form">
-                                                <div class="user-img"><img src="images/users/user1.png" alt=""/></div>
-                                                <input type="text" placeholder="Быстрый ответ на сообщение"/>
-                                                <label for="enter-answer"
-                                                       class="button bg-blue enter-answer">Ответить</label>
-                                                <input id="enter-answer" type="submit"/>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="comments-el">
-                                    <div class="img-col">
-                                        <div class="img-col-mask">
-                                            <img src="images/users/user4.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="message-col">
-                                        <a href="/" class="name">Елизавета Иванова <span>автор</span></a>
-
-                                        <p>Этот человек может быть из вашего</p>
-                                    </div>
-                                </li>
-                                <li class="comments-el">
+                                <li class="dialog-list-el">
                                     <div class="img-col">
                                         <div class="img-col-mask">
                                             <img src="images/users/user4.png" alt=""/>
@@ -624,8 +510,8 @@
                 </footer>
             </div>
             <div class="sideBar right ta-l">
-                <div class="filter-block">
-                    <p>Город:</p>
+                <div class="sidebar-block">
+                    <p class="dib w-full pad5-0">Город:</p>
                     <select id="locationFilter" multiple style="width: 150px;">
                         <option data-country="UA">Киев</option>
                         <option data-country="UA">Львов</option>
@@ -1257,7 +1143,7 @@
 </div>
 
 <div class="md-modal md-effect-5" id="add-new-vp">
-    <div class="md-content" style="width:480px; background: none;">
+    <div class="md-content" style="width:480px; background: #ffffff;">
         <header class="pad10-0">
             <div class="dib w-full pad10-0">
                 <h3 class="w-95perc ta-l">Создать</h3>

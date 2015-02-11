@@ -41,7 +41,10 @@
 .mar0 {
     margin: 0 !important;
 }
-
+.mar10-0
+{
+    margin: 10px 0 !important;
+}
 /*-------------- Padding ------------*/
 .pad0 {
     padding: 0 !important;
@@ -67,6 +70,17 @@
     padding: 10px 20px !important;
 }
 
+.pad0-0-5 {
+    padding: 0 0 5px !important;
+}
+
+.pad0-0-10 {
+    padding: 0 0 10px !important;
+}
+
+.pad0-0-20 {
+    padding: 0 0 20px !important;
+}
 .pad10-0-20 {
     padding: 10px 0 20px !important;
 }
@@ -85,6 +99,10 @@
 
 .pad5-10 {
     padding: 5px 10px !important;
+}
+
+.pad20-0 {
+    padding: 20px 0;
 }
 
 .pad10-0 {
@@ -118,7 +136,7 @@
 }
 
 .fz12 {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .fz13 {

@@ -7,8 +7,8 @@
 .row-list-el {
     display: inline-block;
     width: 100%;
-    border-bottom: 1px solid #f2f2f2;
-    padding: 0 10px;
+    /*border-bottom: 1px solid #f2f2f2;*/
+    padding: 0;
     position: relative;
 }
 

@@ -6,6 +6,8 @@
 @import "regBlock.css";
 @import "rowList.css";
 @import "tabs.css";
+@import "vpList.css";
+@import "modalModif.css";
 @import "socBlock.css";
 @import "carousel.css";
 @import "../add/icheck-blue.css";
@@ -48,13 +50,14 @@
 .img-col,
 .data-col {
     display: table-cell !important;
-    vertical-align: middle !important;
+    vertical-align: top !important;
     line-height: normal !important;
     position: relative;
+    padding: 10px;
 }
 
 .data-col {
-    padding: 0 10px !important;
+    padding: 0 10px;
 }
 
 h3.name,
@@ -63,7 +66,7 @@ a.name {
     font-weight: 700;
     padding: 1px 0 !important;
     line-height: normal !important;
-    display: block;
+    display: inline-block;
 }
 
 a.name:hover,
