@@ -67,8 +67,8 @@ var kENGINES = [
 ];
 
 var kCSS_VENDOR_VALUES = {
-  "-moz-box":             {"webkit": "-webkit-box",        "presto": "", "trident": "", "generic": "box" },
-  "-moz-inline-box":      {"webkit": "-webkit-inline-box", "presto": "", "trident": "", "generic": "inline-box" },
+  "-moz-box":             {"webkit": "-webkit-tab-box",        "presto": "", "trident": "", "generic": "box" },
+  "-moz-inline-box":      {"webkit": "-webkit-inline-tab-box", "presto": "", "trident": "", "generic": "inline-tab-box" },
   "-moz-initial":         {"webkit": "",                   "presto": "", "trident": "", "generic": "initial" },
   "-moz-linear-gradient": {"webkit20110101": FilterLinearGradientForOutput,
                            "webkit": FilterLinearGradientForOutput,
@@ -148,19 +148,19 @@ var kCSS_VENDOR_PREFIXES = {"lastUpdate":1304175007,"properties":[{"gecko":"","w
 {"gecko":"border-top-right-radius","webkit":"-webkit-border-top-right-radius","presto":"border-top-right-radius","trident":"border-top-right-radius","status":"WD"},
 {"gecko":"","webkit":"-webkit-border-top-right-radius = border-top-right-radius","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-border-vertical-spacing","presto":"","trident":"","status":""},
-{"gecko":"-moz-box-align","webkit":"-webkit-box-align","presto":"","trident":"-ms-box-align","status":"WD"},
-{"gecko":"-moz-box-direction","webkit":"-webkit-box-direction","presto":"","trident":"-ms-box-direction","status":"WD"},
-{"gecko":"-moz-box-flex","webkit":"-webkit-box-flex","presto":"","trident":"-ms-box-flex","status":"WD"},
-{"gecko":"","webkit":"-webkit-box-flex-group","presto":"","trident":"","status":"WD"},
-{"gecko":"","webkit":"","presto":"","trident":"-ms-box-line-progression","status":""},
-{"gecko":"","webkit":"-webkit-box-lines","presto":"","trident":"-ms-box-lines","status":"WD"},
-{"gecko":"-moz-box-ordinal-group","webkit":"-webkit-box-ordinal-group","presto":"","trident":"-ms-box-ordinal-group","status":"WD"},
-{"gecko":"-moz-box-orient","webkit":"-webkit-box-orient","presto":"","trident":"-ms-box-orient","status":"WD"},
-{"gecko":"-moz-box-pack","webkit":"-webkit-box-pack","presto":"","trident":"-ms-box-pack","status":"WD"},
-{"gecko":"","webkit":"-webkit-box-reflect","presto":"","trident":"","status":""},
-{"gecko":"box-shadow","webkit":"-webkit-box-shadow","presto":"box-shadow","trident":"box-shadow","status":"WD"},
-{"gecko":"-moz-box-sizing","webkit":"box-sizing","presto":"box-sizing","trident":"","status":"CR"},
-{"gecko":"","webkit":"-webkit-box-sizing = box-sizing","presto":"","trident":"","status":""},
+{"gecko":"-moz-tab-box-align","webkit":"-webkit-tab-box-align","presto":"","trident":"-ms-tab-box-align","status":"WD"},
+{"gecko":"-moz-tab-box-direction","webkit":"-webkit-tab-box-direction","presto":"","trident":"-ms-tab-box-direction","status":"WD"},
+{"gecko":"-moz-tab-box-flex","webkit":"-webkit-tab-box-flex","presto":"","trident":"-ms-tab-box-flex","status":"WD"},
+{"gecko":"","webkit":"-webkit-tab-box-flex-group","presto":"","trident":"","status":"WD"},
+{"gecko":"","webkit":"","presto":"","trident":"-ms-tab-box-line-progression","status":""},
+{"gecko":"","webkit":"-webkit-tab-box-lines","presto":"","trident":"-ms-tab-box-lines","status":"WD"},
+{"gecko":"-moz-tab-box-ordinal-group","webkit":"-webkit-tab-box-ordinal-group","presto":"","trident":"-ms-tab-box-ordinal-group","status":"WD"},
+{"gecko":"-moz-tab-box-orient","webkit":"-webkit-tab-box-orient","presto":"","trident":"-ms-tab-box-orient","status":"WD"},
+{"gecko":"-moz-tab-box-pack","webkit":"-webkit-tab-box-pack","presto":"","trident":"-ms-tab-box-pack","status":"WD"},
+{"gecko":"","webkit":"-webkit-tab-box-reflect","presto":"","trident":"","status":""},
+{"gecko":"tab-box-shadow","webkit":"-webkit-tab-box-shadow","presto":"tab-box-shadow","trident":"tab-box-shadow","status":"WD"},
+{"gecko":"-moz-tab-box-sizing","webkit":"tab-box-sizing","presto":"tab-box-sizing","trident":"","status":"CR"},
+{"gecko":"","webkit":"-webkit-tab-box-sizing = tab-box-sizing","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-epub-caption-side = caption-side","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-color-correction","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-column-break-after","presto":"","trident":"","status":""},
@@ -211,7 +211,7 @@ var kCSS_VENDOR_PREFIXES = {"lastUpdate":1304175007,"properties":[{"gecko":"","w
 {"gecko":"","webkit":"","presto":"","trident":"-ms-layout-grid-line","status":""},
 {"gecko":"","webkit":"","presto":"","trident":"-ms-layout-grid-mode","status":""},
 {"gecko":"","webkit":"","presto":"","trident":"-ms-layout-grid-type","status":""},
-{"gecko":"","webkit":"-webkit-line-box-contain","presto":"","trident":"","status":""},
+{"gecko":"","webkit":"-webkit-line-tab-box-contain","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-line-break","presto":"","trident":"-ms-line-break","status":""},
 {"gecko":"","webkit":"-webkit-line-clamp","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"","presto":"","trident":"-ms-line-grid-mode","status":""},
@@ -239,7 +239,7 @@ var kCSS_VENDOR_PREFIXES = {"lastUpdate":1304175007,"properties":[{"gecko":"","w
 {"gecko":"","webkit":"-webkit-marquee-style","presto":"-wap-marquee-style","trident":"","status":"WD"},
 {"gecko":"mask","webkit":"-webkit-mask","presto":"mask","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-mask-attachment","presto":"","trident":"","status":""},
-{"gecko":"","webkit":"-webkit-mask-box-image","presto":"","trident":"","status":""},
+{"gecko":"","webkit":"-webkit-mask-tab-box-image","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-mask-clip","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-mask-composite","presto":"","trident":"","status":""},
 {"gecko":"","webkit":"-webkit-mask-image","presto":"","trident":"","status":""},
@@ -357,7 +357,7 @@ var kCSS_VENDOR_PREFIXES = {"lastUpdate":1304175007,"properties":[{"gecko":"","w
 {"gecko":"","webkit":"zoom","presto":"","trident":"-ms-zoom","status":""}]};
 
 var kCSS_PREFIXED_VALUE = [
-  {"gecko": "-moz-box", "webkit": "-moz-box", "presto": "", "trident": "", "generic": "box"}
+  {"gecko": "-moz-tab-box", "webkit": "-moz-tab-box", "presto": "", "trident": "", "generic": "box"}
 ];
 
 var CssInspector = {

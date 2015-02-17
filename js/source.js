@@ -274,12 +274,22 @@ $(window).on('load',function(){
         });
     });
 
+    //
+    //$(function() {
+    //    $('.tabs').on('click', 'li:not(.current)', function() {
+    //        $(this).addClass('current').siblings().removeClass('current')
+    //            .closest('.tabSection').find('.tab-box').eq($(this).index())
+    //            .animate({opacity:1},300,function(){$(this).removeClass('hidden')})
+    //            .siblings('.tab-box').animate({opacity:0},300,function(){$(this).addClass('hidden')});
+    //    })
+    //});
+
     $(function() {
         $('.tabs').on('click', 'li:not(.current)', function() {
             $(this).addClass('current').siblings().removeClass('current')
-                .closest('.tabSection').children('.box').eq($(this).index())
+                .closest('.tabSection').find('.tab-box').eq($(this).index())
                 .animate({opacity:1},300,function(){$(this).removeClass('hidden')})
-                .siblings('.box').animate({opacity:0},300,function(){$(this).addClass('hidden')});
+                .siblings('.tab-box').animate({opacity:0},300,function(){$(this).addClass('hidden')});
         })
     });
 });

@@ -17,9 +17,9 @@ Version: 3.5.1 Timestamp: Tue Jul 22 18:58:56 EDT 2014
 .select2-search,
 .select2-search input {
   /*
-    Force border-box so that % widths fit the parent
+    Force border-tab-box so that % widths fit the parent
     container without overlap because of margin/padding.
-    More Info : http://www.quirksmode.org/css/box.html
+    More Info : http://www.quirksmode.org/css/tab-box.html
   */
   -webkit-box-sizing: border-box; /* webkit */
      -moz-box-sizing: border-box; /* firefox */
@@ -295,8 +295,8 @@ html[dir="rtl"] .select2-search input {
     /*border: 1px solid #5897fb;*/
     outline: none;
 
-    /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
-            /*box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
+    /*-webkit-tab-box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
+            /*tab-box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
 }
 
 .select2-dropdown-open .select2-choice {
@@ -530,8 +530,8 @@ html[dir="rtl"] .select2-container-multi .select2-choices {
     /*border: 1px solid #5897fb;*/
     outline: none;
 
-    /*-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
-            /*box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
+    /*-webkit-tab-box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
+            /*tab-box-shadow: 0 0 5px rgba(0, 0, 0, .3);*/
 }
 .select2-container-multi .select2-choices li {
     float: left;

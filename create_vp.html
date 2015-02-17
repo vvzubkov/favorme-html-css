@@ -56,81 +56,245 @@
     <main id="main">
         <div class="c-block">
             <div class="sideBar left ta-l">
-                <div class="sidebar-block">
-                    <nav class="sidebar-nav">
-                        <a href="">Возможности</a>
-                        <a href="">Потребности</a>
-                    </nav>
-                </div>
-                <div class="sidebar-block">
-                    <h3 class="title c-dark-gray fw-extra-bold">Статистика</h3>
-                    <ul class="favorme-about">
-                        <li>
-                            <a href="/">
-                                <div>
-                                    <img src="images/users/users-icon.png" alt=""/>
-                                </div>
-                                <div>
-                                    <p>пользователей</p>
-                                    <p>12 908</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <div>
-                                    <img src="images/capability-icon.png" alt=""/>
-                                </div>
-                                <div>
-                                    <p>возможностей</p>
-                                    <p>122 908</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <div>
-                                    <img src="images/icons/needs-icon.png" alt=""/>
-                                </div>
-                                <div>
-                                    <p>потребностей</p>
-
-                                    <p>101 941</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <div>
-                                    <img src="images/icons/city-icon.png" alt=""/>
-                                </div>
-                                <div>
-                                    <p>городов</p>
-
-                                    <p>53 127</p>
-                                </div>
-                            </a>
+                <div class="sidebar-nav">
+                    <ul class="share-nav">
+                        <li><a>
+                            <img src="images/icons/share.png" alt=""/></a></li>
+                        <li><a href="/">
+                            <img src="images/icons/addContact.png" alt=""/></a></li>
+                        <li><a>
+                            <img src="images/icons/addVP.png" alt=""/></a>
                         </li>
                     </ul>
-                </div>
-                <div class="sidebar-block app-links">
-                    <h3 class="title c-dark-gray">Установить приложение</h3>
-                    <a href="android"><img src="images/icons/google-play-icon.png" alt="google-play-icon"/></a>
-                    <a href="iphone"><img src="images/icons/app-store-icon.png" alt="app-store-icon"/></a>
-                </div>
-                <div class="sidebar-block send-app-block">
-                    <form id="send-app-form" action="">
-                        <p class="c-dark-gray">Отправить ссылку на скачивание приложения</p>
-                        <input id="send-app-tel" type="tel" class="mobile-number"/>
-                        <label class="button button-middle bg-blue" for="send-app-submit">Отправить</label>
-                        <input id="send-app-submit" type="submit"/>
-                    </form>
+                    <span class="vf-fixed-menu">
+                        <a href="/">
+                            <span class="name"><img src="images/v-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                        <a href="/">
+                            <span class="name"><img src="images/icons/p-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                        <a href="/">
+                            <span class="name"><img src="images/icons/message-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                    </span>
+                    <div class="sidebar-block">
+                        <nav class="sidebar-nav">
+                            <a href="/">Возможности <span>+15</span></a>
+                            <a href="/">Потребности</a>
+                            <a href="/">Диалоги</a>
+                            <a href="/">Друзья <span>+3</span></a>
+                            <a href="/">Активность</a>
+                            <a href="/">Настройки</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div class="regBlock ta-c">
+            <div class="wide-block ta-c">
                 <section class="c-body">
-                    <section class="bg-light-gray2 pad10-20">
-                        <h3 class="c-blue">Создать</h3>
+                    <section class="tabSection w-70perc f-l bdr-1-gray3">
+                        <section class="bg-light-gray2 pad10-20 ta-l">
+                            <h3 class="c-blue">Создать</h3>
+                            <ul class="tabs tabs-title ta-l">
+                                <section class="w-25part pad5-0">
+                                    <li class="button button-middle current w-50perc">Возможность</li>
+                                    <li class="button button-middle w-50perc">Потребность</li>
+                                </section>
+                            </ul>
+                        </section>
+                        <section>
+                            <div class="tab-box pad0-20">
+                                <section class="pad10-0 ta-l radio-c">
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Продам</a>
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сдам</a>
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Есть вакансия</a>
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Окажу услугу</a>
+                                </section>
+                                <section class="pad0 pos-rel">
+                                            <textarea class="chartLeftArea w-full" name="reg-vp-textarea"
+                                                      id="reg-vp-textarea-1"
+                                                      placeholder="Опишите возможность"></textarea>
+                                    <span class="charsLeft" id="charsLeft-1"></span>
+                                </section>
+                                <section class="pad10-0-20 ta-l">
+                                    <section class="bg-light-gray ta-l">
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-1.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-2.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-3.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-4.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-1.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-2.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-3.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-4.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                    </section>
+                                    <section class="pad5-0">
+                                        <section class="pad0">
+                                            <div class="progressbar dib w-half va-middle">
+                                                <div id="progressbar1"></div>
+                                                <script>
+                                                    $(function() {
+                                                        $( "#progressbar1" ).progressbar({
+                                                            value: 64,
+                                                            change: function() {
+                                                                if ($(this).attr('aria-valuenow') == 100)
+                                                                {
+                                                                    $(this).animate({opacity:0},500);
+                                                                    $(this).closest('.progressbar').prev('.imgBlock').removeClass('hide').css({opacity:0}).animate({opacity:1},500);
+                                                                }
+                                                            }
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+                                            <div class="dib w-half button button-slim c-black ta-l pad0-5">
+                                                <p class="dib w-auto pad0">Название фото</p>
+                                                <span class="dib w-auto"><i class="fa fa-close"></i></span>
+                                            </div>
+                                        </section>
+                                        <section class="pad0">
+                                            <div class="progressbar dib w-half va-middle">
+                                                <div id="progressbar2"></div>
+                                                <script>
+                                                    $(function() {
+                                                        $( "#progressbar2" ).progressbar({
+                                                            value: 5,
+                                                            change: function() {
+                                                                if ($(this).attr('aria-valuenow') == 100)
+                                                                {
+                                                                    $(this).animate({opacity:0},500);
+                                                                    $(this).closest('.progressbar').prev('.imgBlock').removeClass('hide').css({opacity:0}).animate({opacity:1},500);
+                                                                }
+                                                            }
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+                                            <div class="dib w-half button button-slim c-black ta-l pad0-5">
+                                                <p class="dib w-auto pad0">Название фото 2</p>
+                                                <span class="dib w-auto"><i class="fa fa-close"></i></span>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section class="pad5-0 ta-l">
+                                        <div class="dib w-half va-middle ta-l">
+                                            <select name="reg-city-choise" id="reg-city-choise-1" style="width: 160px;">
+                                                <option value=""></option>
+                                                <option>Москва, Россия</option>
+                                                <option>Киев, Украина</option>
+                                                <option>Минск, Беларусь</option>
+                                            </select>
+                                        </div>
+                                        <div class="dib w-half va-middle ta-r">
+                                            <input class="hidden-input" id="vp-add-photo-1" type="file"/>
+                                            <label class="button button-slim va-middle w-auto c-dark-gray pad0" for="vp-add-photo-1">
+                                                <i class="fa fa-camera"></i><span class="dib pad0-5">Добавить фото</span></label>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                            <div class="tab-box pad0-20 hidden">
+                                <section class="pad10-0 ta-l radio-c">
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Куплю</a>
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сниму</a>
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Ищу работу</a>
+                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Нужна услуга</a>
+                                </section>
+                                <section class="pad0 pos-rel">
+                                            <textarea class="chartLeftArea w-full" name="reg-vp-textarea"
+                                                      id="reg-vp-textarea-2"
+                                                      placeholder="Опишите потребность"></textarea>
+                                    <span class="charsLeft" id="charsLeft-2"></span>
+                                </section>
+                                <section class="pad10-0-20 ta-l">
+                                    <section class="bg-light-gray ta-l">
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-1.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-2.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-3.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                        <div class="dib pad10 pos-rel">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-4.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </div>
+                                    </section>
+                                    <section class="pad5-0 ta-l">
+                                        <div class="dib w-half va-middle ta-l">
+                                            <select name="reg-city-choise" id="reg-city-choise-2" style="width: 160px;">
+                                                <option value=""></option>
+                                                <option>Москва, Россия</option>
+                                                <option>Киев, Украина</option>
+                                                <option>Минск, Беларусь</option>
+                                            </select>
+                                        </div>
+                                        <div class="dib w-half va-middle ta-r">
+                                            <input class="hidden-input" id="vp-add-photo-2" type="file"/>
+                                            <label class="button button-slim va-middle w-auto c-dark-gray pad0" for="vp-add-photo-2">
+                                                <i class="fa fa-camera"></i><span class="dib pad0-5">Добавить фото</span></label>
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="w-30perc f-r">
+
                     </section>
                 </section>
                 <footer id="footer">

@@ -258,8 +258,15 @@
     width: 5%;
 }
 
-.w-10prec {
+.w-10perc {
     width: 10%;
+}
+.w-70perc {
+    width: 70%;
+}
+
+.w-30perc {
+    width: 30%;
 }
 
 .h500 {
@@ -356,6 +363,13 @@
 
 .bdb-1-gray2 {
     border-bottom: 1px solid #f2f2f2;
+}
+
+.bdl-1-gray3 {
+    border-left: 1px solid #e3e3e3;
+}
+.bdr-1-gray3 {
+    border-right: 1px solid #e3e3e3;
 }
 
 .bdb-1-blue {

@@ -57,14 +57,14 @@
     border-radius: 5px;
 }
 
-.box {
+.tab-box {
     display: inline-block;
     text-align: left;
     width: 100%;
     opacity: 1;
 }
 
-.box.hidden {
+.tab-box.hidden {
     display: none;
     opacity: 0;
 }

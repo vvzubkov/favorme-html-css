@@ -2321,7 +2321,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 // install the selection initializer
                 opts.initSelection = function (element, callback) {
                     var selected = element.find("option").filter(function() { return this.selected && !this.disabled });
-                    // a single select box always has a value, no need to null check 'selected'
+                    // a single select tab-box always has a value, no need to null check 'selected'
                     callback(self.optionToData(selected));
                 };
             } else if ("data" in opts) {
@@ -2399,7 +2399,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 }
             }
 
-            // hide the search box if this is the first we got the results and there are enough of them for search
+            // hide the search tab-box if this is the first we got the results and there are enough of them for search
 
             if (initial === true) {
                 var min = this.opts.minimumResultsForSearch;
@@ -2417,7 +2417,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
             this.dropdown.find(".select2-search").toggleClass("select2-search-hidden", !showSearchInput);
             this.dropdown.find(".select2-search").toggleClass("select2-offscreen", !showSearchInput);
-            //add "select2-with-searchbox" to the container if search box is shown
+            //add "select2-with-searchbox" to the container if search tab-box is shown
             $(this.dropdown, this.container).toggleClass("select2-with-searchbox", showSearchInput);
         },
 
@@ -2879,7 +2879,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
             if (placeholder !== undefined  && this.getVal().length === 0 && this.search.hasClass("select2-focused") === false) {
                 this.search.val(placeholder).addClass("select2-default");
-                // stretch the search box to full width of the container so as much of the placeholder is visible as possible
+                // stretch the search tab-box to full width of the container so as much of the placeholder is visible as possible
                 // we could call this.resizeSearch(), but we do not because that requires a sizer and we do not want to create one so early because of a firefox bug, see #944
                 this.search.width(maxWidth > 0 ? maxWidth : this.container.css("width"));
             } else {
