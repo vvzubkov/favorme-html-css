@@ -70,6 +70,10 @@
     padding: 10px 20px !important;
 }
 
+.pad20-10 {
+    padding: 20px 10px !important;
+}
+
 .pad0-0-5 {
     padding: 0 0 5px !important;
 }
