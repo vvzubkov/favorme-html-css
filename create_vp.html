@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Create VP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!------ CSS ----->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/add/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/add/nprogress.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/modifier.css"/>
+
+    <!------ JS ----->
+    <script type="text/javascript" src="js/add/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/add/jquery-ui-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/add/nprogress.js"></script>
+    <script type="text/javascript" src="js/add/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/add/select.js"></script>
+    <script type="text/javascript" src="js/add/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/add/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="js/add/jquery.limit.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/add/icheck.js"></script>
+    <script type="text/javascript" src="js/add/jquery.clearsearch.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/source.js"></script>
+    <script type="text/javascript" src="js/gs.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="c-block">
+            <div class="dib f-l w-50perc ta-l">
+                <div class="logo-block">
+                    <a class="logo" href="/">
+                        <img src="images/logo/logo.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="sTop-button" class="clear" data-scroll="0">
+                <span class="up active">
+                    <i class="fa fa-chevron-up"></i>
+                    <p>Вверх</p>
+                </span>
+                <span class="down">
+                    <i class="fa fa-chevron-down"></i>
+                </span>
+    </div>
+    <main id="main">
+        <div class="c-block">
+            <div class="sideBar left ta-l">
+                <div class="sidebar-block">
+                    <nav class="sidebar-nav">
+                        <a href="">Возможности</a>
+                        <a href="">Потребности</a>
+                    </nav>
+                </div>
+                <div class="sidebar-block">
+                    <h3 class="title c-dark-gray fw-extra-bold">Статистика</h3>
+                    <ul class="favorme-about">
+                        <li>
+                            <a href="/">
+                                <div>
+                                    <img src="images/users/users-icon.png" alt=""/>
+                                </div>
+                                <div>
+                                    <p>пользователей</p>
+                                    <p>12 908</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <div>
+                                    <img src="images/capability-icon.png" alt=""/>
+                                </div>
+                                <div>
+                                    <p>возможностей</p>
+                                    <p>122 908</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <div>
+                                    <img src="images/icons/needs-icon.png" alt=""/>
+                                </div>
+                                <div>
+                                    <p>потребностей</p>
+
+                                    <p>101 941</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <div>
+                                    <img src="images/icons/city-icon.png" alt=""/>
+                                </div>
+                                <div>
+                                    <p>городов</p>
+
+                                    <p>53 127</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-block app-links">
+                    <h3 class="title c-dark-gray">Установить приложение</h3>
+                    <a href="android"><img src="images/icons/google-play-icon.png" alt="google-play-icon"/></a>
+                    <a href="iphone"><img src="images/icons/app-store-icon.png" alt="app-store-icon"/></a>
+                </div>
+                <div class="sidebar-block send-app-block">
+                    <form id="send-app-form" action="">
+                        <p class="c-dark-gray">Отправить ссылку на скачивание приложения</p>
+                        <input id="send-app-tel" type="tel" class="mobile-number"/>
+                        <label class="button button-middle bg-blue" for="send-app-submit">Отправить</label>
+                        <input id="send-app-submit" type="submit"/>
+                    </form>
+                </div>
+            </div>
+            <div class="regBlock ta-c">
+                <section class="c-body">
+                    <section class="bg-light-gray2 pad10-20">
+                        <h3 class="c-blue">Создать</h3>
+                    </section>
+                </section>
+                <footer id="footer">
+                    <nav class="w-34part ta-l">
+                        <a href="/">О проекте</a>
+                        <a href="/">Правила</a>
+                        <a class="md-trigger" data-modal="callBack">Обратная связь</a>
+                    </nav>
+                    <div class="copyright w-14part ta-r"><i class="fa fa-copyright"></i> Favorme 2014</div>
+                </footer>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div class="md-modal md-effect-5" id="callBack">
+    <div class="md-content" style="background: none; width:480px;">
+        <form action="">
+            <header class="pad10-0">
+                <div class="dib w-full pad10-0">
+                    <h3 class="w-95perc ta-l">Обратная связь</h3>
+                    <a class="w-auto md-close pad0"><i class="fa fa-close"></i></a>
+                </div>
+            </header>
+            <main>
+                <p class="dib w-full ta-l">В случае возникновения проблем, вопросов и предложений можете описать их
+                    здесь</p>
+
+                <div action="" class="dib w-full pad10-0 ta-l">
+                    <textarea name="" id="" class="dib w-full pad10" placeholder="Опишите проблему, вопрос, предложение"
+                              style="height:60px"></textarea>
+                    <input type="email" class="w-13part pad0-10" placeholder="Ваш Email"/>
+                </div>
+            </main>
+            <footer>
+                <div class="dib w-full ta-r">
+                    <button type="button" class="button w-auto bg-blue"><p class="pad0-10">Отправить</p></button>
+                </div>
+            </footer>
+        </form>
+    </div>
+</div>
+
+<div class="md-overlay"></div>
+
+<script src="js/modalEffects/classie.js"></script>
+<script src="js/modalEffects/modalEffects.js"></script>
+<script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/modalEffects/';
+</script>
+<script src="js/modalEffects/cssParser.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#reg-city-choise-1").select2({
+            placeholder: "Выберите город",
+            allowClear: true
+        });
+
+        $('#reg-vp-textarea-1').limit('160', '#charsLeft-1');
+
+        $("#reg-city-choise-2").select2({
+            placeholder: "Выберите город",
+            allowClear: true
+        });
+
+        $('#reg-vp-textarea-2').limit('160', '#charsLeft-2');
+
+        $(function () {
+            var _this = $('.charsLeft');
+            var height = _this.closest('.pos-rel')[0].offsetHeight - 34;
+            var width = _this.closest('.pos-rel')[0].offsetWidth - 27;
+            var top = _this.closest('.pos-rel')[0].offsetTop;
+            _this.css({left: width, top: height});
+        });
+    });
+</script>
+
+</body>
+</html>
