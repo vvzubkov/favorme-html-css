@@ -120,7 +120,7 @@
 }
 
 .pad10 {
-    padding: 10px;
+    padding: 10px !important;
 }
 
 .pad-l-60px {
@@ -205,7 +205,7 @@
 
 /*----------- Width option -----------*/
 .w-auto {
-    width: auto;
+    width: auto !important;
 }
 
 .w-full {
@@ -217,7 +217,7 @@
 }
 
 .w-13part {
-    width: 32%;
+    width: 32.5% !important;
 }
 
 .w-23part {
@@ -229,7 +229,7 @@
 }
 
 .w-14part {
-    width: 24%;
+    width: 24% !important;
 }
 
 .w-15part {
