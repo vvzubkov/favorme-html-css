@@ -94,10 +94,10 @@
             </div>
             <div class="wide-block ta-c">
                 <section class="c-body">
-                    <section class="tabSection w-70perc f-l bdr-1-gray3">
-                        <section class="bg-light-gray2 pad10-20 ta-l">
+                    <section class="tabSection w-70perc f-l bdr-1-gray3" tabs="1">
+                        <section class="bg-light-gray2 pad10-20 ta-l bdb-1-gray3">
                             <h3 class="c-blue">Создать</h3>
-                            <ul class="tabs tabs-title ta-l">
+                            <ul class="tabs tabs-title ta-l" tabs="1">
                                 <section class="w-25part pad5-0">
                                     <li class="button button-middle current w-50perc">Возможность</li>
                                     <li class="button button-middle w-50perc">Потребность</li>
@@ -105,73 +105,80 @@
                             </ul>
                         </section>
                         <section>
-                            <div class="tab-box pad0-20">
-                                <section class="pad10-0 ta-l radio-c">
-                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Продам</a>
-                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сдам</a>
-                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Есть вакансия</a>
-                                    <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Окажу услугу</a>
+                            <div class="tab-box pad0" tabs="1">
+                                <section class="tabSection" tabs="2">
+                                    <ul class="tabs tabs-title ta-l bdb-1-gray3 pad0-20" tabs="2">
+                                        <section class="w-15part pad0">
+                                            <li class="va-middle current">Свою</li>
+                                            <li class="va-middle">Друга</li>
+                                        </section>
+                                    </ul>
+                                    <section class="tab-box pad10-20 ta-l radio-c" tabs="2">
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Продам</a>
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сдам</a>
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Есть вакансия</a>
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Окажу услугу</a>
+                                    </section>
+                                    <section class="tab-box hidden pad10-20 ta-l radio-c" tabs="2">
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Продает</a>
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сдает</a>
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Есть вакансия</a>
+                                        <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Окажет услугу</a>
+                                    </section>
                                 </section>
-                                <section class="pad0 pos-rel">
+                                <section class="pad0-20">
+                                    <section class="pos-rel">
                                             <textarea class="chartLeftArea w-full" name="reg-vp-textarea"
                                                       id="reg-vp-textarea-1"
                                                       placeholder="Опишите возможность"></textarea>
-                                    <span class="charsLeft" id="charsLeft-1"></span>
+                                        <span class="charsLeft" id="charsLeft-1"></span>
+                                    </section>
                                 </section>
                                 <section class="pad10-0-20 ta-l">
-                                    <section class="bg-light-gray ta-l">
-                                        <div class="dib pad10 pos-rel">
+                                    <ul class="vp-photo-list ta-l pad0-20">
+                                        <li class="vp-photo-list-el">
                                             <div class="vp-photo-mask">
                                                 <img src="images/vp-photo-1.png" alt=""/>
                                             </div>
                                             <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                        <div class="dib pad10 pos-rel">
-                                            <div class="vp-photo-mask">
-                                                <img src="images/vp-photo-2.png" alt=""/>
-                                            </div>
-                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                        <div class="dib pad10 pos-rel">
-                                            <div class="vp-photo-mask">
-                                                <img src="images/vp-photo-3.png" alt=""/>
-                                            </div>
-                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                        <div class="dib pad10 pos-rel">
-                                            <div class="vp-photo-mask">
-                                                <img src="images/vp-photo-4.png" alt=""/>
-                                            </div>
-                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                        <div class="dib pad10 pos-rel">
+                                        </li>
+                                        <li class="vp-photo-list-el">
                                             <div class="vp-photo-mask">
                                                 <img src="images/vp-photo-1.png" alt=""/>
                                             </div>
                                             <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                        <div class="dib pad10 pos-rel">
+                                        </li>
+                                        <li class="vp-photo-list-el">
                                             <div class="vp-photo-mask">
-                                                <img src="images/vp-photo-2.png" alt=""/>
+                                                <img src="images/vp-photo-1.png" alt=""/>
                                             </div>
                                             <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                        <div class="dib pad10 pos-rel">
+                                        </li>
+                                        <li class="vp-photo-list-el">
                                             <div class="vp-photo-mask">
-                                                <img src="images/vp-photo-3.png" alt=""/>
+                                                <img src="images/vp-photo-1.png" alt=""/>
                                             </div>
                                             <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                        <div class="dib pad10 pos-rel">
+                                        </li>
+                                        <li class="vp-photo-list-el">
                                             <div class="vp-photo-mask">
-                                                <img src="images/vp-photo-4.png" alt=""/>
+                                                <img src="images/vp-photo-1.png" alt=""/>
                                             </div>
                                             <span class="del-img-col"><i class="fa fa-close"></i></span>
-                                        </div>
-                                    </section>
-                                    <section class="pad5-0">
-                                        <section class="pad0">
-                                            <div class="progressbar dib w-half va-middle">
+                                        </li>
+                                        <li class="vp-photo-list-el">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-1.png" alt=""/>
+                                            </div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                        </li>
+                                        <li class="vp-photo-list-el">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-1.png" alt=""/>
+                                            </div>
+                                            <div class="vp-photo-mask-overlay"></div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                            <div class="progressbar dib w-90perc va-middle">
                                                 <div id="progressbar1"></div>
                                                 <script>
                                                     $(function() {
@@ -188,13 +195,14 @@
                                                     });
                                                 </script>
                                             </div>
-                                            <div class="dib w-half button button-slim c-black ta-l pad0-5">
-                                                <p class="dib w-auto pad0">Название фото</p>
-                                                <span class="dib w-auto"><i class="fa fa-close"></i></span>
+                                        </li>
+                                        <li class="vp-photo-list-el">
+                                            <div class="vp-photo-mask">
+                                                <img src="images/vp-photo-1.png" alt=""/>
                                             </div>
-                                        </section>
-                                        <section class="pad0">
-                                            <div class="progressbar dib w-half va-middle">
+                                            <div class="vp-photo-mask-overlay"></div>
+                                            <span class="del-img-col"><i class="fa fa-close"></i></span>
+                                            <div class="progressbar dib w-90perc va-middle">
                                                 <div id="progressbar2"></div>
                                                 <script>
                                                     $(function() {
@@ -211,12 +219,8 @@
                                                     });
                                                 </script>
                                             </div>
-                                            <div class="dib w-half button button-slim c-black ta-l pad0-5">
-                                                <p class="dib w-auto pad0">Название фото 2</p>
-                                                <span class="dib w-auto"><i class="fa fa-close"></i></span>
-                                            </div>
-                                        </section>
-                                    </section>
+                                        </li>
+                                    </ul>
                                     <section class="pad5-0 ta-l">
                                         <div class="dib w-half va-middle ta-l">
                                             <select name="reg-city-choise" id="reg-city-choise-1" style="width: 160px;">
@@ -234,7 +238,7 @@
                                     </section>
                                 </section>
                             </div>
-                            <div class="tab-box pad0-20 hidden">
+                            <div class="tab-box pad0 hidden" tabs="1">
                                 <section class="pad10-0 ta-l radio-c">
                                     <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Куплю</a>
                                     <a class="button button-slim w-auto bd-1-green bd-r5 c-gray trigger-radio">Сниму</a>
@@ -294,7 +298,8 @@
                         </section>
                     </section>
                     <section class="w-30perc f-r">
-
+                        <div class="tab-box pad10" tabs="3">tabs2-1</div>
+                        <div class="tab-box pad10 hidden" tabs="3">tabs2-2</div>
                     </section>
                 </section>
                 <footer id="footer">

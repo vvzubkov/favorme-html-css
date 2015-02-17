@@ -286,10 +286,11 @@ $(window).on('load',function(){
 
     $(function() {
         $('.tabs').on('click', 'li:not(.current)', function() {
-            $(this).addClass('current').siblings().removeClass('current')
-                .closest('.tabSection').find('.tab-box').eq($(this).index())
-                .animate({opacity:1},300,function(){$(this).removeClass('hidden')})
-                .siblings('.tab-box').animate({opacity:0},300,function(){$(this).addClass('hidden')});
+            var attr = $(this).closest('.tabs').attr('tabs');
+            $(this).addClass('current').siblings().removeClass('current');
+            $('.tab-box[tabs="'+attr+'"]').eq($(this).index()).animate({opacity:1},300,
+                    function(){$(this).removeClass('hidden')}).siblings('.tab-box[tabs="'+attr+'"]')
+                    .animate({opacity:0},300,function(){$(this).addClass('hidden')});
         })
     });
 });
