@@ -165,7 +165,7 @@ $(window).on('load',function(){
 
     });
 
-    $(document).on('click', '.soc-icon-trigger', function(e){
+    $(document).on('click', '.icon-el-trigger', function(e){
         e.preventDefault();
         var $this = $(this);
         if ($this.hasClass('logged')) $this.removeClass('logged');

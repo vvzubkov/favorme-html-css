@@ -305,6 +305,10 @@
     color: #878889 !important;
 }
 
+.c-dark-gray2 {
+    color: #4b4b4b !important;
+}
+
 .c-black {
     color: #000 !important;
 }
@@ -339,6 +343,11 @@
 
 .bg-light-gray2 {
     background-color: #f9f9f9;
+}
+
+
+.bg-light-gray3 {
+    background-color: #fafafa;
 }
 
 .bg-light-blue {
@@ -388,6 +397,10 @@
     border-bottom: 1px solid #3eb6e2;
 }
 
+.bdb-none
+{
+    border-bottom: none;
+}
 .grayscale {
     filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
     filter: grayscale(100%); /* Current draft standard */
