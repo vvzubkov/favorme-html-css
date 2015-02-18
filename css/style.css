@@ -188,7 +188,7 @@ input.hidden-input + label {
     transition: all 300ms;
 }
 
-.del-img-col
+.vp-photo-del
 {
     position: absolute;
     top:-8px;
@@ -206,7 +206,7 @@ input.hidden-input + label {
     font-size: 11px;
     text-align: center;
 }
-.del-img-col:hover
+.vp-photo-del:hover
 {
     opacity: 1;
     transition: opacity 300ms;

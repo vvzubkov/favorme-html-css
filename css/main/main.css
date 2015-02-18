@@ -53,7 +53,7 @@
 
 .img-col,
 .data-col {
-    display: table-cell !important;
+    display: table-cell;
     vertical-align: top !important;
     line-height: normal !important;
     position: relative;

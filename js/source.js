@@ -267,9 +267,9 @@ $(window).on('load',function(){
         });
     });
 
-    $(document).on('click', '.del-img-col', function(e){
+    $(document).on('click', '.vp-photo-del', function(e){
         e.preventDefault();
-        $(this).parent('div').animate({opacity:0},300, function(){
+        $(this).closest('.vp-photo-list-el').animate({opacity:0},300, function(){
             $(this).remove();
         });
     });
