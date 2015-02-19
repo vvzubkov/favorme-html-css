@@ -274,6 +274,23 @@ $(window).on('load',function(){
         });
     });
 
+    $(document).on('click', '.shift-trigger', function(e){
+        e.preventDefault();
+        var _this = $(this);
+        var shift = $(this).attr('shift');
+        var block = $('.shift-c');
+        for (var i=0; i < block.length; i++)
+        {
+            if (!$(block[i]).hasClass('shift-hidden'))
+            {
+                $(block[i]).animate({opacity:0}, 300, function(){
+                    $(this).css({left:$(this).closest('.over-hidden')[0].offsetWidth}).addClass('shift-hidden');
+                    $('.shift-c[shift="'+shift+'"]').animate({opacity:1, left:-1},300).removeClass('shift-hidden');
+                })
+            }
+        }
+    });
+
     //
     //$(function() {
     //    $('.tabs').on('click', 'li:not(.current)', function() {

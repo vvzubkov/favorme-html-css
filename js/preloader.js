@@ -67,6 +67,16 @@ $(window).on('load', function () {
 
     $('.scroll-list').addClass('scrollbar-dynamic').scrollbar();
 
+    $(function(){
+        var block = $('.shift-c');
+        for (var i=0; i < block.length; i++)
+        {
+            if ($(block[i]).hasClass('shift-hidden'))
+                $(block[i]).css({top:0,left:$(block[i]).closest('.over-hidden')[0].offsetWidth, opacity:0});
+            else $(block[i]).css({top:0,left:'-1px'});
+        }
+    });
+
     $(function () {
         var $this = $('.modal-abs');
         if ($this.hasClass('modal-abs-r')) $this.css({

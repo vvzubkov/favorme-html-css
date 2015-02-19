@@ -26,13 +26,19 @@
     position: relative;
     transition: all 500ms;
     text-align: center;
-    /*border-bottom: 1px solid #cccccc;*/
+}
+
+.tabs.tabs-underlined li {
+    border-bottom: 1px solid #cccccc;
 }
 
 .tabs li.current {
     color: #3db6e1;
     font-weight: 600;
-    /*border-bottom: 2px solid #3db6e1;*/
+}
+
+.tabs.tabs-underlined li.current {
+    border-bottom: 2px solid #3db6e1;
 }
 
 .tabs.tabs-blue li {
@@ -100,17 +106,18 @@
     float: left;
     letter-spacing: normal;
 }
-.tabs-title .button:first-of-type
-{
+
+.tabs-title .button:first-of-type {
     border-left: 1px solid #3db6e1;
     border-right: none;
 }
-.tabs-title .button:last-of-type
-{
+
+.tabs-title .button:last-of-type {
     border-right: 1px solid #3db6e1;
     border-left: none;
 
 }
+
 .tabs-title .button.current {
     background: #3db6e1;
     color: #ffffff !important;

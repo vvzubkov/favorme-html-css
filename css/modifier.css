@@ -7,8 +7,6 @@
 
 .db {
     display: block;
-    padding: 0;
-    margin: 0;
 }
 
 .dtc {
@@ -105,6 +103,10 @@
 
 .pad5-0 {
     padding: 5px 0 !important;
+}
+
+.pad4-0 {
+    padding: 4px 0 !important;
 }
 
 .pad5-10 {
@@ -280,6 +282,11 @@
     height: 500px;
 }
 
+/*------ Height option -------*/
+.h-full
+{
+    height:100%;
+}
 /*---------- Color -------------*/
 .c-orange {
     color: #F6881F !important;
@@ -345,7 +352,6 @@
     background-color: #f9f9f9;
 }
 
-
 .bg-light-gray3 {
     background-color: #fafafa;
 }
@@ -393,14 +399,18 @@
     border-bottom: 1px solid #e3e3e3;
 }
 
+.bdt-1-gray3 {
+    border-top: 1px solid #e3e3e3;
+}
+
 .bdb-1-blue {
     border-bottom: 1px solid #3eb6e2;
 }
 
-.bdb-none
-{
+.bdb-none {
     border-bottom: none;
 }
+
 .grayscale {
     filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
     filter: grayscale(100%); /* Current draft standard */
