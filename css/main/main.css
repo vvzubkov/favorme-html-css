@@ -19,6 +19,257 @@
 @import "../add/intlTelInput.css";
 @import "../add/component.css";
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: font-size 300ms;
+    -moz-transition: font-size 300ms;
+    -ms-transition: font-size 300ms;
+    -o-transition: font-size 300ms;
+    transition: font-size 300ms;
+    color: #474747;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#wrap {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section,
+header,
+main,
+footer {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+section {
+    display: inline-block;
+    margin: 0;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+p {
+    display: inline-block;
+}
+
+form {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 5px;
+}
+
+select {
+    height: 32px;
+    font-size: 11px;
+    color: #444444;
+    width: 100%;
+    padding: 0 4%;
+    border: 1px solid #bdcbd1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+input {
+    width: 100%;
+    padding: 0 4%;
+    border: 1px solid #bdcbd1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: OpenSansRegular, sans-serif;
+    font-weight: 600;
+    height: 32px;
+    margin: 5px 0;
+    color: #484848;
+}
+
+input:focus,
+input:hover {
+    border-color: #3fb6e3;
+    transition: border-color 300ms;
+}
+
+input[type=submit] {
+    display: none;
+}
+
+input[type=tel] {
+    font-size: 11px;
+    font-weight: 300;
+
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    color: #484848;
+    font-size: 0.917em;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 0 10px;
+    color: #ffffff;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.button-ultraslim {
+    /*height: 24px;*/
+    line-height: 20px !important;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.55px !important;
+}
+
+.button-slim {
+    /*height: 24px;*/
+    line-height: 24px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.55px;
+}
+
+.button-middle {
+    /*height: 32px;*/
+    line-height: 32px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.button-bold {
+    /*height: 48px;*/
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.button:hover {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+#send-app-form p {
+    font-size: 0.917em;
+    padding: 0 0 10px;
+}
+
+input.hidden-input {
+    display: none;
+}
+
+input.hidden-input + label {
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+}
+
+.trigger-radio.selected {
+    opacity: 1;
+    background: #e8f7f1;
+    transition: all 300ms;
+}
+
+.vp-photo-del {
+    position: absolute;
+    top: -8px;
+    left: 36px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #a7a7a7;
+    opacity: 1;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+}
+
+.vp-photo-del:hover {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+input[tel]::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+{
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 11px;
+    color: #949494;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+input[tel]:-moz-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 11px;
+    color: #949494;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+input[tel]:-ms-input-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 11px;
+    color: #949494;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+input[tel]::-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    font-family: OpenSansRegular, sans-serif;
+    font-size: 11px;
+    color: #949494;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
 .c-block {
     display: inline-block;
     margin: 0;
@@ -27,11 +278,12 @@
     text-align: center;
     position: relative;
 }
-.c-body
-{
+
+.c-body {
     border: 1px solid #e3e3e3;
     border-top: none;
 }
+
 .content,
 .regBlock,
 .wide-block {

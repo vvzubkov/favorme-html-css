@@ -1,7 +1,7 @@
 /*----- HEADER -------*/
 #header {
     background: #3db6e1;
-    height: 50px;
+    height: 40px;
     position: relative;
     z-index: 10;
 }
@@ -22,14 +22,14 @@
     display: inline-block;
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 40px;
     vertical-align: middle;
     position: relative;
 }
 
 #header .logo-block a {
     display: table-cell;
-    height: 50px;
+    height: 40px;
     vertical-align: middle;
 }
 
@@ -62,7 +62,7 @@
 .user-profile {
     display: inline-block;
     cursor: pointer;
-    padding: 5px 0;
+    padding: 0;
 }
 
 .user-profile .user-name,

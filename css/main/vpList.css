@@ -43,7 +43,8 @@
 }
 
 .vp-content .footer {
-    background: #f7f7f7;
+    /*background: #f7f7f7;*/
+    background: #fafafa;
     border-bottom: 1px solid #e3e3e3;
     padding: 5px;
     position: relative;

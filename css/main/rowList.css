@@ -12,7 +12,8 @@
     position: relative;
 }
 
-.row-list-el:last-of-type {
+.row-list-el:last-of-type,
+.row-list-el:last-of-type .footer {
     border: none;
 }
 
