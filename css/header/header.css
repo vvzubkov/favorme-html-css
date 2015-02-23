@@ -10,14 +10,6 @@
     background: #3db6e1;
 }
 
-/*#header .ta-r,*/
-/*#header .ta-l {*/
-    /*height: 50px;*/
-    /*vertical-align: middle;*/
-    /*width: 490px;*/
-    /*float: left;*/
-/*}*/
-
 #header .logo-block {
     display: inline-block;
     margin: 0;
@@ -34,9 +26,8 @@
 }
 
 #header .logo-block a.logo {
-    width: 190px;
+    width: 178px;
     padding: 0 0 0 10px;
-    /*transform: scale(1.3);*/
 }
 
 #header .logo-block > .logo-f {

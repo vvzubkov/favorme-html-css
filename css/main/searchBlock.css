@@ -14,6 +14,12 @@
     position: relative;
 }
 
+.search-block-top {
+    background: #ffffff url('../../images/icons/search-icon-gray.png') no-repeat 10px 7px;
+    border: none;
+    height: 28px;
+}
+
 .clear_input_div {
     position: relative;
     margin-right: 20px;
@@ -64,12 +70,19 @@
     font-weight: 300;
 }
 
-.search-line {
+.search-block .search-line {
     border: none;
     font-family: OpenSansRegular, sans-serif;
     font-size: 12px;
     font-weight: 400;
     padding: 0;
     margin: 0;
+}
+
+.search-block .search-line {
     height: 30px;
+}
+
+.search-block-top .search-line {
+    height: 28px;
 }

@@ -105,6 +105,11 @@
     padding: 0 5px !important;
 }
 
+
+.pad0-2 {
+    padding: 0 2px !important;
+}
+
 .pad5-0 {
     padding: 5px 0 !important;
 }
@@ -287,10 +292,10 @@
 }
 
 /*------ Height option -------*/
-.h-full
-{
-    height:100%;
+.h-full {
+    height: 100%;
 }
+
 /*---------- Color -------------*/
 .c-orange {
     color: #F6881F !important;
