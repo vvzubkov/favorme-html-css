@@ -36,13 +36,13 @@ $(window).on('load',function(){
     window.onscroll = function () {
         if (window.pageYOffset > 320)
         {
-            if($('.c-block > .content').length) $('.vf-fixed-menu').css({left:$('.c-block .content').offset().left-60}).show();
+            if($('.c-block > .content').length) $('.sidebar-nav-fixed').css({left:$('.c-block .content').offset().left-60}).show();
             $(sideBarButton).show();
         }
         else
         {
             $(sideBarButton).hide();
-            $('.vf-fixed-menu').hide();
+            $('.sidebar-nav-fixed').hide();
         }
     };
     $(sideBarButton).on('click', function (e){

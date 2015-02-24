@@ -286,7 +286,7 @@ textarea::-moz-placeholder {
 
 .content,
 .regBlock,
-.wide-block {
+.content-wide {
     display: block;
     position: relative;
     float: left;
@@ -298,7 +298,7 @@ textarea::-moz-placeholder {
 }
 
 .regBlock,
-.wide-block {
+.content-wide {
     width: 800px;
     margin: 0 0 0 20px;
 }
