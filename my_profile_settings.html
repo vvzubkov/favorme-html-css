@@ -2,7 +2,7 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>My profile - Edit</title>
+    <title>My profile - Settings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!------ CSS ----->
@@ -120,156 +120,166 @@
             <div class="content content-wide ta-c">
                 <section class="c-body bg-light-gray2">
                     <section class="pad20-20">
-                        <h1 class="fz14 ta-l c-blue">Редактирование профиля</h1>
+                        <h1 class="fz14 ta-l c-blue">Настройки безопасности</h1>
                     </section>
                     <form class="reg-form pad0-20">
-                        <section class="pad10-0">
-                            <h3 class="c-black2 bdb-1-gray3 ta-l fw-regular pad5-0">Личные данные</h3>
-                                <section class="ta-l pad10-0">
-                                    <label class="w-13part va-middle">Подключите социальные сети</label>
-                                    <div class="dib w-auto icon-list va-middle">
-                                        <a class="icon-el icon-el-trigger"><img src="images/icons/vk-icon.png" alt=""/></a>
-                                        <a class="icon-el icon-el-trigger"><img src="images/icons/fb-icon.png" alt=""/></a>
-                                        <a class="icon-el icon-el-trigger"><img src="images/icons/od-icon.png" alt=""/></a>
-                                        <a class="icon-el icon-el-trigger"><img src="images/icons/twitter-icon.png" alt=""/></a>
+                        <section>
+                            <h3 class="c-black2 bdb-1-gray3 ta-l fw-regular pad5-0">Номер телефона</h3>
+                            <section class="pad20-0">
+                                <section class="ta-l">
+                                    <label class="w-13part">Телефон</label>
+                                    <div class="dib w-auto va-middle pad5-0">
+                                        <input class="mobile-number" type="tel" required/>
                                     </div>
-                                    <a href="#" class="button-ultraslim c-blue pad0-10 va-middle">Подключить другую</a>
+                                    <div class="dib ta-l w-25part">
+                                        <a href="/" class="pad0-10 c-blue">Изменить номер</a>
+                                    </div>
                                 </section>
                                 <section class="ta-l">
-                                    <label class="w-13part ta-r">Имя</label>
-
+                                    <label class="w-13part">Код подтверждения</label>
                                     <div class="dib w-auto va-middle pad0">
-                                        <input type="text" required/>
+                                        <input class="input-alert" type="text"/>
                                     </div>
-                                    <div class="dib w-25part">
-                                        <span class="required-icon">*</span>
-
-                                        <p class="input-alert pad0-10">Поле не заполнено</p>
+                                    <div class="dib ta-l w-25part">
+                                        <p class="input-alert pad0-10">Неверный код подтверждения</p>
                                     </div>
                                 </section>
                                 <section class="ta-l">
-                                    <label class="w-13part">Фамилия</label>
-
-                                    <div class="dib w-auto va-middle pad0">
-                                        <input type="text" required/>
-                                    </div>
-                                    <div class="dib w-25part">
-                                        <span class="required-icon">*</span>
-
-                                        <p class="input-alert pad0-10">Поле не заполнено</p>
+                                    <div class="dib ta-r w-35part pad5-0">
+                                        <i class="fa fa-check fz16 c-green va-middle"></i><p class="c-green pad0-5">Номер телефона успешно изменен</p>
                                     </div>
                                 </section>
                                 <section class="ta-l">
-                                    <label class="w-13part">Пол</label>
-
-                                    <div class="dib va-middle pad0" style="width:200px;">
-                                        <select name="gender" id="gender">
-                                            <option value="male">Не выбрано</option>
-                                            <option value="male">Мужчина</option>
-                                            <option value="female">Женщина</option>
-                                        </select>
-                                    </div>
-                                    <div class="dib w-25part">
-                                        <span class="required-icon">*</span>
-
-                                        <p class="input-alert pad0-10">Пол не выбран</p>
-                                    </div>
-                                </section>
-                                <section class="ta-l">
-                                    <label class="w-13part">Дата рождения</label>
-
-                                    <div class="dib va-middle pad0" style="width:50px;">
-                                        <select name="day" id="day">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                        </select>
-                                    </div>
-                                    <div class="dib va-middle pad0" style="width:146px;">
-                                        <select name="month" id="month">
-                                            <option value="1">Январь</option>
-                                            <option value="1">Февраль</option>
-                                            <option value="1">Март</option>
-                                            <option value="1">Апрель</option>
-                                        </select>
-                                    </div>
-                                    <div class="dib va-middle pad0" style="width:70px;">
-                                        <select name="year" id="year">
-                                            <option value="1">1995</option>
-                                            <option value="1">1996</option>
-                                            <option value="1">1997</option>
-                                            <option value="1">1998</option>
-                                        </select>
-                                    </div>
-                                </section>
-                                <div class="load-avatar">
-                                    <div class="img-col">
-                                        <div class="img-mask avatar">
-                                            <img src="images/users/avatar-def.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <div class="dib w-full ta-c">
-                                        <input class="hidden-input" id="add-user-photo" type="file">
-                                        <label class="button button-ultraslim va-middle w-auto c-blue pad0 mar0"
-                                               for="add-user-photo">
-                                            <span class="dib pad0-5">Выбрать фото</span></label>
-                                    </div>
-                                </div>
-                            </section>
-                        <section class="pad10-0">
-                            <h3 class="c-black2 bdb-1-gray3 ta-l fw-regular pad5-0">Контактные данные</h3>
-                            <section class="pad5-0">
-                                <section class="ta-l pad5-0">
-                                    <label class="w-13part va-middle">Страна</label>
-                                    <select id="countryFilter" style="width: 200px;">
-                                        <option>Россия</option>
-                                        <option>Украина</option>
-                                        <option>Беларусь</option>
-                                    </select>
-                                    <div class="dib w-25part">
-                                        <span class="required-icon">*</span>
-
-                                        <p class="input-alert pad0-10">Страна не выбрана</p>
-                                    </div>
-                                </section>
-                                <section class="ta-l pad5-0">
-                                    <label class="w-13part va-middle">Город</label>
-                                    <select id="cityFilter" style="width: 200px;">
-                                        <option value=""></option>
-                                        <option data-country="UA">Киев</option>
-                                        <option data-country="UA">Львов</option>
-                                        <option data-country="RU">Москва</option>
-                                        <option data-country="BL">Минск</option>
-                                        <option data-country="RU">Питер</option>
-                                        <option data-country="UA">Донецк</option>
-                                    </select>
-                                    <div class="dib w-25part">
-                                        <span class="required-icon">*</span>
-                                        <p class="input-alert pad0-10">Город не выбран</p>
-                                    </div>
-                                </section>
-                                <section class="ta-l">
-                                    <label class="w-13part va-middle">E-mail</label>
-                                    <div class="dib w-autova-m">
-                                        <input type="email"/>
-                                    </div>
-                                </section>
-                                <section class="ta-l">
-                                    <div class="dib w-13part"></div>
-                                    <div class="dib w-auto va-middle">
-                                        <p class="w-full">* Поля, обязательные для заполнения</p>
+                                    <div class="dib ta-r w-35part pad5-0">
+                                        <a href="" class="button button-middle w-auto bg-blue pad0-20">Сохранить</a>
                                     </div>
                                 </section>
                             </section>
                         </section>
-                        <section class="ta-r">
-                            <a class="button button-middle w-auto c-gray pad0-20" href="/">Отменить</a>
-                            <a class="button button-middle bg-blue w-auto pad0-20" href="/">Сохранить</a>
+                        <section>
+                            <h3 class="c-black2 bdb-1-gray3 ta-l fw-regular pad5-0">Пароль</h3>
+                            <section class="pad20-0">
+                                <section class="ta-l">
+                                    <label class="w-13part">Старый пароль</label>
+                                    <div class="dib w-auto va-middle pad0">
+                                        <input class="" type="password"/>
+                                    </div>
+                                    <div class="dib ta-l w-25part">
+                                        <p class="pad0-10"></p>
+                                    </div>
+                                </section>
+                                <section class="ta-l">
+                                    <label class="w-13part">Новый пароль</label>
+                                    <div class="dib w-auto va-middle pad0">
+                                        <input class="" type="password"/>
+                                    </div>
+                                    <div class="dib ta-l w-25part">
+                                        <p class="pad0-10"></p>
+                                    </div>
+                                </section>
+                                <section class="ta-l">
+                                    <label class="w-13part">Подтверждение пароля</label>
+                                    <div class="dib w-auto va-middle pad0">
+                                        <input class="input-alert" type="password"/>
+                                    </div>
+                                    <div class="dib ta-l w-25part">
+                                        <p class="input-alert pad0-10">Пароли не совпадают</p>
+                                    </div>
+                                </section>
+                                <section class="ta-l">
+                                    <div class="dib ta-r w-35part pad5-0">
+                                        <i class="fa fa-check fz16 c-green va-middle"></i><p class="c-green pad0-5">Пароль успешно изменен</p>
+                                    </div>
+                                </section>
+                                <section class="ta-l">
+                                    <div class="dib ta-r w-35part pad5-0">
+                                        <a href="" class="button button-middle w-auto bg-blue pad0-20">Сохранить</a>
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                        <section>
+                            <h3 class="c-black2 bdb-1-gray3 ta-l fw-regular pad5-0">История авторизации</h3>
+                            <section class="pad20-0">
+                                <section class="ta-l">
+                                    <div class="dib w-15part"></div>
+                                    <ul class="row-list w-25part row-list-3el scroll-list">
+                                        <li class="row-list-el bdb-1-gray3">
+                                            <div class="data-col pad0 w-14part va-top">
+                                                <p class="c-blue fz12">активна</p>
+                                            </div>
+                                            <div class="data-col c-gray w-24part">
+                                                <p class="fz12">Goggle Chrome</p>
+                                                <p class="fz12">Москва, Россия</p>
+                                            </div>
+                                            <div class="data-col pad0 w-14part">
+                                                <a class="c-blue ta-r fz12">завершить</a>
+                                            </div>
+                                        </li>
+                                        <li class="row-list-el bdb-1-gray3">
+                                            <div class="data-col pad0 w-14part">
+                                                <p class="c-gray fz12">сегодня</p>
+                                                <p class="c-gray fz12">17:49</p>
+                                            </div>
+                                            <div class="data-col c-gray w-24part">
+                                                <p class="fz12">Goggle Chrome</p>
+                                                <p class="fz12">Москва, Россия</p>
+                                            </div>
+                                            <div class="data-col pad0 w-14part">
+                                                <a class="c-blue ta-r fz12">завершить</a>
+                                            </div>
+                                        </li>
+                                        <li class="row-list-el bdb-1-gray3">
+                                            <div class="data-col pad0 w-14part va-top">
+                                                <p class="c-blue fz12">активна</p>
+                                            </div>
+                                            <div class="data-col c-gray w-24part">
+                                                <p class="fz12">Goggle Chrome</p>
+                                                <p class="fz12">Москва, Россия</p>
+                                            </div>
+                                            <div class="data-col pad0 w-14part">
+                                                <a class="c-blue ta-r fz12">завершить</a>
+                                            </div>
+                                        </li>
+                                        <li class="row-list-el bdb-1-gray3">
+                                            <div class="data-col pad0 w-14part va-top">
+                                                <p class="c-blue fz12">активна</p>
+                                            </div>
+                                            <div class="data-col c-gray w-24part">
+                                                <p class="fz12">Goggle Chrome</p>
+                                                <p class="fz12">Москва, Россия</p>
+                                            </div>
+                                            <div class="data-col pad0 w-14part">
+                                                <a class="c-blue ta-r fz12">завершить</a>
+                                            </div>
+                                        </li>
+                                        <li class="row-list-el bdb-1-gray3">
+                                            <div class="data-col pad0 w-14part va-top">
+                                                <p class="c-blue fz12">активна</p>
+                                            </div>
+                                            <div class="data-col c-gray w-24part">
+                                                <p class="fz12">Goggle Chrome</p>
+                                                <p class="fz12">Москва, Россия</p>
+                                            </div>
+                                            <div class="data-col pad0 w-14part">
+                                                <a class="c-blue ta-r fz12">завершить</a>
+                                            </div>
+                                        </li>
+                                        <li class="row-list-el bdb-1-gray3">
+                                            <div class="data-col pad0 w-14part va-top">
+                                                <p class="c-blue fz12">активна</p>
+                                            </div>
+                                            <div class="data-col c-gray w-24part">
+                                                <p class="fz12">Goggle Chrome</p>
+                                                <p class="fz12">Москва, Россия</p>
+                                            </div>
+                                            <div class="data-col pad0 w-14part">
+                                                <a class="c-blue ta-r fz12">завершить</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
                         </section>
                     </form>
                 </section>

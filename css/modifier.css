@@ -239,11 +239,15 @@
 }
 
 .w-34part {
-    width: 74%;
+    width: 74.5%;
+}
+
+.w-24part {
+    width: 49.5% !important;
 }
 
 .w-14part {
-    width: 24% !important;
+    width: 24.5% !important;
 }
 
 .w-15part {
