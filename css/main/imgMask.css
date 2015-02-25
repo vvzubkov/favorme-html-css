@@ -18,8 +18,8 @@
     position: relative;
     margin: 0 0 -4px 0;
 }
-.vp-photo-mask-overlay
-{
+
+.vp-photo-mask-overlay {
     width: 45px;
     height: 45px;
     display: block;
@@ -29,6 +29,7 @@
     top: 0;
     left: 0;
 }
+
 .img-mask.avatar {
     width: 80px;
     height: 80px;
@@ -43,12 +44,13 @@
     border: 1px solid #cccccc;
     text-align: center;
 }
-.img-mask.avatar > img
-{
+
+.img-mask.avatar > img {
     width: 130%;
     margin-left: -15%;
     margin-top: -15%;
 }
+
 .img-mask.large {
     width: 60px;
     height: 60px;
@@ -70,8 +72,8 @@
 }
 
 .img-mask > img {
-    width: 110%;
-    margin-left: -5%;
+    width: 100%;
+    /*margin-left: -15%;*/
 }
 
 .soc-icon-mini {

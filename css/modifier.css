@@ -175,6 +175,10 @@
     font-size: 16px;
 }
 
+.fz18 {
+    font-size: 18px !important;
+}
+
 .fz20 {
     font-size: 20px;
 }
@@ -198,6 +202,10 @@
 
 .fw-semi-bold {
     font-weight: 600 !important;
+}
+
+.fw-bold {
+    font-weight: 700;
 }
 
 .fw-extra-bold {
@@ -292,6 +300,27 @@
 
 .w-30perc {
     width: 30%;
+}
+
+/*------ Height option -------*/
+.h100 {
+    height: 100px;
+}
+
+.h120 {
+    height: 120px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.h400 {
+    height: 400px;
 }
 
 .h500 {
