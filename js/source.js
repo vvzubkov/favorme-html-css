@@ -201,28 +201,22 @@ $(window).on('load',function(){
         }
     });
 
-    $(document).on('click', '.fr-inbook-menu > .hidden-menu-button', function(e){
+    $(document).on('click', '.sub-menu-trigger', function(e){
         e.preventDefault();
         var $this = $(this);
-        var el = $('.hidden-menu');
-        if (!$this.closest('.fr-inbook-menu').next('.hidden-menu').hasClass('visible'))
+        var attr = $(this).attr('sub-menu');
+        var el = $(".sub-menu[sub-menu='" + attr + "']");
+        if (!el.hasClass('visible'))
         {
-            el.animate({opacity:0},150, function(){
-                $(this).slideUp(5, function(){
-                    $(this).removeClass('visible');
+            el.slideDown(100, function(){
+                $(this).animate({opacity:1}, 150,function(){
+                    $(this).addClass('visible')
                 });
-                setTimeout(function(){
-                    $this.closest('.fr-inbook-menu').next('.hidden-menu').slideDown(10, function(){
-                        $(this).animate({opacity:1}, 150,function(){
-                            $(this).addClass('visible')
-                        });
-                    });
-                },5);
             });
         }
-        else if ($this.closest('.fr-inbook-menu').next('.hidden-menu').hasClass('visible'))
+        else if (el.hasClass('visible'))
         {
-            $(this).closest('.fr-inbook-menu').next('.hidden-menu').animate({opacity:0},150,function(){
+            el.animate({opacity:0},150,function(){
                 $(this).slideUp(150, function(){
                     $(this).removeClass('visible')
                 })
@@ -334,10 +328,10 @@ $(window).on('click',function(event) {
             })
         })
     }
-    if ($('.hidden-menu').hasClass('visible'))
+    if ($('.sub-menu').hasClass('visible'))
     {
-        if ($(event.target).closest('.fr-inbook-menu > .hidden-menu-button').length) return;
-        $('.hidden-menu').animate({opacity:0},150,function(){
+        if ($(event.target).closest('.sub-menu-trigger').length) return;
+        $('.sub-menu').animate({opacity:0},150,function(){
             $(this).slideUp(150, function(){
                 $(this).removeClass('visible')
             })

@@ -1,5 +1,5 @@
 @import "stopButton.css";
-@import "contentTitle.css";
+@import "hidden-row-mwnu.css";
 @import "imgMask.css";
 @import "searchBlock.css";
 @import "sidebar.css";
@@ -149,7 +149,10 @@ label {
     vertical-align: middle;
     cursor: pointer;
 }
-
+.button + .button
+{
+    margin-left: 5px;
+}
 .button-ultraslim {
     /*height: 24px;*/
     line-height: 20px !important;

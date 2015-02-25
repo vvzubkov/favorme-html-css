@@ -1,0 +1,125 @@
+
+.hidden-row-menu {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.hidden-row-menu > a {
+    display: table-cell;
+    height: 40px;
+    /*width: 70px;*/
+    vertical-align: middle;
+    border-right: 32px solid transparent;
+    color: #3eb6e2;
+    padding: 0 5px;
+    opacity: 0.5;
+}
+
+.hidden-row-menu > a:last-of-type {
+    border: none;
+    width: 26px;
+}
+
+.hidden-row-menu > a i {
+    font-size: 18px;
+}
+
+.hidden-row-menu > a.hidden {
+    opacity: 0;
+}
+
+.fr-inbook.row-list-el:hover a.hidden,
+.c-title:hover a.hidden {
+    opacity: 0.5;
+    transition: opacity 300ms;
+}
+
+.fr-inbook.row-list-el:hover .hidden-row-menu > a:hover,
+.fr-inbook.row-list-el:hover .hidden-row-menu > a.hidden:hover,
+.c-title:hover .hidden-row-menu > a.hidden:hover,
+.c-title:hover .hidden-row-menu > a:hover {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.fr-inbook .hidden-row-menu > a.hidden {
+    transform: scale(0.75);
+}
+
+
+.sub-menu {
+    position: absolute;
+    top: 40px;
+    right: -25px;
+    display: none;
+    text-align: left;
+    z-index: 99;
+    opacity: 0;
+}
+
+.sub-menu > i,
+.sub-menu > img.arrow {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    position: absolute;
+    top: -16px;
+    left: 155px;
+}
+
+.sub-menu > img.arrow {
+    top: -10px;
+}
+
+.sub-menu > li {
+    display: block;
+    /*width: 100%;*/
+    padding: 0;
+    margin: -4px 0;
+    text-align: left;
+}
+
+.sub-menu > li > a {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sub-menu > li > a:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 300ms;
+}
+
+.sub-menu > li:first-of-type > a {
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.sub-menu > li:last-of-type > a {
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+.sub-menu > li > a > span {
+    display: table-cell;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.sub-menu > li > a > span:last-of-type {
+    width: 150px;
+    text-align: left;
+}
+
+ul.sub-menu > li > a:hover + .hidden-row-menu > a.hidden {
+    opacity: 0;
+}
