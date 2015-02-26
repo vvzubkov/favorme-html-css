@@ -57,6 +57,10 @@
     padding: 0 10px !important;
 }
 
+.pad0-16 {
+    padding: 0 16px !important;
+}
+
 .pad0-20 {
     padding: 0 20px !important;
 }
@@ -71,6 +75,10 @@
 
 .pad5-20 {
     padding: 5px 20px !important;
+}
+
+.pad10-15 {
+    padding: 10px 15px !important;
 }
 
 .pad10-20 {

@@ -102,6 +102,7 @@ $(window).on('load',function(){
         if (!$(this).next('.user-profile-menu').hasClass('visible'))
         {
             $(this).next('.user-profile-menu').slideDown(10, function(){
+                $(this).css({overflow:'visible'});
                 $(this).animate({opacity:1},300,function(){
                     $(this).addClass('visible')
                 });
@@ -206,9 +207,11 @@ $(window).on('load',function(){
         var $this = $(this);
         var attr = $(this).attr('sub-menu');
         var el = $(".sub-menu[sub-menu='" + attr + "']");
+
         if (!el.hasClass('visible'))
         {
-            el.slideDown(100, function(){
+            el.slideDown(10, function(){
+                $(this).css({top:$this[0].offsetTop + $this[0].offsetHeight, left:$(this)[0].offsetWidth + 20, overflow:'visible'});
                 $(this).animate({opacity:1}, 150,function(){
                     $(this).addClass('visible')
                 });

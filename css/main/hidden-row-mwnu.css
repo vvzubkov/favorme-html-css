@@ -50,12 +50,12 @@
 
 .sub-menu {
     position: absolute;
-    top: 40px;
-    right: -25px;
     display: none;
     text-align: left;
     z-index: 99;
     opacity: 0;
+    width: auto;
+
 }
 
 .sub-menu > i,
@@ -63,63 +63,61 @@
     color: rgba(0, 0, 0, 0.6);
     font-size: 30px;
     position: absolute;
-    top: -16px;
-    left: 155px;
+    top: -12px;
+    left: 130px;
 }
 
-.sub-menu > img.arrow {
+.sub-menu > ul > img.arrow {
     top: -10px;
 }
 
-.sub-menu > li {
-    display: block;
-    /*width: 100%;*/
-    padding: 0;
-    margin: -4px 0;
-    text-align: left;
-}
+/*.sub-menu > ul > li {*/
+    /*margin: 0 0 -4px;*/
+    /*text-align: left;*/
+/*}*/
 
-.sub-menu > li > a {
+.sub-menu > ul > li > a {
     background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-
+    /*color: #ffffff;*/
+    display: block;
+    /*padding: 0;*/
+    /*margin: 0;*/
+    white-space: nowrap;
 }
 
-.sub-menu > li > a:hover {
+.sub-menu > ul > li > a:hover {
     background: rgba(0, 0, 0, 0.4);
     transition: all 300ms;
 }
 
-.sub-menu > li:first-of-type > a {
+.sub-menu > ul > li:first-of-type > a {
     -webkit-border-radius: 3px 3px 0 0;
     -moz-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0;
 }
 
-.sub-menu > li:last-of-type > a {
+.sub-menu > ul > li:last-of-type > a {
     -webkit-border-radius: 0 0 3px 3px;
     -moz-border-radius: 0 0 3px 3px;
     border-radius: 0 0 3px 3px;
 }
 
-.sub-menu > li > a > span {
-    display: table-cell;
-    width: 50px;
-    height: 40px;
+.sub-menu > ul > li > a > span {
+    display: inline-block;
+    width: 40px;
+    /*height: 40px;*/
     text-align: center;
     vertical-align: middle;
     font-size: 12px;
     font-weight: 300;
 }
 
-.sub-menu > li > a > span:last-of-type {
-    width: 150px;
+.sub-menu > ul > li > a > span:last-of-type {
+    width: auto;
     text-align: left;
+    padding: 0 10px 0 0;
 }
 
-ul.sub-menu > li > a:hover + .hidden-row-menu > a.hidden {
+.sub-menu  > ul > li > a:hover + .hidden-row-menu > .hidden {
     opacity: 0;
 }
