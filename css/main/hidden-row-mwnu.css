@@ -47,7 +47,6 @@
     transform: scale(0.75);
 }
 
-
 .sub-menu {
     position: absolute;
     display: none;
@@ -70,11 +69,6 @@
 .sub-menu > ul > img.arrow {
     top: -10px;
 }
-
-/*.sub-menu > ul > li {*/
-    /*margin: 0 0 -4px;*/
-    /*text-align: left;*/
-/*}*/
 
 .sub-menu > ul > li > a {
     background: rgba(0, 0, 0, 0.6);
@@ -118,6 +112,6 @@
     padding: 0 10px 0 0;
 }
 
-.sub-menu  > ul > li > a:hover + .hidden-row-menu > .hidden {
+.sub-menu > ul > li > a:hover + .hidden-row-menu > .hidden {
     opacity: 0;
 }
