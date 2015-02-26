@@ -2,7 +2,7 @@
 <html>
 <head lang="ru">
     <meta charset="UTF-8">
-    <title>Friend lock</title>
+    <title>Friend my page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!------ CSS ----->
@@ -41,11 +41,11 @@
                         <img src="images/logo/logo.png" alt=""/>
                     </a>
                 </div>
-                <section class="w-25part va-middle">
-                    <form id="search-header" class="search-block search-block-top ta-l">
-                        <input class="search-line clearble" type="text"
-                               placeholder="Что вас интересует?" autofocus tabindex="1"/>
-                    </form>
+                <section class="w-25part va-middle ta-l">
+                    <a href="/" class="button button-middle c-white w-auto">
+                        <i class="fa fa-angle-left fz28 va-middle"></i>
+                        <p class="dib w-auto pad0-10 va-middle">Назад</p>
+                    </a>
                 </section>
             </div>
             <div class="f-r w-50perc ta-r">
@@ -119,33 +119,200 @@
             </div>
             <div class="content content-wide ta-c">
                 <section class="c-body">
-                    <div class="bdb-1-gray3">
-                        <div class="img-col">
-                            <div class="img-mask large">
-                                <img src="/images/icons/icon-lock.png" alt=""/>
-                            </div>
-                        </div>
-                        <div class="data-col va-middle w-full">
-                            <section class="w-half ta-l">
-                                <h3 class="fw-bold">Марина Иванцова</h3>
-                                <p class="c-gray">Москва, Россия</p>
-                            </section>
-                            <section class="w-half ta-r va-top">
-                            </section>
-                        </div>
-                    </div>
-                    <div class="w-full bg-light-gray3">
-                        <section class="h400">
-                            <section class="h120">
-
-                            </section>
-                            <img src="images/icons/icon-lock-big.png" class="va-middle" alt=""/>
-                            <section class="pad20-0 w-45part">
-                                <p class="c-gray fz18 fw-regular">пользователь заблокирован по причине многочисленных жалоб</p>
-                                <a href="/" class="fz18 c-blue fw-regular">удалить из друзей</a>
-                            </section>
+                    <ul class="tabs tabs-blue ta-c bdb-1-gray3" tabs="1">
+                        <section class="w-full pad10-10">
+                            <li class="button-middle current w-15part pad0-10">Поиск друзей</li>
+                            <li class="button-middle w-14part pad0-10">Социальные сети 4</li>
                         </section>
-                    </div>
+                    </ul>
+                    <section class="tab-box" tabs="1">
+                        <section class="bg-light-gray3 bdb-1-gray3 pad10-10">
+                            <form id="search1" class="search-block ta-l">
+                                <input class="search-line clearble" type="text"
+                                       placeholder="Поиск по возможностям" autofocus tabindex="1"/>
+                            </form>
+                        </section>
+                        <section class="ta-l">
+                        <p class="pad10-10 c-gray">Возможные друзья</p>
+                        </section>
+                        <section>
+                            <ul class="row-list bd-gor-list bdb-none">
+                                <li class="row-list-el">
+                                    <section class="ta-l w-half va-middle">
+                                        <div class="img-col">
+                                            <div class="img-mask middle">
+                                                <img src="images/users/user3.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="data-col va-middle">
+                                            <section class="ta-l">
+                                                <h3 class="c-blue">Екатерина Иванова</h3>
+                                            </section>
+                                            <section class="ta-l">
+                                                <p class="c-gray fz11">Москва, Россия</p>
+                                            </section>
+                                        </div>
+                                    </section>
+                                    <section class="ta-r w-half va-middle">
+                                        <section class="w-half ta-r va-middle pad0-10">
+                                            <p class="c-dark-gray">12 общих друзей</p>
+                                        </section>
+                                        <section class="w-half ta-c pad0-10">
+                                            <a href="/" class="button button-slim bg-blue">
+                                                <img src="images/icons/add-fr-icon-white.png" alt="" class="dib va-middle"/>
+                                                <span class="dib pad0-5">Добавить в друзья</span></a>
+                                        </section>
+                                    </section>
+                                </li>
+                                <li class="row-list-el">
+                                    <section class="ta-l w-half va-middle">
+                                        <div class="img-col">
+                                            <div class="img-mask middle">
+                                                <img src="images/users/user3.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="data-col va-middle">
+                                            <section class="ta-l">
+                                                <h3 class="c-blue">Екатерина Иванова</h3>
+                                            </section>
+                                            <section class="ta-l">
+                                                <p class="c-gray fz11">Москва, Россия</p>
+                                            </section>
+                                        </div>
+                                    </section>
+                                    <section class="ta-r w-half va-middle">
+                                        <section class="w-half ta-r va-middle pad0-10">
+                                            <p class="c-dark-gray">12 общих друзей</p>
+                                        </section>
+                                        <section class="w-half ta-c pad0-10">
+                                            <a href="/" class="button button-slim bg-blue">
+                                                <img src="images/icons/add-fr-icon-white.png" alt="" class="dib va-middle"/>
+                                                <span class="dib pad0-5">Добавить в друзья</span></a>
+                                        </section>
+                                    </section>
+                                </li>
+                                <li class="row-list-el">
+                                    <section class="ta-l w-half va-middle">
+                                        <div class="img-col">
+                                            <div class="img-mask middle">
+                                                <img src="images/users/user3.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="data-col va-middle">
+                                            <section class="ta-l">
+                                                <h3 class="c-blue">Екатерина Иванова</h3>
+                                            </section>
+                                            <section class="ta-l">
+                                                <p class="c-gray fz11">Москва, Россия</p>
+                                            </section>
+                                        </div>
+                                    </section>
+                                    <section class="ta-r w-half va-middle">
+                                        <section class="w-half ta-r va-middle pad0-10">
+                                        </section>
+                                        <section class="w-half ta-c pad0-10">
+                                            <a href="/" class="button button-slim bg-white bd-1-blue c-dark-gray">
+                                                <span class="dib pad0-5">Отменить заявку</span></a>
+                                        </section>
+                                    </section>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section class="tab-box hidden" tabs="1">
+                        <section class="bg-light-gray3 bdb-1-gray3 pad10-10">
+                            <form id="search1" class="search-block ta-l">
+                                <input class="search-line clearble" type="text"
+                                       placeholder="Поиск по возможностям" autofocus tabindex="1"/>
+                            </form>
+                        </section>
+                        <section class="ta-l">
+                        <p class="pad10-10 c-gray">Друзья в Favorme</p>
+                        </section>
+                        <section>
+                            <ul class="row-list bd-gor-list bdb-none">
+                                <li class="row-list-el">
+                                    <section class="ta-l w-half va-middle">
+                                        <div class="img-col">
+                                            <div class="img-mask middle">
+                                                <img src="images/users/user3.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="data-col va-middle">
+                                            <section class="ta-l">
+                                                <h3 class="c-blue">Екатерина Иванова</h3>
+                                            </section>
+                                            <section class="ta-l">
+                                                <p class="c-gray fz11">Москва, Россия</p>
+                                            </section>
+                                        </div>
+                                    </section>
+                                    <section class="ta-r w-half va-middle">
+                                        <section class="w-half ta-r va-middle pad0-10">
+                                            <p class="c-dark-gray">12 общих друзей</p>
+                                        </section>
+                                        <section class="w-half ta-c pad0-10">
+                                            <a href="/" class="button button-slim bg-blue">
+                                                <img src="images/icons/add-fr-icon-white.png" alt="" class="dib va-middle"/>
+                                                <span class="dib pad0-5">Добавить в друзья</span></a>
+                                        </section>
+                                    </section>
+                                </li>
+                                <li class="row-list-el">
+                                    <section class="ta-l w-half va-middle">
+                                        <div class="img-col">
+                                            <div class="img-mask middle">
+                                                <img src="images/users/user3.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="data-col va-middle">
+                                            <section class="ta-l">
+                                                <h3 class="c-blue">Екатерина Иванова</h3>
+                                            </section>
+                                            <section class="ta-l">
+                                                <p class="c-gray fz11">Москва, Россия</p>
+                                            </section>
+                                        </div>
+                                    </section>
+                                    <section class="ta-r w-half va-middle">
+                                        <section class="w-half ta-r va-middle pad0-10">
+                                            <p class="c-dark-gray">12 общих друзей</p>
+                                        </section>
+                                        <section class="w-half ta-c pad0-10">
+                                            <a href="/" class="button button-slim bg-blue">
+                                                <img src="images/icons/add-fr-icon-white.png" alt="" class="dib va-middle"/>
+                                                <span class="dib pad0-5">Добавить в друзья</span></a>
+                                        </section>
+                                    </section>
+                                </li>
+                                <li class="row-list-el">
+                                    <section class="ta-l w-half va-middle">
+                                        <div class="img-col">
+                                            <div class="img-mask middle">
+                                                <img src="images/users/user3.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="data-col va-middle">
+                                            <section class="ta-l">
+                                                <h3 class="c-blue">Екатерина Иванова</h3>
+                                            </section>
+                                            <section class="ta-l">
+                                                <p class="c-gray fz11">Москва, Россия</p>
+                                            </section>
+                                        </div>
+                                    </section>
+                                    <section class="ta-r w-half va-middle">
+                                        <section class="w-half ta-r va-middle pad0-10">
+                                        </section>
+                                        <section class="w-half ta-c pad0-10">
+                                            <a href="/" class="button button-slim bg-white bd-1-blue c-dark-gray">
+                                                <span class="dib pad0-5">Отменить заявку</span></a>
+                                        </section>
+                                    </section>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
                 </section>
                 <footer id="footer">
                     <nav class="w-34part ta-l">
