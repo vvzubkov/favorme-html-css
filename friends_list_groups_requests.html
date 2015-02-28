@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Friend my page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!------ CSS ----->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/add/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/add/nprogress.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/modifier.css"/>
+
+    <!------ JS ----->
+    <script type="text/javascript" src="js/add/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/add/jquery-ui-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/add/nprogress.js"></script>
+    <script type="text/javascript" src="js/add/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/add/select.js"></script>
+    <script type="text/javascript" src="js/add/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/add/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="js/add/jquery.limit.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/add/icheck.js"></script>
+    <script type="text/javascript" src="js/add/jquery.clearsearch.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/source.js"></script>
+    <script type="text/javascript" src="js/gs.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="c-block">
+            <div class="f-l w-50perc ta-l">
+                <div class="logo-block">
+                    <a class="logo" href="/">
+                        <img src="images/logo/logo.png" alt=""/>
+                    </a>
+                </div>
+                <section class="w-25part va-middle">
+                    <form id="search-header" class="search-block search-block-top ta-l">
+                        <input class="search-line clearble" type="text"
+                               placeholder="Что вас интересует?" autofocus tabindex="1"/>
+                    </form>
+                </section>
+            </div>
+            <div class="f-r w-50perc ta-r">
+                <a class="user-profile">
+                    <p class="user-name">Юрий</p>
+
+                    <div class="img-mask">
+                        <img src="images/users/user1.png" alt=""/>
+                    </div>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+
+                <div class="user-profile-menu">
+                    <img class="angle-icon" src="images/angle-icon.png" alt=""/>
+                    <a href=""><i class="fa fa-pencil"></i>
+
+                        <p>Редактировать профиль</p></a>
+                    <a href=""><i class="fa fa-power-off"></i>
+
+                        <p>Выход</p></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="sTop-button" class="clear" data-scroll="0">
+        <div class="sTop-col">
+                <span class="up active">
+                    <i class="fa fa-chevron-up"></i>
+                </span>
+                <span class="down active">
+                    <i class="fa fa-chevron-down"></i>
+                </span>
+        </div>
+    </div>
+    <main id="main">
+        <div class="c-block">
+            <div class="sideBar left ta-l">
+                <div class="sidebar-block">
+                    <ul class="share-nav">
+                        <li><a>
+                            <img src="images/icons/share.png" alt=""/></a></li>
+                        <li><a>
+                            <img src="images/icons/addContact.png" alt=""/></a></li>
+                        <li><a>
+                            <img src="images/icons/addVP.png" alt=""/></a>
+                        </li>
+                    </ul>
+                    <div class="sidebar-nav-fixed">
+                        <a href="/">
+                            <span class="name"><img src="images/v-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                        <a href="/">
+                            <span class="name"><img src="images/icons/p-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                        <a href="/">
+                            <span class="name"><img src="images/icons/message-icon-fixed.png" alt=""/></span>
+                            <span class="amount">+15</span>
+                        </a>
+                    </div>
+                    <nav class="sidebar-nav">
+                        <a href="/">Возможности <span>+15</span></a>
+                        <a href="/">Потребности</a>
+                        <a href="/">Диалоги</a>
+                        <a href="/">Друзья <span>+3</span></a>
+                        <a href="/">Активность</a>
+                        <a href="/">Настройки</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="content ta-c">
+                <div class="c-body">
+                    <section class="w-full bdb-1-gray3 ta-l">
+                            <ul class="tabs tabs-blue " tabs="1">
+                                <section class="w-23part pad10-10 ta-l va-middle">
+                                    <li class="button-middle current w-14part">Друзья</li>
+                                    <li class="button-middle w-14part">Группы</li>
+                                    <li class="button-middle w-13part">Ваши заявки</li>
+                                </section>
+                                <section class="tab-box-c w-13part">
+                                    <section class="tab-box dib  pad10-10 ta-r va-middle" tabs="1">
+                                        <a href="/" class="button button-middle bg-green fw-regular w-auto pad0-20">Добавить друзей</a>
+                                    </section>
+                                    <section class="tab-box hidden dib va-middle ta-r pad10-10 ta-r" tabs="1">
+                                        <a href="/" class="button button-middle bg-green fw-regular w-auto pad0-20">Создать группу</a>
+                                    </section>
+                                    <section class="tab-box hidden dib va-middle ta-r " tabs="1">
+                                    </section>
+                                </section>
+                            </ul>
+                    </section>
+                    <div class="tab-box-c">
+                        <div class="tab-box w-full" tabs="1">
+                            <div class="w-full bdb-1-gray3 bg-light-gray3">
+                                <section class="pad15-15">
+                                    <form id="search1" class="search-block ta-l">
+                                        <input class="search-line clearble" type="text"
+                                               placeholder="Поиск по друзьям" autofocus tabindex="1"/>
+                                    </form>
+                                </section>
+                            </div>
+                            <div class="w-full">
+                                <section class="ta-l">
+                                    <p class="pad10-10">Заявки в друзья</p>
+                                    <ul class="row-list bd-gor-list">
+                                        <li class="row-list-el">
+                                            <section class="ta-l w-25part va-middle">
+                                                <div class="img-col">
+                                                    <div class="img-mask middle">
+                                                        <img src="images/users/user3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="data-col va-middle">
+                                                    <section class="ta-l">
+                                                        <h3 class="c-blue">Екатерина Иванова</h3>
+                                                    </section>
+                                                    <section class="ta-l">
+                                                        <p class="c-gray fz11">Москва, Россия</p>
+                                                    </section>
+                                                </div>
+                                            </section>
+                                            <section class="ta-r w-35part va-middle">
+                                                <section class="w-auto ta-r va-middle pad0-10">
+                                                    <p class="c-dark-gray">12 общих друзей</p>
+                                                </section>
+                                                <section class="w-auto ta-r pad0-5">
+                                                    <a href="/" class="button button-slim bg-blue w-auto">
+                                                        <span class="dib pad0-5">Принять</span></a>
+                                                </section>
+                                                <section class="w-auto ta-r pad0-5">
+                                                    <a href="/" class="button button-slim bg-gray w-auto">
+                                                        <span class="dib pad0-5">Отклонить</span></a>
+                                                </section>
+                                            </section>
+                                        </li>
+                                        <li class="row-list-el">
+                                            <section class="ta-l w-25part va-middle">
+                                                <div class="img-col">
+                                                    <div class="img-mask middle">
+                                                        <img src="images/users/user3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="data-col va-middle">
+                                                    <section class="ta-l">
+                                                        <h3 class="c-blue">Екатерина Иванова</h3>
+                                                    </section>
+                                                    <section class="ta-l">
+                                                        <p class="c-gray fz11">Москва, Россия</p>
+                                                    </section>
+                                                </div>
+                                            </section>
+                                            <section class="ta-r w-35part va-middle">
+                                                <section class="w-auto ta-r va-middle pad0-10">
+                                                    <p class="c-dark-gray">12 общих друзей</p>
+                                                </section>
+                                                <section class="w-auto ta-r pad0-5">
+                                                    <a href="/" class="button button-slim bg-blue w-auto">
+                                                        <span class="dib pad0-5">Принять</span></a>
+                                                </section>
+                                                <section class="w-auto ta-r pad0-5">
+                                                    <a href="/" class="button button-slim bg-gray w-auto">
+                                                        <span class="dib pad0-5">Отклонить</span></a>
+                                                </section>
+                                            </section>
+                                        </li>
+                                        <li class="row-list-el">
+                                            <section class="ta-l w-25part va-middle">
+                                                <div class="img-col">
+                                                    <div class="img-mask middle">
+                                                        <img src="images/users/user3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="data-col va-middle">
+                                                    <section class="ta-l">
+                                                        <h3 class="c-blue">Екатерина Иванова</h3>
+                                                    </section>
+                                                    <section class="ta-l">
+                                                        <p class="c-gray fz11">Москва, Россия</p>
+                                                    </section>
+                                                </div>
+                                            </section>
+                                            <section class="ta-r w-35part va-middle">
+                                                <section class="w-auto ta-r va-middle pad0-10">
+                                                    <p class="c-dark-gray">12 общих друзей</p>
+                                                </section>
+                                                <section class="w-auto ta-r pad0-5">
+                                                    <a href="/" class="button button-slim bg-blue w-auto">
+                                                        <span class="dib pad0-5">Принять</span></a>
+                                                </section>
+                                                <section class="w-auto ta-r pad0-5">
+                                                    <a href="/" class="button button-slim bg-gray w-auto">
+                                                        <span class="dib pad0-5">Отклонить</span></a>
+                                                </section>
+                                            </section>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="tab-box hidden w-full" tabs="1">
+
+                        </div>
+                        <div class="tab-box hidden w-full" tabs="1">
+
+                        </div>
+                    </div>
+                </div>
+                <footer id="footer">
+                    <nav class="w-34part ta-l">
+                        <a href="/">О проекте</a>
+                        <a href="/">Правила</a>
+                        <a class="md-trigger" data-modal="callBack">Обратная связь</a>
+                    </nav>
+                    <div class="copyright w-14part ta-r"><i class="fa fa-copyright"></i> Favorme 2014</div>
+                </footer>
+            </div>
+            <div class="sideBar right ta-l">
+
+            </div>
+        </div>
+    </main>
+</div>
+
+<div class="md-modal md-effect-5" id="callBack">
+    <div class="md-content" style="background: none; width:480px;">
+        <form action="">
+            <header class="pad10-0">
+                <div class="dib w-full pad10-0">
+                    <h3 class="w-95perc ta-l">Обратная связь</h3>
+                    <a class="w-auto md-close pad0"><i class="fa fa-close"></i></a>
+                </div>
+            </header>
+            <main>
+                <p class="dib w-full ta-l">В случае возникновения проблем, вопросов и предложений можете описать их
+                    здесь</p>
+
+                <div action="" class="dib w-full pad10-0 ta-l">
+                    <textarea name="" id="" class="dib w-full pad10-10" placeholder="Опишите проблему, вопрос, предложение"
+                              style="height:60px"></textarea>
+                    <input type="email" class="w-13part pad0-10" placeholder="Ваш Email"/>
+                </div>
+            </main>
+            <footer>
+                <div class="dib w-full ta-r">
+                    <button type="button" class="button w-auto bg-blue"><p class="pad0-10">Отправить</p></button>
+                </div>
+            </footer>
+        </form>
+    </div>
+</div>
+
+<div class="md-modal md-effect-5" id="modal-gallery">
+    <div class="gallery-button close md-close ta-r">
+        <a class="c-gray fz16"><i class="fa fa-close"></i></a>
+    </div>
+    <div class="md-content" style="background: none; width:730px;">
+        <div class="sh pos-rel" style="padding:0 40px 0; z-index: 1;">
+            <div class="dib w-full pad10-0">
+                <div class="dib w-half f-l ta-l va-middle">
+                    <div class="dib ta-l va-middle">
+                        <span class="galleryIndex"></span> из <span class="galleryLength"></span>
+                    </div>
+                    <div class="dib pad0-10 va-middle">
+                        <a class="c-blue fz20 icon-el-trigger"><i class="fa fa-arrow-circle-down"></i></a>
+                    </div>
+                </div>
+                <div class="dib w-half f-r ta-r md-close va-middle"><a class="c-dark-gray">Закрыть</a></div>
+            </div>
+            <div class="gallerySlider">
+                <div class="galleryBox">
+                    <div class="dib w-full" data-pos="1">
+                        <img class="dib w-full" src="images/imgGallery/img1.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="2">
+                        <img class="dib w-full" src="images/imgGallery/img2.png" data-pos="6" alt=""/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                    <div class="dib w-full" data-pos="3">
+                        <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="4">
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                    <div class="dib w-full" data-pos="5">
+                        <img class="dib w-full" src="images/imgGallery/img1.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="6">
+                        <img class="dib w-full" src="images/imgGallery/img2.png" data-pos="6" alt=""/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                    <div class="dib w-full" data-pos="7">
+                        <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="8">
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                    <div class="dib w-full" data-pos="9">
+                        <img class="dib w-full" src="images/imgGallery/img1.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="10">
+                        <img class="dib w-full" src="images/imgGallery/img2.png" data-pos="6" alt=""/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                    <div class="dib w-full" data-pos="11">
+                        <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="12">
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                    <div class="dib w-full" data-pos="13">
+                        <img class="dib w-full" src="images/imgGallery/img1.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="14">
+                        <img class="dib w-full" src="images/imgGallery/img2.png" data-pos="6" alt=""/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                    <div class="dib w-full" data-pos="15">
+                        <img class="dib w-full" src="images/imgGallery/img3.png" alt=""/>
+                    </div>
+                    <div class="dib w-full" data-pos="16">
+                        <img class="dib w-full" src="images/imgGallery/img4.png" data-pos="6" alt=""
+                             style="height: 1000px;"/>
+
+                        <p class="dib w-full">rvekvmfvlkdfvdkflnvdfklvndfkvln</p>
+                    </div>
+                </div>
+                <div class="galleryNav">
+                    <div class="prev"><i class="c-gray fz28 fa fa-angle-left"></i></div>
+                    <div class="next"></div>
+                </div>
+                <div class="galleryDots pad10-0">
+                    <img src="images/imgGallery/img1.png" alt=""/>
+                    <img src="images/imgGallery/img2.png" alt=""/>
+                    <img src="images/imgGallery/img3.png" alt=""/>
+                    <img src="images/imgGallery/img4.png" alt=""/>
+                    <img src="images/imgGallery/img1.png" alt=""/>
+                    <img src="images/imgGallery/img2.png" alt=""/>
+                    <img src="images/imgGallery/img3.png" alt=""/>
+                    <img src="images/imgGallery/img4.png" alt=""/>
+                    <img src="images/imgGallery/img1.png" alt=""/>
+                    <img src="images/imgGallery/img2.png" alt=""/>
+                    <img src="images/imgGallery/img3.png" alt=""/>
+                    <img src="images/imgGallery/img4.png" alt=""/>
+                    <img src="images/imgGallery/img1.png" alt=""/>
+                    <img src="images/imgGallery/img2.png" alt=""/>
+                    <img src="images/imgGallery/img3.png" alt=""/>
+                    <img src="images/imgGallery/img4.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="md-overlay"></div>
+
+<script src="js/modalEffects/classie.js"></script>
+<script src="js/modalEffects/modalEffects.js"></script>
+<script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+</script>
+<script src="js/modalEffects/cssParser.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    });
+    $(function () {
+        $('.clearble').clearSearch({
+            callback: function () {
+                console.log("cleared");
+            }
+        });
+    });
+
+</script>
+
+</body>
+</html>

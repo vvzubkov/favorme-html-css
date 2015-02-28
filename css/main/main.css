@@ -1,5 +1,5 @@
 @import "stopButton.css";
-@import "hidden-row-mwnu.css";
+@import "hidden-menu.css";
 @import "imgMask.css";
 @import "searchBlock.css";
 @import "sidebar.css";
@@ -140,7 +140,7 @@ label {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    margin: 5px 0;
+    margin: 0;
     padding: 0 10px;
     color: #ffffff;
     opacity: 0.8;
@@ -296,14 +296,18 @@ textarea::-moz-placeholder {
 }
 
 .content {
+    width: 640px;
+    margin: 0 10px 0 10px;
+}
+.content-index
+{
     width: 620px;
     margin: 0 20px 0 20px;
 }
-
 .regBlock,
 .content-wide {
     width: 800px;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 10px;
 }
 
 .img-col,

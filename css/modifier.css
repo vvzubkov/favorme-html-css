@@ -81,6 +81,10 @@
     padding: 10px 15px !important;
 }
 
+.pad15-15 {
+    padding: 15px 15px !important;
+}
+
 .pad10-20 {
     padding: 10px 20px !important;
 }
@@ -251,7 +255,7 @@
 }
 
 .w-23part {
-    width: 64%;
+    width: 64.5%;
 }
 
 .w-34part {

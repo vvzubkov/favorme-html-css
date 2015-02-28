@@ -52,38 +52,39 @@ $(window).on('load',function(){
     });
     /*--------------------   sideBar -------------------------*/
 
-    var hb = document.querySelectorAll('.popover-trigger');
-
-    for (var i=0; i < hb.length; i++) {
-        hb[i].onmouseover = handleMouseEnter(function(e) {
-            e.preventDefault();
-            var attr = $(this).attr('data-popover-button');
-            var el = $("[data-popover-block='" + attr + "']");
-            if (!el.hasClass('visible'))
-            {
-                el.slideDown(10, function(){
-                    $(this).animate({opacity:1}, 150,function(){
-                        $(this).addClass('visible')
-                    });
-                });
-            }
-        });
-        hb[i].onmouseout = handleMouseLeave(function(e) {
-            e.preventDefault();
-            var attr = $(this).attr('data-popover-button');
-            var el = $("[data-popover-block='" + attr + "']");
-            setTimeout(function(){
-                if (el.hasClass('visible'))
+    $(function(){
+        var hb = document.querySelectorAll('.popover-trigger');
+        for (var i=0; i < hb.length; i++) {
+            hb[i].onmouseover = handleMouseEnter(function(e) {
+                e.preventDefault();
+                var attr = $(this).attr('data-popover-button');
+                var el = $("[data-popover-block='" + attr + "']");
+                if (!el.hasClass('visible'))
                 {
-                    el.animate({opacity:0},150, function(){
-                        $(this).slideUp(5, function(){
-                            $(this).removeClass('visible')
+                    el.slideDown(10, function(){
+                        $(this).animate({opacity:1}, 150,function(){
+                            $(this).addClass('visible')
                         });
                     });
                 }
-            },300)
-        });
-    }
+            });
+            hb[i].onmouseout = handleMouseLeave(function(e) {
+                e.preventDefault();
+                var attr = $(this).attr('data-popover-button');
+                var el = $("[data-popover-block='" + attr + "']");
+                setTimeout(function(){
+                    if (el.hasClass('visible'))
+                    {
+                        el.animate({opacity:0},150, function(){
+                            $(this).slideUp(5, function(){
+                                $(this).removeClass('visible')
+                            });
+                        });
+                    }
+                },300)
+            });
+        }
+    });
 
     $(document).on('click', '.trigger-radio', function(e){
         e.preventDefault();
@@ -288,25 +289,35 @@ $(window).on('load',function(){
         }
     });
 
-    //
-    //$(function() {
-    //    $('.tabs').on('click', 'li:not(.current)', function() {
-    //        $(this).addClass('current').siblings().removeClass('current')
-    //            .closest('.tabSection').find('.tab-box').eq($(this).index())
-    //            .animate({opacity:1},300,function(){$(this).removeClass('hidden')})
-    //            .siblings('.tab-box').animate({opacity:0},300,function(){$(this).addClass('hidden')});
-    //    })
-    //});
-
     $(function() {
         $('.tabs').on('click', 'li:not(.current)', function() {
-            var attr = $(this).closest('.tabs').attr('tabs');
-            $(this).addClass('current').siblings().removeClass('current');
-            $('.tab-box[tabs="'+attr+'"]').eq($(this).index()).animate({opacity:1},300,
-                    function(){$(this).removeClass('hidden')}).siblings('.tab-box[tabs="'+attr+'"]')
-                    .animate({opacity:0},300,function(){$(this).addClass('hidden')});
+            var _this = $(this),
+                $attr = $(this).closest('.tabs').attr('tabs'),
+                $box_c = $('.tab-box-c'),
+                box = '.tab-box[tabs="'+$attr+'"]';
+
+            _this.addClass('current').siblings().removeClass('current');
+            if($box_c.length > 0 )
+            {
+                for (var i=0; i < $box_c.length; i++)
+                {
+                    $($box_c[i]).find($(box)).eq(_this.index())
+                                        .animate({opacity:1}, 300, function(){
+                                            $(this).removeClass('hidden')})
+                                                    .siblings(box)
+                                                    .animate({opacity:0}, 300, function(){$(this).addClass('hidden')});
+                }
+            }
+            else $(box).eq(_this.index())
+                .animate({opacity:1},300,
+                    function(){
+                        $(this).removeClass('hidden')})
+                                .siblings(box)
+                                .animate({opacity:0},300,function(){$(this).addClass('hidden')});
         })
     });
+
+
 });
 
 $(window).on('click',function(event) {

@@ -1,11 +1,11 @@
 
-.hidden-row-menu {
+.hidden-menu-block {
     display: inline-block;
     vertical-align: top;
     position: relative;
 }
 
-.hidden-row-menu > a {
+.hidden-menu-block > a {
     display: table-cell;
     height: 40px;
     /*width: 70px;*/
@@ -16,34 +16,34 @@
     opacity: 0.5;
 }
 
-.hidden-row-menu > a:last-of-type {
+.hidden-menu-block > a:last-of-type {
     border: none;
     width: 26px;
 }
 
-.hidden-row-menu > a i {
+.hidden-menu-block > a i {
     font-size: 18px;
 }
 
-.hidden-row-menu > a.hidden {
+.hidden-menu-block > a.hidden {
     opacity: 0;
 }
 
 .fr-inbook.row-list-el:hover a.hidden,
-.c-title:hover a.hidden {
+.hidden-menu-row:hover a.hidden {
     opacity: 0.5;
     transition: opacity 300ms;
 }
 
-.fr-inbook.row-list-el:hover .hidden-row-menu > a:hover,
-.fr-inbook.row-list-el:hover .hidden-row-menu > a.hidden:hover,
-.c-title:hover .hidden-row-menu > a.hidden:hover,
-.c-title:hover .hidden-row-menu > a:hover {
+.fr-inbook.row-list-el:hover .hidden-menu-block > a:hover,
+.fr-inbook.row-list-el:hover .hidden-menu-block > a.hidden:hover,
+.hidden-menu-row:hover .hidden-menu-block > a.hidden:hover,
+.hidden-menu-row:hover .hidden-menu-block > a:hover {
     opacity: 1;
     transition: opacity 300ms;
 }
 
-.fr-inbook .hidden-row-menu > a.hidden {
+.fr-inbook .hidden-menu-block > a.hidden {
     transform: scale(0.75);
 }
 
@@ -54,7 +54,6 @@
     z-index: 99;
     opacity: 0;
     width: auto;
-
 }
 
 .sub-menu > i,
@@ -112,6 +111,6 @@
     padding: 0 10px 0 0;
 }
 
-.sub-menu > ul > li > a:hover + .hidden-row-menu > .hidden {
+.sub-menu > ul > li > a:hover + .hidden-menu-block > .hidden {
     opacity: 0;
 }
