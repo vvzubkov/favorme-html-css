@@ -207,16 +207,31 @@ $(window).on('load',function(){
         e.preventDefault();
         var $this = $(this);
         var attr = $(this).attr('sub-menu');
-        var el = $(".sub-menu[sub-menu='" + attr + "']");
+        //var el = $(".sub-menu[sub-menu='" + attr + "']");
+        var el = $(this).closest('.hidden-menu-row').find('.sub-menu');
+        var el_list = $(".sub-menu");
 
         if (!el.hasClass('visible'))
         {
-            el.slideDown(10, function(){
-                $(this).css({top:$this[0].offsetTop + $this[0].offsetHeight, left:$(this)[0].offsetWidth + 20, overflow:'visible'});
-                $(this).animate({opacity:1}, 150,function(){
-                    $(this).addClass('visible')
-                });
+            el_list.animate({opacity:0},1,function(){
+                $(this).slideUp(1, function(){
+                    $(this).removeClass('visible')
+                })
             });
+            setTimeout(function(){
+            el.slideDown(10, function(){
+                setTimeout(function(){
+                    el.css({
+                        top:$this[0].offsetTop + $this[0].offsetHeight,
+                        left:$this[0].offsetLeft + $this[0].offsetWidth - el[0].offsetWidth + 55,
+                        overflow:'visible'
+                    });
+                    el.animate({opacity:1}, 150,function(){
+                        $(this).addClass('visible')
+                    });
+                },20)
+                });
+            },20);
         }
         else if (el.hasClass('visible'))
         {

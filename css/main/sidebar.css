@@ -41,14 +41,14 @@
     padding: 0;
 }
 
-.sideBar a {
-    color: #3db6e1;
-    display: inline-block;
-    font-size: 0.917em;
-    font-weight: 600;
-    width: 100%;
-    text-align: center;
-}
+/*.sideBar a {*/
+    /*color: #3db6e1;*/
+    /*display: inline-block;*/
+    /*font-size: 0.917em;*/
+    /*font-weight: 600;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+/*}*/
 
 /*------ sideBar-nav ----------*/
 .sidebar-nav {

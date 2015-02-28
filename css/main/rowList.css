@@ -12,10 +12,11 @@
     position: relative;
 }
 
-.row-list-el:last-of-type,
-.row-list-el:last-of-type .footer {
-    border: none;
-}
+/*.row-list-el:last-of-type,*/
+/*.row-list-el:last-of-type .footer */
+/*{*/
+    /*border: none;*/
+/*}*/
 
 .row-list-el.fr-inbook,
 .row-list-el.fr-offer,
