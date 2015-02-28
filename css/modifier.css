@@ -255,23 +255,23 @@
 }
 
 .w-13part {
-    width: 32.5% !important;
+    width: 33% !important;
 }
 
 .w-23part {
-    width: 64.5%;
+    width: 66%;
 }
 
-.w-34part {
-    width: 74.5%;
+.w-14part {
+    width: 24.5% !important;
 }
 
 .w-24part {
     width: 49.5% !important;
 }
 
-.w-14part {
-    width: 24.5% !important;
+.w-34part {
+    width: 74.5%;
 }
 
 .w-15part {
@@ -279,15 +279,15 @@
 }
 
 .w-25part {
-    width: 39%;
+    width: 39.5%;
 }
 
 .w-35part {
-    width: 59%;
+    width: 59.5%;
 }
 
 .w-45part {
-    width: 79%;
+    width: 79.5%;
 }
 
 .w-95perc {
@@ -316,6 +316,10 @@
 
 .w-30perc {
     width: 30%;
+}
+
+.w-29perc {
+    width: 29%;
 }
 
 /*------ Height option -------*/
