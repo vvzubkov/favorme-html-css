@@ -62,9 +62,12 @@
     font-size: 30px;
     position: absolute;
     top: -12px;
-    left: 130px;
+    left: 150px;
 }
 
+.sub-menu > ul {
+    width: 195px;
+}
 .sub-menu > ul > img.arrow {
     top: -10px;
 }

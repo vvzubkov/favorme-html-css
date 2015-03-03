@@ -246,6 +246,17 @@
     width: auto !important;
 }
 
+.w-175 {
+    width: 175px !important;
+}
+
+.w-195 {
+    width: 195px !important;
+}
+.w-310 {
+    width: 310px !important;
+}
+
 .w-full {
     width: 100%;
 }
@@ -430,12 +441,17 @@
 }
 
 /*----- Border -------*/
-.bd-r5 {
+.bd-r7 {
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
 }
-
+.bd-r5
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 .td-u:hover {
     text-decoration: underline;
 }
@@ -478,6 +494,10 @@
 
 .bdb-none {
     border-bottom: none;
+}
+
+.bdt-none {
+    border-top: none;
 }
 
 .grayscale {
