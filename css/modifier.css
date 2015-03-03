@@ -77,6 +77,14 @@
     padding: 5px 20px !important;
 }
 
+.pad0-15 {
+    padding: 0 15px !important;
+}
+
+.pad5-15 {
+    padding: 5px 15px !important;
+}
+
 .pad10-15 {
     padding: 10px 15px !important;
 }
@@ -253,6 +261,7 @@
 .w-195 {
     width: 195px !important;
 }
+
 .w-310 {
     width: 310px !important;
 }
@@ -446,12 +455,13 @@
     -moz-border-radius: 7px;
     border-radius: 7px;
 }
-.bd-r5
-{
+
+.bd-r5 {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+
 .td-u:hover {
     text-decoration: underline;
 }
