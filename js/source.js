@@ -221,14 +221,16 @@ $(window).on('load',function(){
             setTimeout(function(){
             el.slideDown(10, function(){
                 setTimeout(function(){
-                    console.log($this[0].offsetTop);
-                    console.log($this[0].offsetLeft);
-                    console.log($this[0].offsetHeight);
-                    console.log($this[0].offsetWidth);
-                    console.log(el[0].offsetWidth);
+                    //console.log($this[0].offsetTop);
+                    //console.log($this[0].offsetLeft);
+                    //console.log($this[0].offsetHeight);
+                    //console.log($this[0].offsetWidth);
+                    //console.log(el[0].offsetWidth);
                     el.css({
-                        top:$this[0].offsetTop + $this[0].offsetHeight,
-                        left:$this[0].offsetLeft + $this[0].offsetWidth - el[0].offsetWidth + 55,
+                        //top:$this[0].offsetTop + $this[0].offsetHeight,
+                        top:'40px',
+                        //left:$this[0].offsetLeft + $this[0].offsetWidth - el[0].offsetWidth + 55,
+                        right:'-23px',
                         overflow:'visible'
                     });
                     el.animate({opacity:1}, 150,function(){
